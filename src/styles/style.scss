@@ -1,6 +1,6 @@
 @mixin flex-container {
 	display: -webkit-flex;
-    display: flex;
+    display: flex;    
 }
 
 @mixin flex-item($flex) {
@@ -11,6 +11,11 @@
 	display: block;
 	margin: 0 auto;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 .content {
 	@include flex-container;
 	-webkit-flex-direction: column-reverse;
@@ -19,6 +24,7 @@
 
 .sidebar {
 	@include flex-item(1);
+	width: 250px;
 	img {
 		@include center;
 		padding: 10px;
@@ -40,6 +46,9 @@
 	@include flex-container;
     bottom: 0px;
     width:100%;
+    h3 {
+		color: black;
+    }
 
 }
 
@@ -56,3 +65,5 @@
 }
 
 }
+
+@import "_carousel.scss";

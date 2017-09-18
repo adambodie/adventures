@@ -1,7 +1,7 @@
 // Libs
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Content from './Content';
 
 class Application extends React.Component {
   constructor() {
@@ -32,7 +32,7 @@ class Application extends React.Component {
 			<img src="http://via.placeholder.com/200x200"/>						
 			</div>
 			<div className="carousel">
-			<img src={`http://via.placeholder.com/${width * 150}x${height *150}`}/>
+			
 			</div>
 		</div>
 		<div className="footer">
