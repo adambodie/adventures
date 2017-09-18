@@ -19,7 +19,12 @@ var webpackConfig = {
       {
         test: /\.s?css$/,
         loader: 'style-loader!css-loader!sass-loader'
-      }
+      },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg$/, /\.eot$/, /\.woff$/, /\.tff$/],
+        loader: 'url-loader'
+
+		}
     ]
   },
   plugins: [

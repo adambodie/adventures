@@ -11,9 +11,12 @@
   "author": "Adam Bodie",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "jquery": "^3.1.1",
     "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react-dom": "^15.2.1",
+    "react-slick": "^0.15.4",
+    "slick-carousel": "^1.7.1"
   },
   "devDependencies": {
     "babel-core": "^6.11.4",
@@ -28,6 +31,7 @@
     "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
     "uglify-js-plugin": "0.0.6",
+    "url-loader": "^0.5.9",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
