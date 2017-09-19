@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-.content {
+.primary-content {
 	@include flex-container;
 	-webkit-flex-direction: column-reverse;
     flex-direction: column-reverse;
@@ -33,6 +33,16 @@
 	}
 }
 
+.area {
+	margin: 0 auto;
+    background: #e5e5e5;
+	height: 90vh;
+    .content {
+		.item {
+            margin: 20px;
+        }
+    }
+}
 
 
 .carousel {
@@ -53,7 +63,7 @@
 }
 
 @media (min-width: 769px) {
-.content {
+.primary-content {
 	-webkit-flex-direction: row;
     flex-direction: row;
 }
@@ -65,5 +75,6 @@
 }
 
 }
+
 
 @import "_carousel.scss";

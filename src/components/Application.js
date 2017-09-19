@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Content from './Content';
-
+import Sidebar from './Sidebar';
 class Application extends React.Component {
   constructor() {
     super();
@@ -13,24 +13,15 @@ class Application extends React.Component {
   }
 
   render() {
-	let width = 4;
-	let height = 3;
     return (
       <div>
 		<div className="header">
-			<h1>Adam's Adventures</h1>
+			<h1>Adam&apos;s Adventures</h1>
 		</div>
-		<div className="content">
-			<div className="sidebar">
-			<img src="http://via.placeholder.com/200x200"/>
-			<img src="http://via.placeholder.com/200x200"/>
-			<img src="http://via.placeholder.com/200x200"/>
-			<img src="http://via.placeholder.com/200x200"/>
-			<img src="http://via.placeholder.com/200x200"/>
-			<img src="http://via.placeholder.com/200x200"/>
-			<img src="http://via.placeholder.com/200x200"/>
-			<img src="http://via.placeholder.com/200x200"/>						
-			</div>
+		<div className="primary-content">
+			<div class="sidebar">
+			<Sidebar />	
+			</div>				
 			<div className="carousel">
 			
 			</div>
