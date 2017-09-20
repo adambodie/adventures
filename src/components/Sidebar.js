@@ -10,17 +10,19 @@ class Sidebar extends React.Component{
         };
     }
 
+    handleScroll(scrollData){
+      console.log(scrollData);
+    }
+
     render() {
         var itemElements = [];
 
         for( var i = 0; i< this.state.itemsCount; i++){
-            itemElements.push(<div className="item" key={i}><img src="http://via.placeholder.com/250x150"/></div>);
+            itemElements.push(<div className="item" key={i}>item {i}</div>);
         }
 
         let scrollbarStyles = {borderRadius: 5};
-		let w = window.innerWidth;
-		let whichScroll = w > 768 ? true : false; 
-		console.log(whichScroll);
+
         return (
             <div>
                 <ScrollArea
@@ -32,8 +34,7 @@ class Sidebar extends React.Component{
                   horizontalContainerStyle={scrollbarStyles}
                   smoothScrolling= {true}
                   minScrollSize={40}
-                  horizontal={false}
-                  vertical={true}
+                  onScroll={this.handleScroll}
                   >
 
                     {itemElements}
@@ -42,7 +43,8 @@ class Sidebar extends React.Component{
 
             </div>
         );
-    }
+    }	
+
 }
 
 export default Sidebar;

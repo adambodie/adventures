@@ -23,7 +23,7 @@ class Application extends React.Component {
 			<Sidebar />	
 			</div>				
 			<div className="carousel">
-			
+				<Content />
 			</div>
 		</div>
 		<div className="footer">

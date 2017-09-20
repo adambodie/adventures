@@ -52,9 +52,6 @@ export default class Content extends Component {
           <div className="main-content">
             <PhotoList data={this.state.photographs}/>
           </div>
-          <div className="main-footer">
-			<h4>Adam Bodie &copy; {year}</h4>
-          </div>
         </div>
       );
     }
