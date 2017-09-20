@@ -16,6 +16,17 @@
   box-sizing: border-box;
 }
 
+.header {
+	@include flex-container;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100px;
+	h1 {
+		@include flex-item(1);
+		text-align: center;
+		font-size: 1.5em;
+	}
+}
 
 .footer {
 	@include flex-container;
@@ -28,8 +39,11 @@
 }
 
 @media (min-width: 769px) {
-	.flex-container {
-		@include flex-container;
+	.header {
+		height: 200px;
+		h1 {
+			font-size: 2.5em;
+		}
 	}
 }
 
