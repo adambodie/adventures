@@ -14,7 +14,7 @@ class Application extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="main-container">
 		<div className="header">
 			<h1>Adam&apos;s Adventures</h1>
 		</div>

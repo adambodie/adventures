@@ -6,14 +6,9 @@ class Sidebar extends React.Component{
         super(props);
 
         this.state = {
-            itemsCount : 10
+            itemsCount : 11
         };
     }
-
-    handleScroll(scrollData){
-      console.log(scrollData);
-    }
-
     render() {
         var itemElements = [];
 
@@ -34,7 +29,6 @@ class Sidebar extends React.Component{
                   horizontalContainerStyle={scrollbarStyles}
                   smoothScrolling= {true}
                   minScrollSize={40}
-                  onScroll={this.handleScroll}
                   >
 
                     {itemElements}

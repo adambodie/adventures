@@ -16,6 +16,7 @@
   box-sizing: border-box;
 }
 
+
 .footer {
 	@include flex-container;
     bottom: 0px;
@@ -27,7 +28,9 @@
 }
 
 @media (min-width: 769px) {
-
+	.flex-container {
+		@include flex-container;
+	}
 }
 
 @import "_sidebar.scss";

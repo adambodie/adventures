@@ -44,11 +44,6 @@ export default class Content extends Component {
     let year = new Date().getFullYear();
       return (
         <div>
-          <div className="main-header flex-container">
-            <div className="inner flex-item">
-                <h1>Adam&apos;s Wild Wild West</h1>
-            </div>
-          </div>
           <div className="main-content">
             <PhotoList data={this.state.photographs}/>
           </div>

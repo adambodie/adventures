@@ -1,6 +1,6 @@
 .area{
         margin: 0 auto;
-        height: 200px;
+        height: 150px;
         background: #e5e5e5;
 
         .content{
@@ -8,12 +8,10 @@
 
             .item{
                 background: #82bb95;
-                width: 250px;
-                height: 150px;
-                margin: 10px;
-                float: left;
+                width: 200px;
+                height: 125px;
+                margin: 8px;
                 padding: 8px;
-                box-sizing: border-box;
                 display: inline-block;
             }
         }
