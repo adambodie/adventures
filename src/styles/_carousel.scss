@@ -45,7 +45,7 @@ li {
 }
 
 .slick-dots {
-	position: relative;
+	position: relative!important;
 	bottom: 0;
 	max-width: 500px;
 	display: block;
@@ -93,14 +93,14 @@ li {
   }
   .slick-next:before {
 	margin-right: 30px;
-  }  
-  
+  }
+
   .slick-prev, .slick-next {
   	top: 240px;
   }
-  
+
   .slick-next {
 	right: 25px;
   }
-  
+
 }

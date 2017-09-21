@@ -6,14 +6,14 @@ class Sidebar extends React.Component{
         super(props);
 
         this.state = {
-            itemsCount : 11
+            itemsCount : 7
         };
     }
     render() {
         var itemElements = [];
 
-        for( var i = 0; i< this.state.itemsCount; i++){
-            itemElements.push(<div className="item" key={i}>item {i}</div>);
+        for( var i = 1; i< this.state.itemsCount + 1; i++){
+            itemElements.push(<img src={`./src/images/adventure${i}.jpg`} alt={i} key={i}/>);
         }
 
         let scrollbarStyles = {borderRadius: 5};
@@ -37,7 +37,7 @@ class Sidebar extends React.Component{
 
             </div>
         );
-    }	
+    }
 
 }
 

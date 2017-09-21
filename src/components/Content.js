@@ -13,10 +13,10 @@ function formUrl(method, api_key, photoset_id, user_id, per_page) {
 	&format=json&nojsoncallback=1`;
 }
 
-const url = formUrl('flickr.photosets.getPhotos', 
-					'0c3f8d32a28de8434240115b85a28499', 
-					'72157688485135075', 
-					'8994820%40N07', 
+const url = formUrl('flickr.photosets.getPhotos',
+					'0c3f8d32a28de8434240115b85a28499',
+					'72157688485135075',
+					'8994820%40N07',
 					'300'
 					);
 
@@ -39,9 +39,8 @@ export default class Content extends Component {
           console.log('Error fetching and parsing data', error);
         });
     }
-	
+
     render() {
-    let year = new Date().getFullYear();
       return (
         <div>
           <div className="main-content">

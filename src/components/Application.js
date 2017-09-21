@@ -21,7 +21,7 @@ class Application extends React.Component {
 		<div className="primary-content">
 			<div class="sidebar">
 			<Sidebar />	
-			</div>				
+			</div>
 			<div className="carousel">
 				<Content />
 			</div>

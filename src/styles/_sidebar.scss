@@ -14,14 +14,13 @@ $height: 3;
 
         .content{
             width: max-width(multiplier($width, 25px), 13);
+            img {
+		                width: multiplier($width, 25px);
+		                height: multiplier($height, 25px);
+		                margin: 8px;
+		                padding: 8px;
+		                display: inline-block;
 
-            .item{
-                background: #82bb95;
-                width: multiplier($width, 25px);
-                height: multiplier($height, 25px);
-                margin: 8px;
-                padding: 8px;
-                display: inline-block;
             }
         }
     }
@@ -30,14 +29,13 @@ $height: 3;
 @media (min-width: 769px) {
 	.area {
         height: multiplier($height, 50px) + 20px;
-
         .content{
             width: max-width(multiplier($width, 50px), 12);
+							img {
+                	width: multiplier($width, 50px);
+                	height: multiplier($height, 50px);
+							}
 
-            .item{
-                width: multiplier($width, 50px);
-                height: multiplier($height, 50px);
-            }
         }
     }
 }
