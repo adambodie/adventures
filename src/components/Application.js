@@ -4,17 +4,20 @@ import ReactDOM from 'react-dom';
 import Content from './Content';
 import Sidebar from './Sidebar';
 class Application extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-		background: '#222222'
+		backgroundImage: "url('./src/images/background.jpg')"
     };
-
+    this.handleBackgroundImageChange = this.handleBackgroundImageChange.bind(this);
   }
-
+  handleBackgroundImageChange(backgroundImage){
+    this.setState({backgroundImage: backgroundImage});
+  }
   render() {
 	  const carouselStyle = {
-		backgroundColor: this.state.background,
+		backgroundImage: this.state.backgroundImage,
+    backgroundSize: 'cover',
 	}
     return (
       <div className="main-container">
@@ -23,7 +26,9 @@ class Application extends React.Component {
 		</div>
 		<div className="primary-content">
 			<div class="sidebar">
-			<Sidebar />	
+			<Sidebar
+        onBackgroundImageChange={this.handleBackgroundImageChange}
+      />
 			</div>
 			<div className="carousel" style={carouselStyle}>
 				<Content />
