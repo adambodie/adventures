@@ -7,12 +7,15 @@ class Application extends React.Component {
   constructor() {
     super();
     this.state = {
-
+		background: '#222222'
     };
 
   }
 
   render() {
+	  const carouselStyle = {
+		backgroundColor: this.state.background,
+	}
     return (
       <div className="main-container">
 		<div className="header">
@@ -22,7 +25,7 @@ class Application extends React.Component {
 			<div class="sidebar">
 			<Sidebar />	
 			</div>
-			<div className="carousel">
+			<div className="carousel" style={carouselStyle}>
 				<Content />
 			</div>
 		</div>
