@@ -45,7 +45,8 @@ li {
 
 .slick-dots {
 	position: relative!important;
-	bottom: 0;
+  bottom: 0;
+  background-color: black;
 	max-width: 500px;
 	display: block;
 	margin: 0 auto;
@@ -53,7 +54,17 @@ li {
 	li {
 		margin: 0;
 		width: 10px;
-		height: 10px;
+    height: 10px;
+    color: white;
+    button {
+      &:before {
+        opacity: 1;
+        color: white;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
 	}
 }
 
@@ -76,7 +87,7 @@ li {
     float: left;
   }
   .slick-dots {
-  	max-width: 1000px;
+  	max-width: 100%;
   }
   .slick-slide {
 	width: 800px;
