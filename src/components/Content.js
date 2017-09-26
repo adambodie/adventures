@@ -3,32 +3,24 @@ import axios from 'axios';
 import PhotoList from './PhotoList';
 
 
-function formUrl(method, api_key, photoset_id, user_id, per_page) {
-	return `https://api.flickr.com/services/rest/
-	?method=${method}
-	&api_key=${api_key}
-	&photoset_id=${photoset_id}
-	&user_id=${user_id}
-	&per_page=${per_page}
-	&format=json&nojsoncallback=1`;
+function formUrl(photoset_id, per_page) {
+	return `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&per_page=${per_page}&format=json&nojsoncallback=1`;
 }
 
-const url = formUrl('flickr.photosets.getPhotos',
-					'0c3f8d32a28de8434240115b85a28499',
-					'72157688485135075',
-					'8994820%40N07',
-					'300'
-					);
+
 
 export default class Content extends Component {
-  constructor() {
-      super();
+  constructor(props) {
+      super(props);
       this.state = {
-        photographs: []
+        photographs: [],
       };
     }
 
     componentDidMount() {
+      let photoset_id = this.props.id;
+      let per_page = this.props.page;
+      const url = formUrl(photoset_id, per_page);
       axios.get(url)
         .then(response => {
           this.setState({

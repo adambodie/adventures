@@ -4,7 +4,6 @@ import Photo from './Photo';
 
 const PhotoList = props => {
   let results = props.data;
-  console.log(results);
   let settings = {
   dots: true,
   infinite: true,

@@ -5,9 +5,7 @@ import Item from './Item';
 export default class ItemList extends Component{
     constructor(props) {
       super(props);
-      this.state = {
-      }
-      this.onHandleClick = this.onHandleClick.this(bind);
+      this.onHandleClick = this.onHandleClick.bind(this);
     }
     onHandleClick() {
       console.log("testing");

@@ -7,7 +7,9 @@ class Application extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-		backgroundImage: "url('./src/images/background.jpg')"
+    backgroundImage: "url('./src/images/background.jpg')",
+    photosetId: '72157688485135075',
+    perPage: 300
     };
     this.handleBackgroundImageChange = this.handleBackgroundImageChange.bind(this);
   }
@@ -18,7 +20,7 @@ class Application extends React.Component {
 	  const carouselStyle = {
 		backgroundImage: this.state.backgroundImage,
     backgroundSize: 'cover',
-	}
+  }
     return (
       <div className="main-container">
 		<div className="header">
@@ -31,7 +33,7 @@ class Application extends React.Component {
       />
 			</div>
 			<div className="carousel" style={carouselStyle}>
-				<Content />
+				<Content id={this.state.photosetId} page={this.state.perPage} />
 			</div>
 		</div>
 		<div className="footer">
