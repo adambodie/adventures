@@ -29,7 +29,14 @@ li {
 /* =================================
   Layout Styles
 ==================================== */
-
+.button {
+	padding: 20px;
+	margin: 20px;
+	font-weight: bold;
+}
+.slick-arrow {
+	display: none!important;
+}
 
 .slick-list {
 	padding: 10px;
@@ -39,14 +46,10 @@ li {
     max-height: 200px;
 }
 
-.slick-prev, .slick-next {
-	top: 100px;
-}
-
 .slick-dots {
 	position: relative!important;
-  bottom: 0;
-  background-color: black;
+	bottom: 0;
+	background-color: black;
 	max-width: 500px;
 	display: block;
 	margin: 0 auto;
@@ -54,17 +57,17 @@ li {
 	li {
 		margin: 0;
 		width: 10px;
-    height: 10px;
-    color: white;
-    button {
-      &:before {
-        opacity: 1;
-        color: white;
-      }
-      &:hover {
-        opacity: 0.5;
-      }
-    }
+		height: 10px;
+		color: white;
+		button {
+			&:before {
+				opacity: 1;
+				color: white;
+			}
+		&:hover {
+			opacity: 0.5;
+			}
+		}
 	}
 }
 
@@ -95,22 +98,8 @@ li {
 			max-height: 480px;
 		}
   }
-  .slick-prev:before, .slick-next:before {
-  	font-size: 40px;
-  }
-  .slick-prev:before {
-	margin-left: 30px;
-  }
-  .slick-next:before {
-	margin-right: 30px;
-  }
-
-  .slick-prev, .slick-next {
-  	top: 240px;
-  }
-
-  .slick-next {
-	right: 25px;
-  }
 
 }
+
+
+

@@ -1,26 +1,28 @@
 // Libs
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Content from './Content';
 import Sidebar from './Sidebar';
-class Application extends React.Component {
+
+//hawaii - 72157686468511520 - 76
+//vegas - 72157687042225613 - 37
+//wildwildwest - 72157688485135075 - 300
+
+export default class Application extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    backgroundImage: "url('./src/images/background.jpg')",
-    photosetId: '72157688485135075',
-    perPage: 300
+		backgroundImage: 'background',
+		photosetId: '72157688485135075',
+		perPage: 300
     };
-    this.handleBackgroundImageChange = this.handleBackgroundImageChange.bind(this);
   }
-  handleBackgroundImageChange(backgroundImage){
-    this.setState({backgroundImage: backgroundImage});
-  }
+
   render() {
 	  const carouselStyle = {
-		backgroundImage: this.state.backgroundImage,
-    backgroundSize: 'cover',
-  }
+		backgroundImage: `url('./src/images/${this.state.backgroundImage}.jpg')`,
+		backgroundSize: 'cover',
+	}
     return (
       <div className="main-container">
 		<div className="header">
@@ -28,9 +30,7 @@ class Application extends React.Component {
 		</div>
 		<div className="primary-content">
 			<div class="sidebar">
-			<Sidebar
-        onBackgroundImageChange={this.handleBackgroundImageChange}
-      />
+				<Sidebar/>
 			</div>
 			<div className="carousel" style={carouselStyle}>
 				<Content id={this.state.photosetId} page={this.state.perPage} />
@@ -44,4 +44,3 @@ class Application extends React.Component {
   }
 }
 
-export default Application;
