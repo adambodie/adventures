@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import Photo from './Photo';
+import FontAwesome from 'react-fontawesome';
 
 export default class PhotoList extends Component {
 	constructor(props) {
@@ -37,8 +38,8 @@ export default class PhotoList extends Component {
       {photos}
     </Slider>
     <div style={{display: 'flex', justifyContent: 'space-between'}}>
-		<button className='button' onClick={this.previous}>&lt;</button>
-        <button className='button' onClick={this.next}>&gt;</button>
+		<button className='button' onClick={this.previous}><FontAwesome name='arrow-circle-left' stack='2x' style={{position: 'relative'}}/></button>
+        <button className='button' onClick={this.next}><FontAwesome name='arrow-circle-right' stack='2x' style={{position: 'relative'}}/></button>
     </div>
     </div>
   );
