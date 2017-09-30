@@ -34,6 +34,17 @@ li {
 	margin: 20px;
 	font-weight: bold;
 	border-radius: 100%;
+	position: absolute;
+	top: 100%;
+}
+
+.left {
+	left: 5%;
+
+}
+
+.right {
+	right: 5%;
 }
 .slick-arrow {
 	display: none!important;
@@ -50,7 +61,6 @@ li {
 .slick-dots {
 	position: relative!important;
 	bottom: 0;
-	background-color: black;
 	max-width: 500px;
 	display: block;
 	margin: 0 auto;
