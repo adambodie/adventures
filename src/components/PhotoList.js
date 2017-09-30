@@ -25,10 +25,11 @@ export default class PhotoList extends Component {
 			slidesToScroll: 1,
 			fade: true,
 		};
-  let length = results.length;
+  let length = this.props.page;
+  console.log(length);
   let photos = results.map((x, index) =>
     <div key={x.id}>
-    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} index={index + 1}/>
+    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} index={index + 1} length={length}/>
     </div>
   )
   
