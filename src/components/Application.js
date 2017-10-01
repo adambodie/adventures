@@ -4,9 +4,6 @@ import ReactDOM from 'react-dom';
 import Content from './Content';
 import Sidebar from './Sidebar';
 
-//hawaii - 72157686468511520 - 76
-//vegas - 72157687042225613 - 37
-//wildwildwest - 72157688485135075 - 300
 
 export default class Application extends Component {
   constructor(props) {

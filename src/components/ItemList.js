@@ -5,15 +5,11 @@ import Item from './Item';
 export default class ItemList extends Component{
     constructor(props) {
       super(props);
-      this.onHandleClick = this.onHandleClick.bind(this);
-    }
-    onHandleClick() {
-      console.log("testing");
     }
     render(){
     let adventures = this.props.data;
     let itemList = adventures.map((x, index) =>
-      <Item title={x.title} key={x.index} index={index + 1} handleClick={x.onHandleClick}/>
+      <Item title={x.backgroundImage} key={x.index} index={index + 1}/>
     )
     let scrollbarStyles = {borderRadius: 5};
     return(
