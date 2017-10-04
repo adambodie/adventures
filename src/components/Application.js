@@ -9,9 +9,9 @@ export default class Application extends Component {
   constructor(props) {
     super(props);
     this.state = {
-		backgroundImage: 'vegas',
-		photosetId: '72157687042225613',
-		perPage: 37
+		backgroundImage: 'europe',
+		photosetId: '72157686893038650',
+		perPage: 138
     };
   }
 

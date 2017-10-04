@@ -13,7 +13,7 @@ export default class Sidebar extends Component{
         sidebarItems: [
           {backgroundImage: 'vegas', photoset_id: 72157687042225613, per_page: 37},
           {backgroundImage: 'hawaii', photoset_id: 72157686468511520, per_page: 76},
-          {backgroundImage: 'wildwildwest', photoset_id: 72157688485135075, per_page: 300}],
+          {backgroundImage: 'europe', photoset_id: 72157686893038650, per_page: 138}],
       }
     }
     render() {
