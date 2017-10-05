@@ -14,7 +14,8 @@ export default class Content extends Component {
       super(props);
       this.state = {
         photographs: [],
-        per_page: this.props.page
+        per_page: this.props.page,
+        title: this.props.title
       };
     }
 
@@ -37,6 +38,7 @@ export default class Content extends Component {
       return (
         <div>
           <div className="main-content">
+				<h1 className="title">{this.props.title}</h1>
             <PhotoList data={this.state.photographs} page={this.state.per_page}/>
           </div>
         </div>

@@ -11,7 +11,8 @@ export default class Application extends Component {
     this.state = {
 		backgroundImage: 'europe',
 		photosetId: '72157686893038650',
-		perPage: 138
+		perPage: 138,
+		title: 'My Trip to Europe'
     };
   }
 
@@ -30,7 +31,7 @@ export default class Application extends Component {
 				<Sidebar/>
 			</div>
 			<div className="carousel" style={carouselStyle}>
-				<Content id={this.state.photosetId} page={this.state.perPage} />
+				<Content title={this.state.title} id={this.state.photosetId} page={this.state.perPage} />
 			</div>
 		</div>
 		<div className="footer">
