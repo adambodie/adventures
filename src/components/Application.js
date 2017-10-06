@@ -35,7 +35,7 @@ export default class Application extends Component {
 			</div>
 		</div>
 		<div className="footer">
-			<h3>Adam Bodie &copy; 2017</h3>
+			<h2>Adam Bodie &copy; 2017</h2>
 		</div>
       </div>
     );
