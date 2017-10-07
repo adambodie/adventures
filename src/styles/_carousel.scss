@@ -36,29 +36,24 @@ li {
 }
 
 .button {
-	padding: 10px;
-	margin: 20px;
+	padding: 5px;
 	font-weight: bold;
 	border-radius: 100%;
 	position: absolute;
-	top: 100%;
+	top: 60%;
 }
 
 .left {
-	left: 5%;
+	left: 0%;
 
 }
-
 .right {
-	right: 5%;
+	right: 0%;
 }
 .slick-arrow {
 	display: none!important;
 }
 
-.slick-list {
-	padding: 10px;
-}
 .slick-slide img {
     margin: 0 auto;
     max-height: 200px;
@@ -96,10 +91,21 @@ li {
 @media (min-width: 550px) {
   .slick-slide img {
       max-height: 340px;
-  }
-  .slick-prev, .slick-next {
-    top: 170px;
-  }
+	}
+	.slick-list {
+		padding: 10px;
+	}
+	.button {
+		top: 45%;
+	}
+	.left {
+		left: 2.5%;
+	
+	}
+	.right {
+		right: 2.5%;
+	}
+
 }
 
 @media (min-width: 769px) {
@@ -108,9 +114,26 @@ li {
   }
   .slick-dots {
   	max-width: 100%;
-  }
+	}
+	.slick-list {
+		padding: 10px;
+	}
+	.button {
+		margin: 20px;
+		top: 100%;
+		padding: 5px;
+	}
+
+	.left {
+		left: 5%;
+	
+	}
+	.right {
+		right: 5%;
+	}
+
   .slick-slide {
-	width: 800px;
+		width: 800px;
 		img {
 			max-height: 480px;
 		}

@@ -16,11 +16,10 @@ export default class ItemList extends Component{
           <ScrollArea
             className="area"
             contentClassName="content"
-            verticalScrollbarStyle={scrollbarStyles}
-            verticalContainerStyle={scrollbarStyles}
             horizontalScrollbarStyle={scrollbarStyles}
             horizontalContainerStyle={scrollbarStyles}
             smoothScrolling= {true}
+            vertical={false}
             minScrollSize={40}
             >
         {itemList}
