@@ -15,7 +15,9 @@ export default class Content extends Component {
       this.state = {
         photographs: [],
         per_page: this.props.page,
-        title: this.props.title
+        title: this.props.title,
+        background: this.props.background,
+        color: this.props.color
       };
     }
 
@@ -35,13 +37,19 @@ export default class Content extends Component {
     }
 
     render() {
+		const carouselStyle = {
+			backgroundImage: `url('./src/images/${this.state.background}.jpg')`,
+			backgroundSize: 'cover',
+			
+		}
+		const colorStyle = {
+			color: this.state.color
+		}
       return (
-        <div>
-          <div className="main-content">
-				<h1 className="title">{this.props.title}</h1>
+          <div style={carouselStyle}>
+				<h1 className="title" style={colorStyle}>{this.props.title}</h1>
             <PhotoList data={this.state.photographs} page={this.state.per_page}/>
           </div>
-        </div>
       );
     }
 }

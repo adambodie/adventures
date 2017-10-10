@@ -12,15 +12,12 @@ export default class Application extends Component {
 		backgroundImage: 'europe',
 		photosetId: '72157686893038650',
 		perPage: 138,
-		title: 'My Trip to Europe'
+		title: 'My Trip to Europe',
+		color: 'gold'
     };
   }
 
   render() {
-	  const carouselStyle = {
-		backgroundImage: `url('./src/images/${this.state.backgroundImage}.jpg')`,
-		backgroundSize: 'cover',
-	}
     return (
       <div className="main-container">
 		<div className="header">
@@ -30,8 +27,14 @@ export default class Application extends Component {
 			<div class="sidebar">
 				<Sidebar/>
 			</div>
-			<div className="carousel" style={carouselStyle}>
-				<Content title={this.state.title} id={this.state.photosetId} page={this.state.perPage} />
+			<div className="carousel">
+				<Content 
+					title={this.state.title} 
+					id={this.state.photosetId} 
+					page={this.state.perPage} 
+					background={this.state.backgroundImage}
+					color={this.state.color}
+				/>
 			</div>
 		</div>
 		<div className="footer">
