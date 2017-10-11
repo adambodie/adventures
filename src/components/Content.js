@@ -17,7 +17,8 @@ export default class Content extends Component {
         title: this.props.title,
         background: this.props.background,
         color: this.props.color,
-        isLoading: false,
+        isLoaded: false,
+        isFailed: false,
       };
     }
 
@@ -29,16 +30,19 @@ export default class Content extends Component {
         .then(response => {
           this.setState({
             photographs: response.data.photoset.photo,
-            isLoading: true
+            isLoaded: true
           });
         })
         .catch(error => {
           console.log('Error fetching and parsing data', error);
+          this.setState({
+				isFailed: true
+			});
         });
     }
 
     render() {
-		const isLoading = this.state.isLoading;
+		const isLoaded = this.state.isLoaded;
 		const carouselStyle = {
 			backgroundImage: `url('./src/images/${this.state.background}.jpg')`,
 			backgroundSize: 'cover',
@@ -49,12 +53,12 @@ export default class Content extends Component {
 		}
       return (
       <div>
-		{ isLoading ? (
+		{ isLoaded ? (
           <div style={carouselStyle}>
 				<h1 className="title" style={colorStyle}>{this.props.title}</h1>
             <PhotoList data={this.state.photographs} page={this.state.per_page}/>
           </div> ) : (
-				<Loading />
+				<Loading isFailed={this.state.isFailed}/>
           )}
         </div>
       );
