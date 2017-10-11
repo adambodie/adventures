@@ -11,9 +11,9 @@ export default class Sidebar extends Component{
       super(props);
       this.state = {
         sidebarItems: [
-          {backgroundImage: 'vegas', title: 'High School Graduation Trip to Las Vegas', photoset_id: 72157687042225613, per_page: 37},
-          {backgroundImage: 'hawaii', title: 'Mahalo Fora Maui', photoset_id: 72157686468511520, per_page: 76},
-          {backgroundImage: 'europe', title: 'My Trip to Europe', photoset_id: 72157686893038650, per_page: 138}],
+          {backgroundImage: 'vegas', title: 'High School Graduation Trip to Las Vegas', color: 'gold', photoset_id: 72157687042225613, per_page: 37},
+          {backgroundImage: 'hawaii', title: 'Mahalo Fora Maui', color: 'gold', photoset_id: 72157686468511520, per_page: 76},
+          {backgroundImage: 'europe', title: 'My Trip to Europe', color: 'gold', photoset_id: 72157686893038650, per_page: 138}],
       }
     }
     render() {

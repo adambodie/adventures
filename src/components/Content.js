@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import PhotoList from './PhotoList';
-
+import Loading from './Loading';
 
 function formUrl(photoset_id, per_page) {
 	return `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&per_page=${per_page}&format=json&nojsoncallback=1`;
 }
-
 
 
 export default class Content extends Component {
@@ -17,7 +16,8 @@ export default class Content extends Component {
         per_page: this.props.page,
         title: this.props.title,
         background: this.props.background,
-        color: this.props.color
+        color: this.props.color,
+        isLoading: false,
       };
     }
 
@@ -28,7 +28,8 @@ export default class Content extends Component {
       axios.get(url)
         .then(response => {
           this.setState({
-            photographs: response.data.photoset.photo
+            photographs: response.data.photoset.photo,
+            isLoading: true
           });
         })
         .catch(error => {
@@ -37,6 +38,7 @@ export default class Content extends Component {
     }
 
     render() {
+		const isLoading = this.state.isLoading;
 		const carouselStyle = {
 			backgroundImage: `url('./src/images/${this.state.background}.jpg')`,
 			backgroundSize: 'cover',
@@ -46,10 +48,15 @@ export default class Content extends Component {
 			color: this.state.color
 		}
       return (
+      <div>
+		{ isLoading ? (
           <div style={carouselStyle}>
 				<h1 className="title" style={colorStyle}>{this.props.title}</h1>
             <PhotoList data={this.state.photographs} page={this.state.per_page}/>
-          </div>
+          </div> ) : (
+				<Loading />
+          )}
+        </div>
       );
     }
 }
