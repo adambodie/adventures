@@ -13,7 +13,7 @@ export default class Loading extends Component {
 			{ isFailed ? (
 				<div className="loading">
 					<h1>File Not Found</h1>
-					<img src="./src/images/frown.jpg" alt = "Frown" />					
+					<img src="./src/images/frown.gif" alt = "Frown" />					
 				</div> ) : (
 				<div className="loading">
 					<h1>Loading...</h1>
