@@ -38,8 +38,18 @@ export default class PhotoList extends Component {
       {photos}
     </Slider>
     <div style={{display: 'flex', justifyContent: 'space-between'}}>
-		<button className='button left' onClick={this.previous}><FontAwesome name='arrow-circle-left' stack='2x' style={{position: 'relative'}}/></button>
-        <button className='button right' onClick={this.next}><FontAwesome name='arrow-circle-right' stack='2x' style={{position: 'relative'}}/></button>
+		<button className='button left' onClick={this.previous}>
+			<FontAwesome 
+				name='arrow-circle-left'  
+				style={{position: 'relative'}}
+			/>
+		</button>
+        <button className='button right' onClick={this.next}>
+			<FontAwesome 
+				name='arrow-circle-right' 
+				style={{position: 'relative'}}
+			/>
+		</button>
     </div>
     </div>
   );
