@@ -1,5 +1,5 @@
-$width: 4;
-$height: 2.5;
+$width: 3;
+$height: 1.875;
 @function multiplier($variable, $multiplier) {
 	@return $variable * $multiplier;
 }
@@ -9,17 +9,23 @@ $height: 2.5;
 }
 .area{
         margin: 0 auto;
-        height: multiplier($height, 25px) + 15px;
+        height: multiplier($height, 25px) + 18px;
         background: #e5e5e5;
 
         .content{
             width: max-width(multiplier($width, 25px), 13);
+            button {
+				border: none;
+            }
             img {
 		                width: multiplier($width, 25px);
 		                height: multiplier($height, 25px);
-		                margin: 8px;
-		                padding: 8px;
+		                margin: 4px;
+		                padding: 4px;
 		                display: inline-block;
+		                &:hover {
+							transform: scale(1.2);
+		                }
 
             }
         }
@@ -28,7 +34,7 @@ $height: 2.5;
 
 @media (min-width: 769px) {
 	.area {
-        height: multiplier($height, 50px) + 20px;
+        height: multiplier($height, 50px) + 26px;
         .content{
             width: max-width(multiplier($width, 50px), 12);
 							img {

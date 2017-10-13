@@ -4,7 +4,7 @@
 .carousel {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #4c4c4c;
-  margin-top: -25px;
+  margin-top: -30px;
 }
 a {
   text-decoration: none;
@@ -35,15 +35,15 @@ li {
 	padding: 10px;
 }
 
-.button {
-	border-radius: 100%;
+.fa {
 	position: absolute;
 	top: 60%;
-	.fa {
-		font-size: 3em;
+	font-size: 3em;
+	color: white;
+	&:hover {
+		color: gray;
 	}
 }
-
 .left {
 	left: 0%;
 
@@ -96,7 +96,7 @@ li {
 	.slick-list {
 		padding: 10px;
 	}
-	.button {
+	.fa {
 		top: 45%;
 	}
 	.left {
@@ -119,7 +119,7 @@ li {
 	.slick-list {
 		padding: 10px;
 	}
-	.button {
+	.fa {
 		margin: 20px;
 		top: 100%;
 	}
