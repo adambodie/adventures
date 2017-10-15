@@ -8,16 +8,24 @@ import Sidebar from './Sidebar';
 export default class Application extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = {		
+		items: [
+				{backgroundImage: 'vegas', title: 'High School Graduation Trip to Las Vegas', color: 'gold', photoset_id: 72157687042225613, per_page: 37},
+				{backgroundImage: 'hawaii', title: 'Mahalo Fora Maui', color: 'gold', photoset_id: 72157686468511520, per_page: 76},
+				{backgroundImage: 'europe', title: 'My Trip to Europe', color: 'gold', photoset_id: 72157686893038650, per_page: 138}
+          ],
 		backgroundImage: 'europe',
 		photosetId: '72157686893038650',
 		perPage: 138,
 		title: 'My Trip to Europe',
-		color: 'gold'
+		color: 'gold',
     };
+    this.handleBackgroundImageChange = this.handleBackgroundImageChange.bind(this);
   }
-
-  render() {
+	handleBackgroundImageChange(backgroundImage){
+		this.setState({backgroundImage: backgroundImage});
+}
+  render(){
     return (
       <div className="main-container">
 		<div className="header">
@@ -25,7 +33,10 @@ export default class Application extends Component {
 		</div>
 		<div className="primary-content">
 			<div class="sidebar">
-				<Sidebar/>
+				<Sidebar 
+					items={this.state.items}
+					onBackgroundImageChange={this.handleBackgroundImageChange}
+				/>
 			</div>
 			<div className="carousel">
 				<Content 

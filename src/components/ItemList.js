@@ -9,7 +9,7 @@ export default class ItemList extends Component{
     render(){
     let adventures = this.props.data;
     let itemList = adventures.map((x, index) =>
-      <Item title={x.backgroundImage} key={x.index} index={index + 1}/>
+      <Item title={x.backgroundImage} key={x.index} index={index + 1} handleClick={this.props.onChange}/>
     )
     let scrollbarStyles = {borderRadius: 5};
     return(

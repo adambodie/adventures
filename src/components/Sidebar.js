@@ -10,16 +10,20 @@ export default class Sidebar extends Component{
     constructor(props) {
       super(props);
       this.state = {
-        sidebarItems: [
-          {backgroundImage: 'vegas', title: 'High School Graduation Trip to Las Vegas', color: 'gold', photoset_id: 72157687042225613, per_page: 37},
-          {backgroundImage: 'hawaii', title: 'Mahalo Fora Maui', color: 'gold', photoset_id: 72157686468511520, per_page: 76},
-          {backgroundImage: 'europe', title: 'My Trip to Europe', color: 'gold', photoset_id: 72157686893038650, per_page: 138}],
-      }
+		  sidebarItems: this.props.items
     }
+    this.handleChange = this.handleChange.bind(this);
+}
+  handleChange(event) {
+      this.props.onBackgroundImageChange(event.backgroundImage);
+      console.log("Testing");
+  }
+
     render() {
+		let sidebarItems = this.props.items;
       return (
         <div>
-            <ItemList data={this.state.sidebarItems}/>
+            <ItemList data={this.state.sidebarItems} onChange={this.handleChange}/>
         </div>
       );
     }
