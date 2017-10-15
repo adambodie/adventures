@@ -40,7 +40,7 @@ body {
 	height: 100px;
 	h1 {
 		@include flex-item(1);
-		@include cover-text(2.5em);
+		@include cover-text(3em);
 	}
 }
 
@@ -58,9 +58,9 @@ body {
 
 @media (min-width: 769px) {
 	.header {
-		height: 200px;
+		height: 150px;
 		h1 {
-			font-size: 4em;
+			font-size: 3.5em;
 		}
 	}
 }
