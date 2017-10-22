@@ -1,0 +1,17 @@
+.home {
+	color: black;
+	background-image: url('/src/images/background.jpg');
+	background-size: cover;
+	display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: center;
+	align-items: center;   
+	h1 {
+		text-align: center;
+		padding: 20px;
+	}
+}
+.intro {
+	flex: 1;
+	margin: 50px;
+}
