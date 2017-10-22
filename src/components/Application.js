@@ -1,67 +1,58 @@
 // Libs
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ScrollArea from 'react-scrollbar';
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom'
 import Content from './Content';
-//import Sidebar from './Sidebar';
+import Sidebar from './Sidebar';
 
+const Vegas = () => ( <Content title='High School Graduation Trip to Las Vegas' id='72157687042225613' page= '37' background='vegas' color='gold' /> );
+const Hawaii = () => ( <Content title='Mahalo Fora Maui' id='72157686468511520' page= '76' background='hawaii' color='gold' /> );
+const Europe = () => ( <Content title='My Trip to Europe' id='72157686893038650' page= '138' background='europe' color='gold' /> );
+const Seattle = () => ( <Content title='Birthday Trip to Seattle' id='72157687246355471' page= '32' background='seattle' color='black' /> );
+const CrossCountry = () => ( <Content title='Cross Country Trip to Minnesota' id='72157688200510913' page= '66' background='cross-country' color='white' /> );
 
 export default class Application extends Component {
   constructor(props) {
     super(props);
     this.state = {		
 		items: [
-				{backgroundImage: 'vegas', title: 'High School Graduation Trip to Las Vegas', color: 'gold', photoset_id: 72157687042225613, per_page: 37},
-				{backgroundImage: 'hawaii', title: 'Mahalo Fora Maui', color: 'gold', photoset_id: 72157686468511520, per_page: 76},
-				{backgroundImage: 'europe', title: 'My Trip to Europe', color: 'gold', photoset_id: 72157686893038650, per_page: 138}
-          ],
-		backgroundImage: 'europe',
-		photosetId: '72157686893038650',
-		perPage: 138,
-		title: 'My Trip to Europe',
-		color: 'gold',
+			{backgroundImage: 'vegas', component: 'Vegas'},
+			{backgroundImage: 'hawaii', component: 'Hawaii'},
+			{backgroundImage: 'europe', component: 'Europe'},
+			{backgroundImage: 'seattle', component: 'Seattle'},
+			{backgroundImage: 'cross-country', component: 'CrossCountry'}
+          ]
     };
-    this.handleClick = this.handleClick.bind(this);
   }
-	handleClick(){
-		console.log("testing");
-}
+
   render(){
-	  let itemList = this.state.items.map((x, index) =>
-        <button onClick={x.handleClick}>
-                <img src={`./src/images/adventure${index + 1}.jpg`} alt={x.backgroundImage} key={x.index}/>
-        </button>
-    )
-    let scrollbarStyles = {borderRadius: 5};
+	/*let routes = this.state.items.map((x) =>
+			<Route path={`/${x.backgroundImage}`} component={x.component}/>
+    )*/
     return (
       <div className="main-container">
 		<div className="header">
 			<h1>Adam&apos;s Adventures</h1>
 		</div>
+		<Router>
 		<div className="primary-content">
 			<div class="sidebar">
-				<ScrollArea
-					className="area"
-					contentClassName="content"
-					horizontalScrollbarStyle={scrollbarStyles}
-					horizontalContainerStyle={scrollbarStyles}
-					smoothScrolling= {true}
-					vertical={false}
-					minScrollSize={40}
-					>
-					{itemList}
-				</ScrollArea>
-			</div>
-			<div className="carousel">
-				<Content 
-					title={this.state.title} 
-					id={this.state.photosetId} 
-					page={this.state.perPage} 
-					background={this.state.backgroundImage}
-					color={this.state.color}
+				<Sidebar 
+					items={this.state.items}
 				/>
 			</div>
+			<div className="carousel">
+				<Route path="/vegas" component={Vegas}/>
+				<Route path="/hawaii" component={Hawaii}/>
+				<Route path="/europe" component={Europe}/>
+				<Route path="/seattle" component={Seattle}/>
+				<Route path="/cross-country" component={CrossCountry}/>
+			</div>
 		</div>
+		</Router>
 		<div className="footer">
 			<h2>Adam Bodie &copy; 2017</h2>
 		</div>
