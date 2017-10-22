@@ -39,7 +39,7 @@ export default class Application extends Component {
 			</div>
 			<div className="carousel">
 				<Route exact path = "/" render={() => <Home />}/>
-				<Route path="/vegas" render={() => <Content title='High School Graduation Trip to Las Vegas' id='72157687042225613' page= '37' background='vegas' color='gold' />}/>
+				<Route path="/vegas" render={() => <Content title='High School Graduation Trip to Las Vegas' id='72157687042225613' page= '37' background='vegas' color='white' />}/>
 				<Route path="/hawaii" render={() => <Content title='Mahalo Fora Maui' id='72157686468511520' page= '76' background='hawaii' color='gold' />  }/>
 				<Route path="/europe" render={() => <Content title='My Trip to Europe' id='72157686893038650' page= '138' background='europe' color='gold' />  }/>
 				<Route path="/seattle" render={() => <Content title='Birthday Trip to Seattle' id='72157687246355471' page= '32' background='seattle' color='black' /> }/>

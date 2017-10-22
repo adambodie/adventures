@@ -56,7 +56,7 @@ export default class Content extends Component {
 		{ isLoaded ? (
           <div style={carouselStyle}>
 				<h1 className="title" style={colorStyle}>{this.props.title}</h1>
-            <PhotoList data={this.state.photographs} page={this.state.per_page}/>
+            <PhotoList data={this.state.photographs} page={this.state.per_page} color={this.state.color}/>
           </div> ) : (
 				<Loading isFailed={this.state.isFailed}/>
           )}

@@ -26,9 +26,10 @@ export default class PhotoList extends Component {
 			fade: true,
 		};
   let length = this.props.page;
+  let color = this.props.color;
   let photos = results.map((x, index) =>
     <div key={x.id}>
-    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} index={index + 1} length={length}/>
+    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} index={index + 1} length={length} color={color}/>
     </div>
   )
   
@@ -40,12 +41,14 @@ export default class PhotoList extends Component {
     <div style={{display: 'flex', justifyContent: 'space-between'}}>
 			<FontAwesome 
 				className='left'
-				name='arrow-circle-left'  
+				name='arrow-circle-left' 
+				style={{color: color}} 
 				onClick={this.previous}
 			/>
 			<FontAwesome 
 				className='right'
-				name='arrow-circle-right'  
+				name='arrow-circle-right'
+				style={{color: color}}   
 				onClick={this.next}
 			/>
 		
