@@ -44,7 +44,7 @@ export default class Content extends Component {
     render() {
 		const isLoaded = this.state.isLoaded;
 		const carouselStyle = {
-			backgroundImage: `url('./src/images/${this.state.background}.jpg')`,
+			backgroundImage: `url('./src/images/backgrounds/${this.state.background}.jpg')`,
 			backgroundSize: 'cover',
 			
 		}

@@ -12,7 +12,7 @@ export default class ItemList extends Component{
 		let adventures = this.props.data;
 		let itemList = adventures.map((x, index) =>
         <Link to={`/${x.backgroundImage}`}>
-                <img src={`./src/images/adventure${index + 1}.jpg`} alt={x.backgroundImage} key={x.index}/>
+                <img src={`./src/images/links/adventure${index + 1}.jpg`} alt={x.backgroundImage} key={x.index}/>
         </Link>
     )    
 		let scrollbarStyles = {borderRadius: 5};
