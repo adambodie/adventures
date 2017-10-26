@@ -21,8 +21,22 @@ export default class Application extends Component {
 			{backgroundImage: 'seattle'},
 			{backgroundImage: 'cross-country'},
 			{backgroundImage: 'minnesota'},
-			{backgroundImage: 'green-bay'}
-          ]
+			{backgroundImage: 'green-bay'},
+			{backgroundImage: 'kansas-city'},
+			{backgroundImage: 'chicago'},
+			{backgroundImage: 'mississippi'},
+			{backgroundImage: 'sioux-falls'},
+			{backgroundImage: 'boston'},
+			{backgroundImage: 'italy'},
+			{backgroundImage: 'winter-2008'},
+			{backgroundImage: 'spring-2008'},
+			{backgroundImage: 'denver'},
+			{backgroundImage: 'summer-2008'},
+			{backgroundImage: 'seattle-2008'},
+			{backgroundImage: 'san-francisco'},
+			{backgroundImage: 'fall-2008'},
+			{backgroundImage: 'hawaii-2008'}						
+      ]
     };
   }
 
@@ -48,6 +62,20 @@ export default class Application extends Component {
 				<Route path="/cross-country" render={() => <Content title='Cross Country Trip to Minnesota' id='72157688200510913' page= '66' background='cross-country' color='white' date='August 29, 2006 - September 1, 2006' /> }/>
 				<Route path="/minnesota" render={() => <ComingSoon /> }/>
 				<Route path="/green-bay" render={() => <ComingSoon /> }/>
+				<Route path="/kansas-city" render={() => <ComingSoon /> }/>
+				<Route path="/chicago" render={() => <ComingSoon /> }/>
+				<Route path="/mississippi" render={() => <ComingSoon /> }/>
+				<Route path="/sioux-falls" render={() => <ComingSoon /> }/>
+				<Route path="/boston" render={() => <ComingSoon /> }/>
+				<Route path="/italy" render={() => <ComingSoon /> }/>
+				<Route path="/winter-2008" render={() => <ComingSoon /> }/>
+				<Route path="/spring-2008" render={() => <ComingSoon /> }/>
+				<Route path="/denver" render={() => <ComingSoon /> }/>	
+				<Route path="/summer-2008" render={() => <ComingSoon /> }/>
+				<Route path="/seattle-2008" render={() => <ComingSoon /> }/>	
+				<Route path="/san-francisco" render={() => <ComingSoon /> }/>					
+				<Route path="/fall-2008" render={() => <ComingSoon /> }/>
+				<Route path="/hawaii-2008" render={() => <ComingSoon /> }/>																											
 			</div>
 		</div>
 		</Router>
