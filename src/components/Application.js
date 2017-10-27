@@ -15,32 +15,37 @@ export default class Application extends Component {
     super(props);
     this.state = {		
 		items: [
-			{backgroundImage: 'vegas'},
-			{backgroundImage: 'hawaii'},
-			{backgroundImage: 'europe'},
-			{backgroundImage: 'seattle'},
-			{backgroundImage: 'cross-country'},
-			{backgroundImage: 'minnesota'},
-			{backgroundImage: 'green-bay'},
-			{backgroundImage: 'kansas-city'},
-			{backgroundImage: 'chicago'},
-			{backgroundImage: 'mississippi'},
-			{backgroundImage: 'sioux-falls'},
-			{backgroundImage: 'boston'},
-			{backgroundImage: 'italy'},
-			{backgroundImage: 'winter-2008'},
-			{backgroundImage: 'spring-2008'},
-			{backgroundImage: 'denver'},
-			{backgroundImage: 'summer-2008'},
-			{backgroundImage: 'seattle-2008'},
-			{backgroundImage: 'san-francisco'},
-			{backgroundImage: 'fall-2008'},
-			{backgroundImage: 'hawaii-2008'}						
+			{backgroundImage: 'vegas', completed: true},
+			{backgroundImage: 'hawaii', completed: true},
+			{backgroundImage: 'europe', completed: true},
+			{backgroundImage: 'seattle', completed: true},
+			{backgroundImage: 'cross-country', completed: true},
+			{backgroundImage: 'minnesota', completed: false},
+			{backgroundImage: 'green-bay', completed: false},
+			{backgroundImage: 'kansas-city', completed: false},
+			{backgroundImage: 'chicago', completed: false},
+			{backgroundImage: 'mississippi', completed: false},
+			{backgroundImage: 'sioux-falls', completed: false},
+			{backgroundImage: 'boston', completed: false},
+			{backgroundImage: 'italy', completed: false},
+			{backgroundImage: 'winter-2008', completed: false},
+			{backgroundImage: 'spring-2008', completed: false},
+			{backgroundImage: 'denver', completed: false},
+			{backgroundImage: 'summer-2008', completed: false},
+			{backgroundImage: 'seattle-2008', completed: false},
+			{backgroundImage: 'san-francisco', completed: false},
+			{backgroundImage: 'fall-2008', completed: false},
+			{backgroundImage: 'hawaii-2008', completed: false}						
       ]
     };
   }
 
   render(){
+	let routes = this.state.items.map((r) => {
+				if (!r.completed) {
+					return <Route path={"/" + r.backgroundImage}  render={() => <ComingSoon />} />
+				}
+				})	
     return (
       <div className="main-container">
 		<div className="header">
@@ -60,22 +65,7 @@ export default class Application extends Component {
 				<Route path="/europe" render={() => <Content title='My Trip to Europe' id='72157686893038650' page= '138' background='europe' color='gold' date='May 19, 2005 - June 4, 2005' />  }/>
 				<Route path="/seattle" render={() => <Content title='Birthday Trip to Seattle' id='72157687246355471' page= '32' background='seattle' color='black' date='May 12, 2006 - May 13, 2006' /> }/>
 				<Route path="/cross-country" render={() => <Content title='Cross Country Trip to Minnesota' id='72157688200510913' page= '66' background='cross-country' color='white' date='August 29, 2006 - September 1, 2006' /> }/>
-				<Route path="/minnesota" render={() => <ComingSoon /> }/>
-				<Route path="/green-bay" render={() => <ComingSoon /> }/>
-				<Route path="/kansas-city" render={() => <ComingSoon /> }/>
-				<Route path="/chicago" render={() => <ComingSoon /> }/>
-				<Route path="/mississippi" render={() => <ComingSoon /> }/>
-				<Route path="/sioux-falls" render={() => <ComingSoon /> }/>
-				<Route path="/boston" render={() => <ComingSoon /> }/>
-				<Route path="/italy" render={() => <ComingSoon /> }/>
-				<Route path="/winter-2008" render={() => <ComingSoon /> }/>
-				<Route path="/spring-2008" render={() => <ComingSoon /> }/>
-				<Route path="/denver" render={() => <ComingSoon /> }/>	
-				<Route path="/summer-2008" render={() => <ComingSoon /> }/>
-				<Route path="/seattle-2008" render={() => <ComingSoon /> }/>	
-				<Route path="/san-francisco" render={() => <ComingSoon /> }/>					
-				<Route path="/fall-2008" render={() => <ComingSoon /> }/>
-				<Route path="/hawaii-2008" render={() => <ComingSoon /> }/>																											
+				{routes}																										
 			</div>
 		</div>
 		</Router>
