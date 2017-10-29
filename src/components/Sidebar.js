@@ -14,7 +14,7 @@ export default class Sidebar extends Component{
 		let sidebarItems = this.props.items;
 		return (
 			<div>
-				<ItemList data={this.state.sidebarItems} />
+				<ItemList data={sidebarItems} />
 			</div>
 			)
 		}
