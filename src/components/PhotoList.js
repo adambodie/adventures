@@ -52,8 +52,8 @@ export default class PhotoList extends Component {
 				style={{color: color}}   
 				onClick={this.next}
 			/>
-	<p className="date" style={{color: color}}><strong>Date:</strong> {date}</p>	
     </div>
+		<p className="date" style={{color: color}}><strong>Date:</strong> {date}</p>	
     </div>
   );
 }
