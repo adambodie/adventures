@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom'
 const Item = props => (
         <Link to={`/${props.backgroundImage}`}>
-                <img src={`./src/images/adventure${props.index}.jpg`} alt={props.backgroundImage}/>
+                <img src={`./src/images/links/adventure${props.index}.jpg`} alt={props.backgroundImage}/>
         </Link>
 );
 
