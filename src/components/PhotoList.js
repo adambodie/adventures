@@ -27,9 +27,10 @@ export default class PhotoList extends Component {
 		};
   let length = this.props.page;
   let color = this.props.color;
+  let date = this.props.date;
   let photos = results.map((x, index) =>
     <div key={x.id}>
-    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} index={index + 1} length={length} color={color}/>
+    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} tags={x.tags} index={index + 1} length={length} color={color}/>
     </div>
   )
   
@@ -51,8 +52,8 @@ export default class PhotoList extends Component {
 				style={{color: color}}   
 				onClick={this.next}
 			/>
-		
     </div>
+		<p className="date" style={{color: color}}><strong>Date:</strong> {date}</p>	
     </div>
   );
 }

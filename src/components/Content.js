@@ -4,7 +4,7 @@ import PhotoList from './PhotoList';
 import Loading from './Loading';
 
 function formUrl(photoset_id, per_page) {
-	return `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&per_page=${per_page}&format=json&nojsoncallback=1`;
+	return `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&extras=tags&per_page=${per_page}&format=json&nojsoncallback=1`;
 }
 
 
@@ -17,6 +17,7 @@ export default class Content extends Component {
         title: this.props.title,
         background: this.props.background,
         color: this.props.color,
+        date: this.props.date,
         isLoaded: false,
         isFailed: false,
       };
@@ -44,7 +45,7 @@ export default class Content extends Component {
     render() {
 		const isLoaded = this.state.isLoaded;
 		const carouselStyle = {
-			backgroundImage: `url('./src/images/${this.state.background}.jpg')`,
+			backgroundImage: `url('./src/images/backgrounds/${this.state.background}.jpg')`,
 			backgroundSize: 'cover',
 			
 		}
@@ -56,7 +57,7 @@ export default class Content extends Component {
 		{ isLoaded ? (
           <div style={carouselStyle}>
 				<h1 className="title" style={colorStyle}>{this.props.title}</h1>
-            <PhotoList data={this.state.photographs} page={this.state.per_page} color={this.state.color}/>
+            <PhotoList data={this.state.photographs} page={this.state.per_page} color={this.state.color} date={this.state.date}/>            
           </div> ) : (
 				<Loading isFailed={this.state.isFailed}/>
           )}

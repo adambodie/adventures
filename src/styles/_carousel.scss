@@ -14,8 +14,8 @@ h3, h6 {
   text-align: center;
 }
 h4 {
-	margin-left: 20px;
-	color: white;
+	text-align: center;
+	text-transform:capitalize;
 }
 ul,
 li {
@@ -33,7 +33,10 @@ li {
 	color: white;
 	padding: 10px;
 }
-
+.date {
+	text-indent: 4em;
+	margin: 0;
+}
 .fa {
 	position: absolute;
 	top: 60%;

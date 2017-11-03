@@ -8,23 +8,37 @@ import {
 import Content from './Content';
 import Sidebar from './Sidebar';
 import Home from './Home';
-
+import ComingSoon from './ComingSoon';
+import axios from 'axios';
 
 export default class Application extends Component {
   constructor(props) {
     super(props);
     this.state = {		
-		items: [
-			{backgroundImage: 'vegas'},
-			{backgroundImage: 'hawaii'},
-			{backgroundImage: 'europe'},
-			{backgroundImage: 'seattle'},
-			{backgroundImage: 'cross-country'}
-          ]
+		items: []
     };
   }
-
+	componentDidMount() {
+		let json = '../src/item.json'
+		  axios.get(json)
+			.then(response => {;
+				this.setState({
+					items: response.data
+				});
+			})
+			.catch(error => {
+			  console.log('Error fetching and parsing data', error);
+			});
+		}
   render(){
+	let item = this.state.items
+	let routes = item.map((r) => {
+				if (r.completed) {
+					return <Route path={"/" + r.backgroundImage} render={() => <Content title={r.title} id={r.id} page={r.page} background={r.backgroundImage} color={r.color} date={r.date} />} /> 
+				} else {
+					return <Route path={"/" + r.backgroundImage}  render={() => <ComingSoon />} />
+				}
+				})	
     return (
       <div className="main-container">
 		<div className="header">
@@ -34,16 +48,12 @@ export default class Application extends Component {
 		<div className="primary-content">
 			<div class="sidebar">
 				<Sidebar 
-					items={this.state.items}
+					items={item}
 				/>
 			</div>
 			<div className="carousel">
 				<Route exact path = "/" render={() => <Home />}/>
-				<Route path="/vegas" render={() => <Content title='High School Graduation Trip to Las Vegas' id='72157687042225613' page= '37' background='vegas' color='white' />}/>
-				<Route path="/hawaii" render={() => <Content title='Mahalo Fora Maui' id='72157686468511520' page= '76' background='hawaii' color='gold' />  }/>
-				<Route path="/europe" render={() => <Content title='My Trip to Europe' id='72157686893038650' page= '138' background='europe' color='gold' />  }/>
-				<Route path="/seattle" render={() => <Content title='Birthday Trip to Seattle' id='72157687246355471' page= '32' background='seattle' color='black' /> }/>
-				<Route path="/cross-country" render={() => <Content title='Cross Country Trip to Minnesota' id='72157688200510913' page= '66' background='cross-country' color='white' /> }/>
+				{routes}																										
 			</div>
 		</div>
 		</Router>
