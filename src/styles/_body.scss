@@ -1,23 +1,23 @@
 @import "_imports.scss";
 
-.loading {
+.primary {
+	color: black;
 	@include background(background);
-	margin-top: -30px;
-	height: 600px;
+	@include flex-container; 
 	h1 {
 		text-align: center;
-		font-size: 3em;
-		margin-top: 30px;
+		font-size: 48px;
 		@include cover-text(0);
 	}
 	img {
 		display: block;
 		margin: 0 auto;
 	}
-	.fa {
-		font-size: 8em;
-		width: 100%;
-		text-align: center;
-		top: 60%;
-	}
+}
+.secondary {
+	@include flex-item(1);
+}
+
+.margin {
+	margin: 0px 150px 150px 150px;
 }

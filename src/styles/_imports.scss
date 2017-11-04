@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+@mixin flex-container {
+	display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: center;
+	align-items: center;    
+}
+
+@mixin flex-item($flex) {
+	flex: $flex;
+}
+
+@mixin center {
+	display: block;
+	margin: 0 auto;
+}
+
+@mixin cover-text($indent) {
+	font-family: 'Permanent Marker', cursive;
+	color: #992D3C;
+	text-shadow: 4px 4px 4px #C4B3B9;
+	text-indent: $indent;
+}
+
+@mixin background($image) {
+	background-image: url('../images/' + $image + '.jpg');
+	background-size: cover;
+}
