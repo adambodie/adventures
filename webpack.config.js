@@ -38,7 +38,10 @@ var webpackConfig = {
         warnings: false
       }
     })
-  ]
+  ],
+   devServer: {
+        historyApiFallback: true,
+    },
 };
 
 module.exports = webpackConfig;

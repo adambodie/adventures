@@ -19,6 +19,11 @@ body {
 		@include flex-item(1);
 		@include cover-text(3em);
 	}
+	.home {
+		color: #992D3C;
+		text-shadow: 4px 4px 4px #C4B3B9;
+		position: static;
+	}
 }
 
 .footer {
