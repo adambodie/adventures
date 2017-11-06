@@ -12,14 +12,23 @@ import Home from './Home';
 import ComingSoon from './ComingSoon';
 import axios from 'axios';
 import FontAwesome from 'react-fontawesome';
+import {Collapse} from 'react-collapse';
 
 export default class Application extends Component {
   constructor(props) {
     super(props);
     this.state = {		
-		items: []
+		items: [],
+		isOpened: true
     };
+    this.handleClick = this.handleClick.bind(this);
   }
+  
+	handleClick() {
+		this.setState(prevState => ({
+			isOpened: !prevState.isOpened
+		}));
+	}
 	componentDidMount() {
 		let json = '../src/item.json'
 		  axios.get(json)
@@ -33,7 +42,8 @@ export default class Application extends Component {
 			});
 		}
   render(){
-	let item = this.state.items
+	let item = this.state.items;
+	let isOpened = this.state.isOpened;
 	let routes = item.map((r) => {
 				if (r.completed) {
 					return <Route exact path={"/" + r.backgroundImage} render={() => <Content title={r.title} id={r.id} page={r.page} background={r.backgroundImage} color={r.color} date={r.date} />} /> 
@@ -57,9 +67,12 @@ export default class Application extends Component {
 		
 		<div className="primary-content">
 			<div class="sidebar">
+			<button onClick={this.handleClick} className="button">	{ isOpened ? ( <p>Hide</p> ) : ( <p>Show</p> )}</button>
+			<Collapse isOpened={this.state.isOpened}>
 				<Sidebar 
 					items={item}
 				/>
+			</Collapse>	
 			</div>
 			<div className="carousel">
 				<Route exact path = "/" render={() => <Home />}/>

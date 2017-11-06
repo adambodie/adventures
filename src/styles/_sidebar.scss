@@ -7,6 +7,10 @@ $height: 1.875;
 @function max-width($multiplier, $items) {
 	@return $multiplier * $items;
 }
+
+.button {
+	width: 100%;
+}
 .area	{
 	margin: 0 auto;
     height: multiplier($height, 25px) + 18px;
