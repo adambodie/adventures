@@ -24,8 +24,13 @@ body {
 		text-shadow: 4px 4px 4px #C4B3B9;
 		position: static;
 	}
+
 }
 
+	.toggle {
+		position: static;
+		margin: 10px;
+	}
 .footer {
 	@include flex-container;
 	@include background(footer-background);

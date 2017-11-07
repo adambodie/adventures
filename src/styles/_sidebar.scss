@@ -10,6 +10,11 @@ $height: 1.875;
 
 .button {
 	width: 100%;
+	background-color: #992D3C;
+	border: none;
+	&:hover {
+		background-color: #881C2B;
+	}
 }
 .area	{
 	margin: 0 auto;

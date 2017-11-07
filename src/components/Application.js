@@ -67,7 +67,21 @@ export default class Application extends Component {
 		
 		<div className="primary-content">
 			<div class="sidebar">
-			<button onClick={this.handleClick} className="button">	{ isOpened ? ( <p>Hide</p> ) : ( <p>Show</p> )}</button>
+			<button onClick={this.handleClick} className="button">	
+				{ isOpened ? ( 
+					<FontAwesome 
+						className='toggle'
+						name='angle-double-up'
+						size='2x'
+					/>
+				) : ( 
+					<FontAwesome 
+						className='toggle'
+						name='angle-double-down'
+						size='2x'
+					/>
+				)}
+			</button>
 			<Collapse isOpened={this.state.isOpened}>
 				<Sidebar 
 					items={item}
