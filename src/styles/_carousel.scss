@@ -66,10 +66,10 @@ li {
 
 .slick-dots {
 	position: relative!important;
-	bottom: 0;
+	bottom: 0!important;
 	max-width: 500px;
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto!important;
 	padding: 10px;
 	li {
 		margin: 0;

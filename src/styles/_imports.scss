@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
+$primary-color: #992D3C;
+
 @mixin flex-container {
 	display: -webkit-flex;
     display: flex;
@@ -18,12 +20,9 @@
 
 @mixin cover-text($indent) {
 	font-family: 'Permanent Marker', cursive;
-	color: #992D3C;
-	text-shadow: 4px 4px 4px #C4B3B9;
 	text-indent: $indent;
 }
 
-@mixin background($image) {
-	background-image: url('../images/' + $image + '.jpg');
-	background-size: cover;
+@mixin background-gradient {
+background: linear-gradient(#59657B, #B4BAC6);
 }

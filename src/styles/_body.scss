@@ -2,17 +2,20 @@
 
 .primary {
 	color: black;
-	@include background(background);
+	@include background-gradient;
 	@include flex-container; 
 	h1 {
 		text-align: center;
 		font-size: 48px;
 		@include cover-text(0);
+		color: $primary-color;
+		text-shadow: 4px 4px 4px #C4B3B9;
 	}
 	img {
 		display: block;
 		margin: 0 auto;
 	}
+	margin-top: 35px;
 }
 .secondary {
 	@include flex-item(1);

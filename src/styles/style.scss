@@ -11,42 +11,23 @@ body {
   box-sizing: border-box;
 }
 
-.header {
-	@include flex-container;
-	@include background(header-background);
-	height: 100px;
-	h1 {
-		@include flex-item(1);
-		@include cover-text(3em);
-	}
-	.home {
-		color: #992D3C;
-		text-shadow: 4px 4px 4px #C4B3B9;
-		position: static;
-	}
-
-}
-
-	.toggle {
-		position: static;
-		margin: 10px;
-	}
 .footer {
 	@include flex-container;
-	@include background(footer-background);
+	background-color: $primary-color;
 	bottom: 0px;
-	width:100%;
-	height: 100px;
+	width: 100%;
 	h2 {
 		@include cover-text(1.5em);
-	}
+		color: #C4B3B9;
+		text-shadow: 4px 4px 4px #59657B;
+		}
 }
 
 @media (min-width: 769px) {
 	.header {
-		height: 150px;
+		height: 50px;
 		h1 {
-			font-size: 4em;
+			font-size: 2em;
 		}
 	}
 }

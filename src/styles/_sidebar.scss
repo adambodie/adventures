@@ -1,3 +1,5 @@
+@import "_imports.scss";
+
 $width: 3;
 $height: 1.875;
 @function multiplier($variable, $multiplier) {
@@ -7,14 +9,33 @@ $height: 1.875;
 @function max-width($multiplier, $items) {
 	@return $multiplier * $items;
 }
-
-.button {
-	width: 100%;
-	background-color: #992D3C;
-	border: none;
-	&:hover {
-		background-color: #881C2B;
+.sidebar {
+	background-color: $primary-color;
+	h1 {
+		display: inline-block;
+		@include cover-text(1.5em);
+		color: #B4BAC6;
+		text-shadow: 4px 4px 4px #59657B;
+		margin: 0px 50px;
 	}
+	.home {
+		display: inline-block;
+		color: #B4BAC6;
+		text-shadow: 4px 4px 4px #59657B;
+		position: static;
+		font-size: 2em;
+		margin: 20px;
+	}
+	.toggle {
+		position: static;
+		color: #B4BAC6;
+		text-shadow: 4px 4px 4px #59657B;
+		margin: 0px 50px;
+	}
+}
+.button {	
+	border: none;
+	background-color: $primary-color;
 }
 .area	{
 	margin: 0 auto;

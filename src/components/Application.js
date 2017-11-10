@@ -54,20 +54,11 @@ export default class Application extends Component {
     return (
     <Router>
       <div className="main-container">
-		<div className="header">
-			<h1>Adam&apos;s Adventures</h1>
-		    <Link to="/">
-			<FontAwesome 
-				className='home'
-				name='home'
-				size='2x'
-			/>
-			</Link>			
-		</div>
-		
 		<div className="primary-content">
-			<div class="sidebar">
-			<button onClick={this.handleClick} className="button">	
+			<div className="sidebar">
+			<h1>Adam&apos;s Adventures</h1>
+			<button onClick={this.handleClick} className="button">
+				
 				{ isOpened ? ( 
 					<FontAwesome 
 						className='toggle'
@@ -81,7 +72,14 @@ export default class Application extends Component {
 						size='2x'
 					/>
 				)}
-			</button>
+				</button>
+			<Link to="/">
+			<FontAwesome 
+				className='home'
+				name='home'
+			/>
+			</Link>		
+			
 			<Collapse isOpened={this.state.isOpened}>
 				<Sidebar 
 					items={item}
