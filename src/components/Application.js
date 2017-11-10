@@ -13,6 +13,7 @@ import ComingSoon from './ComingSoon';
 import axios from 'axios';
 import FontAwesome from 'react-fontawesome';
 import {Collapse} from 'react-collapse';
+import Headroom from 'react-headroom';
 
 export default class Application extends Component {
   constructor(props) {
@@ -55,6 +56,7 @@ export default class Application extends Component {
     <Router>
       <div className="main-container">
 		<div className="primary-content">
+			<Headroom>
 			<div className="sidebar">
 			<h1>Adam&apos;s Adventures</h1>
 			<button onClick={this.handleClick} className="button">
@@ -86,6 +88,7 @@ export default class Application extends Component {
 				/>
 			</Collapse>	
 			</div>
+			</Headroom>
 			<div className="carousel">
 				<Route exact path = "/" render={() => <Home />}/>
 				{routes}																										

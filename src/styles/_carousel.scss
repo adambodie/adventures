@@ -75,7 +75,7 @@ li {
 		margin: 0;
 		width: 10px;
 		height: 10px;
-		color: white;
+		color: white!important;
 		button {
 			&:before {
 				opacity: 1;
@@ -125,7 +125,7 @@ li {
 	}
 	.fa {
 		margin: 20px;
-		top: 100%;
+		top: 50%;
 	}
 
 	.left {
@@ -147,3 +147,7 @@ li {
 
 
 
+.slick-dots li button:before {
+	color: white!important;
+	text-shadow: 2px 2px 2px black;
+}
