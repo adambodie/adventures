@@ -15,12 +15,15 @@ $height: 1.875;
 }
 .sidebar {
 	background-color: $primary-color;
+	.logo {
+		margin-top: 5px;
+		display: inline-block;
+	}
 	h1 {
 		display: inline-block;
-		@include cover-text(1.5em);
+		@include cover-text(0.5em);
 		color: #B4BAC6;
 		text-shadow: 4px 4px 4px #59657B;
-		margin: 0px 50px;
 	}
 	.home {
 		display: inline-block;
@@ -30,17 +33,19 @@ $height: 1.875;
 		font-size: 2em;
 		margin: 20px;
 	}
+	.button {	
+		border: none;
+		background-color: $primary-color;
+		margin: 0px 50px;
+	}
 	.toggle {
 		position: static;
 		color: #B4BAC6;
 		text-shadow: 4px 4px 4px #59657B;
-		margin: 0px 50px;
+		
 	}
 }
-.button {	
-	border: none;
-	background-color: $primary-color;
-}
+
 .area	{
 	margin: 0 auto;
     height: multiplier($height, 25px) + 18px;

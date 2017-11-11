@@ -58,6 +58,7 @@ export default class Application extends Component {
 		<div className="primary-content">
 			<Headroom>
 			<div className="sidebar">
+			<img src="./src/images/logo.jpg" alt="lighthouse" className="logo" />	
 			<h1>Adam&apos;s Adventures</h1>
 			<button onClick={this.handleClick} className="button">
 				
