@@ -3,20 +3,21 @@
 .primary {
 	color: black;
 	@include background-gradient;
-	@include flex-container; 
+	@include flex-container;
+	-webkit-align-items: baseline;
+    align-items: baseline; 
 	h1 {
 		text-align: center;
 		font-size: 48px;
 		@include cover-text(0);
-		color: $primary-color;
-		text-shadow: 4px 4px 4px #C4B3B9;
+		@include text-shadow($primary-color, $secondary-color);
 	}
 	img {
 		display: block;
 		margin: 0 auto;
 	}
-	margin-top: 35px;
 	height: 700px;
+	margin-top: 20px;
 }
 .secondary {
 	@include flex-item(1);

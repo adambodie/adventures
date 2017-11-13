@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 $primary-color: #992D3C;
+$secondary-color: #B4BAC6;
+$tertiary-color: #59657B;
 
 @mixin flex-container {
 	display: -webkit-flex;
@@ -24,5 +26,10 @@ $primary-color: #992D3C;
 }
 
 @mixin background-gradient {
-background: linear-gradient(#59657B, #B4BAC6);
+background: linear-gradient($tertiary-color, $secondary-color);
+}
+
+@mixin text-shadow ($color, $shadow) {
+	color: $color;
+	text-shadow: 4px 4px 4px $shadow;
 }

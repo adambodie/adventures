@@ -15,20 +15,15 @@ $height: 1.875;
 }
 .sidebar {
 	background-color: $primary-color;
-	.logo {
-		margin-top: 5px;
-		display: inline-block;
+	.header {
+		@include flex-container;
 	}
 	h1 {
-		display: inline-block;
 		@include cover-text(0.5em);
-		color: #B4BAC6;
-		text-shadow: 4px 4px 4px #59657B;
+		@include text-shadow($secondary-color, $tertiary-color);
 	}
 	.home {
-		display: inline-block;
-		color: #B4BAC6;
-		text-shadow: 4px 4px 4px #59657B;
+		@include text-shadow($secondary-color, $tertiary-color);
 		position: static;
 		font-size: 2em;
 		margin: 20px;
@@ -40,8 +35,7 @@ $height: 1.875;
 	}
 	.toggle {
 		position: static;
-		color: #B4BAC6;
-		text-shadow: 4px 4px 4px #59657B;
+		@include text-shadow($secondary-color, $tertiary-color);
 		
 	}
 }

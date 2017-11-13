@@ -9,8 +9,7 @@
 		font-size: 3em;
 		margin-top: 30px;
 		@include cover-text(0);
-		color: $primary-color;
-		text-shadow: 4px 4px 4px #C4B3B9;
+		@include text-shadow($primary-color, $secondary-color);
 	}
 	img {
 		display: block;
