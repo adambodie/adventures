@@ -32,7 +32,6 @@ li {
 	text-align: center;
 	color: white;
 	padding: 10px;
-	font-size: 3em;
 }
 .date {
 	text-indent: 4em;
@@ -114,6 +113,7 @@ li {
 }
 
 @media (min-width: 769px) {
+	font-size: 3em;
   .main-title {
     float: left;
   }

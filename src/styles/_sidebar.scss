@@ -21,6 +21,7 @@ $height: 1.875;
 	h1 {
 		@include cover-text(0.5em);
 		@include text-shadow($secondary-color, $tertiary-color);
+		font-size: 1.5em;
 	}
 	.home {
 		@include text-shadow($secondary-color, $tertiary-color);
@@ -31,7 +32,7 @@ $height: 1.875;
 	.button {	
 		border: none;
 		background-color: $primary-color;
-		margin: 0px 50px;
+		margin: 0px 20px;
 	}
 	.toggle {
 		position: static;
@@ -72,5 +73,13 @@ $height: 1.875;
                 height: multiplier($height, 50px);
 			}
         }
-    }
+	}
+	.sidebar {
+		h1 {
+			font-size: 2em;
+		}
+		.button {
+			margin: 0px 50px;
+		}
+	}
 }
