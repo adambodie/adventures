@@ -31,7 +31,9 @@ export default class Application extends Component {
 		}));
 	}
 	componentDidMount() {
-		let json = '../src/item.json'
+		let json = '../src/item.json';
+		//TODO: retrieve json from S3
+		//let json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/item.json';
 		  axios.get(json)
 			.then(response => {;
 				this.setState({
@@ -53,13 +55,15 @@ export default class Application extends Component {
 				}
 				})	
     return (
+			//TODO: retrieve images from S3
     <Router>
       <div className="main-container">
 		<div className="primary-content">
 			<Headroom>
 			<div className="sidebar">
 				<div className="header">
-					<img src="./src/images/logo.jpg" alt="lighthouse" className="logo" />	
+					
+					<img src="https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/logo.jpg" alt="lighthouse" className="logo" />	
 					<h1>Adam&apos;s Adventures</h1>
 					<button onClick={this.handleClick} className="button">						
 						{ isOpened ? ( 

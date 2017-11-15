@@ -43,9 +43,10 @@ export default class Content extends Component {
     }
 
     render() {
+      //TODO: retrieve images from S3
 		const isLoaded = this.state.isLoaded;
 		const carouselStyle = {
-			backgroundImage: `url('./src/images/backgrounds/${this.state.background}.jpg')`,
+			backgroundImage: `url('https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/backgrounds/${this.state.background}.jpg')`,
 			backgroundSize: 'cover',
 			
 		}

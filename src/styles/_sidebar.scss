@@ -6,6 +6,7 @@ $height: 1.875;
 	@return $variable * $multiplier;
 }
 
+//TODO: recalculate max-width
 @function max-width($multiplier, $items) {
 	@return $multiplier * $items;
 }
