@@ -2,12 +2,13 @@
 
 $width: 3;
 $height: 1.875;
-@function multiplier($variable, $multiplier) {
+
+@function set-length($variable, $multiplier) {
 	@return $variable * $multiplier;
 }
 
 //TODO: recalculate max-width
-@function max-width($multiplier, $items) {
+@function set-area-width($multiplier, $items) {
 	@return $multiplier * $items;
 }
 
@@ -37,28 +38,26 @@ $height: 1.875;
 	}
 	.toggle {
 		position: static;
-		@include text-shadow($secondary-color, $tertiary-color);
-		
+		@include text-shadow($secondary-color, $tertiary-color);		
 	}
 }
 
 .area	{
 	margin: 0 auto;
-    height: multiplier($height, 25px) + 18px;
+    height: set-length($height, 29px);
     background: #ac8fab;
     .content{
-		width: max-width(multiplier($width, 25px), 22);
+		width: set-area-width(set-length($width, 29px), 21);
          button {
-				border: none;
+			border: none;
          }
         img {
-			width: multiplier($width, 25px);
-			height: multiplier($height, 25px);
-		    margin: 4px;
-		    padding: 4px;
+			width: set-length($width, 25px);
+			height: set-length($height, 25px);
+			margin: 6px;
 		    display: inline-block;
 		    &:hover {
-				transform: scale(1.2);
+				transform: scale(1.1);
 		    }
         }
     }
@@ -66,12 +65,12 @@ $height: 1.875;
 
 @media (min-width: 769px) {
 	.area {
-        height: multiplier($height, 50px) + 26px;
+        height: set-length($height, 58px);
         .content{
-            width: max-width(multiplier($width, 50px), 25);
+            width: set-area-width(set-length($width, 54px), 21);
 			img {
-				width: multiplier($width, 50px);
-                height: multiplier($height, 50px);
+				width: set-length($width, 50px);
+                height: set-length($height, 50px);
 			}
         }
 	}

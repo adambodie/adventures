@@ -16,13 +16,15 @@
 		display: block;
 		margin: 0 auto;
 	}
-	height: 700px;
+	height: 1000px;
 	margin-top: 20px;
 }
 .secondary {
 	@include flex-item(1);
 }
 
+@media (min-width: 769px) {
 .margin {
 	margin: 0px 150px 150px 150px;
+}
 }
