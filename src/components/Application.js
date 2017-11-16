@@ -31,9 +31,7 @@ export default class Application extends Component {
 		}));
 	}
 	componentDidMount() {
-		let json = '../src/item.json';
-		//TODO: retrieve json from S3
-		//let json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/item.json';
+		let json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/item.json';
 		  axios.get(json)
 			.then(response => {;
 				this.setState({
