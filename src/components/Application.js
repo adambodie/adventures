@@ -53,7 +53,6 @@ export default class Application extends Component {
 				}
 				})	
     return (
-			//TODO: retrieve images from S3
     <Router>
       <div className="main-container">
 		<div className="primary-content">
