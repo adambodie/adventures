@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+function formUrl(length) {
+	return `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=72157666519338749&user_id=8994820%40N07&extras=tags&per_page=${length}&format=json&nojsoncallback=1`;
+}
+
 export default class Home extends Component {
 	constructor(props) {
     super(props);
     this.state = {		
 		items: [],
-    };
+		length: this.props.length
+		};
 	}
-	
 	componentDidMount() {
-		let item = `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=72157666519338749&user_id=8994820%40N07&extras=tags&per_page=591&format=json&nojsoncallback=1`;
-		  axios.get(item)
-			.then(response => {;
+		let count = this.props.count;
+		const url = formUrl(count);		
+		axios.get(url)
+			.then(response => {
 				this.setState({
 					items: response.data.photoset.photo[Math.floor(Math.random() * response.data.photoset.photo.length)] 
 				});
