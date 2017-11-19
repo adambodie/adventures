@@ -10,11 +10,13 @@ export default class Home extends Component {
     super(props);
     this.state = {		
 		items: [],
+		updates: [],
 		length: this.props.length
 		};
 	}
 	componentDidMount() {
 		const url = formUrl(length);
+		const json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/update.json';
 		axios.get(url)
 			.then(response => {
 				this.setState({
@@ -24,14 +26,22 @@ export default class Home extends Component {
 			.catch(error => {
 			  console.log('Error fetching and parsing data', error);
 			});
-		}
+		axios.get(json)
+			.then(response => {
+				this.setState({
+					updates: response.data
+				});
+			})
+			.catch(error => {
+			  console.log('Error fetching and parsing data', error);
+			});
+		}		
+
 		render(){
 			let items = this.state.items;
-			let farm = items.farm;
-			let server = items.server;
-			let id = items.id;
-			let secret = items.secret;
-			let title = items.title;
+			let updateItems = this.state.updates.map((x, index) =>
+				<p key={index}>{x.description} - {x.date}</p>
+			) 
 			return (
 				<div className="primary">
 				<div className="secondary">
@@ -40,14 +50,14 @@ export default class Home extends Component {
 					<p>That was then.   Now I'm able to make more creative and dynamic projects to show my photos, and with web projects, anyone can view them.   My best examples of this increased creativity can be viewed for my trips to the <a href="http://grand-canyon.bodiewebdesign.com">Grand Canyon</a> and to the <a href="http://nadm2.bodiewebdesign.com">East Coast</a>. But I do enjoy my slideshows from the past, so I made this project to showcase all of them on the web for anyone to view.  Be sure to come back and checkout out new slideshows being added.</p>
 					<p>For this project, I primarily used React for the front-end aspect of this page, using the React Router dependency for routing purposes.  I've also used the Flickr API to retrieve my photo, via the Axios depenency.  On the back end is Webpack, which bundles all the modules for production-ready capabilities.</p>
 					<h3>Recent Updates</h3>
-					<p>Launch</p>
+					{updateItems}
 				</div>
 				<div className="secondary">
-				<h2>Featured Picture</h2>
-				<img src={`https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_z.jpg`} alt={title}/>
-        <h4>{title}</h4>
+					<h2>Featured Picture</h2>
+					<img src={`https://farm${items.farm}.staticflickr.com/${items.server}/${items.id}_${items.secret}_z.jpg`} alt={items.title}/>
+					<h4>{items.title}</h4>
 				</div>
-				</div>
+			</div>
 			)
 		}
 }
