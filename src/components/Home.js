@@ -14,8 +14,7 @@ export default class Home extends Component {
 		};
 	}
 	componentDidMount() {
-		let count = this.props.count;
-		const url = formUrl(count);		
+		const url = formUrl(length);
 		axios.get(url)
 			.then(response => {
 				this.setState({
