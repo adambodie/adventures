@@ -3,9 +3,6 @@
 .primary {
 	color: black;
 	@include background-gradient;
-	@include flex-container;
-	-webkit-align-items: flex-start;
-    align-items: flex-start; 
 	h1 {
 		text-align: center;
 		font-size: 48px;
@@ -28,12 +25,10 @@
 		display: block;
 		margin: 0 auto;
 	}
-	height: 1000px;
 	margin-top: 20px;
 }
 .secondary {
-	@include flex-item(1);
-	margin-top: 50px;
+	
 	padding: 30px;
 }
 
@@ -41,4 +36,13 @@
 .margin {
 	margin: 0px 150px 150px 150px;
 }
+.primary {
+	@include flex-container;
+	-webkit-align-items: flex-start;
+    align-items: flex-start; 
+}
+.secondary {
+	margin-top: 50px;
+	@include flex-item(1);
+	}
 }
