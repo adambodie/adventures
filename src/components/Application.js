@@ -21,7 +21,7 @@ export default class Application extends Component {
     this.state = {		
 		items: [],
 		isOpened: true,
-		length: 0
+		length: []
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -36,7 +36,7 @@ export default class Application extends Component {
 		axios.get(album)
 		.then(response => {
 			this.setState({
-				length: response.data.photoset.count_photos
+				length: response.data.photoset
 			});
 		})
 		.catch(error => {
