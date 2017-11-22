@@ -32,16 +32,6 @@ export default class Application extends Component {
 		}));
 	}
 	componentDidMount() {
-		let album = `https://api.flickr.com/services/rest/?method=flickr.photosets.getInfo&api_key=86ffc39a91d899bc368624d54cc01ef7&photoset_id=72157666519338749&user_id=8994820%40N07&format=json&nojsoncallback=1&auth_token=72157690747367016-b024df8e3b88eede&api_sig=6945ad87339ee6bc8859f5b24466339a`;
-		axios.get(album)
-		.then(response => {
-			this.setState({
-				length: response.data.photoset
-			});
-		})
-		.catch(error => {
-			console.log('Error fetching and parsing data', error);
-		});
 		let json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/item.json';
 		  axios.get(json)
 			.then(response => {
@@ -50,7 +40,7 @@ export default class Application extends Component {
 				});
 			})
 			.catch(error => {
-			  console.log('Error fetching and parsing data', error);
+			  console.log('Error fetching and parsing Items data', error);
 			});
 		}
   render(){
@@ -92,7 +82,7 @@ export default class Application extends Component {
 			</div>
 			</Headroom>
 			<div className="carousel">
-				<Route exact path = "/" render={() => <Home length={this.state.length}/>}/>
+				<Route exact path = "/" render={() => <Home/>}/>
 				{routes}																										
 			</div>
 		</div>

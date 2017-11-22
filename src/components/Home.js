@@ -10,7 +10,6 @@ export default class Home extends Component {
 	constructor(props) {
     super(props);
     this.state = {		
-		items: [],
 		updates: []
 		};
 	}
@@ -28,7 +27,6 @@ export default class Home extends Component {
 		}		
 
 		render(){
-			let items = this.state.items;
 			let updateItems = this.state.updates.map((x, index) =>
 				<p key={index}>{x.description} - {x.date}</p>
 			) 

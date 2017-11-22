@@ -23,7 +23,7 @@ export default class Picture extends Component {
 				});
 			})
 			.catch(error => {
-			  console.log('Error fetching and parsing data', error);
+			  console.log('Error fetching and parsing Item data', error);
 			});		
 	}
 	render() {
