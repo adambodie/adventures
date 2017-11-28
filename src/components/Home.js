@@ -13,8 +13,8 @@ export default class Home extends Component {
 		updates: []
 		};
 	}
-	componentDidMount() {
-		const json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/update.json';
+	/*componentDidMount() {
+		const json = '../update.json';
 		axios.get(json)
 			.then(response => {
 				this.setState({
@@ -24,10 +24,18 @@ export default class Home extends Component {
 			.catch(error => {
 			  console.log('Error fetching and parsing Update data', error);
 			});
-		}		
+		}	*/	
 
 		render(){
-			let updateItems = this.state.updates.map((x, index) =>
+			let updates = [
+				{"description": "Added new projects - Show Me The Sights, A Pursuit of Enjoiment and My Great Adventure around Lake Michigan",
+				"date": "November 27, 2017"},
+				
+				{
+				"description": "Launched version 1.0",
+				"date": "November 23, 2017"
+			}];
+			let updateItems = updates.map((x, index) =>
 				<p key={index}>{x.description} - {x.date}</p>
 			) 
 			return (
