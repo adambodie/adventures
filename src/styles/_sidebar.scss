@@ -63,6 +63,16 @@ $items: 68;
         }
     }
 }
+.scrollarea .scrollbar-container.horizontal .scrollbar {
+    opacity: 1;
+    background: $primary-color;
+    margin-top: 2px;
+}
+
+.scrollarea .scrollbar-container {
+    opacity: 1;
+}
+
 
 @media (min-width: 769px) {
 	.area {
