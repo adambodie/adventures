@@ -118,20 +118,20 @@ export default class Application extends Component {
 		"completed": true
 	}, {
 		"backgroundImage": "mississippi",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Rafting Down the Mississippi RIver",
+		"id": "72157663252243728",
+		"page": "188",
+		"color": "black",
+		"date": "May 17, 2007 - May 21, 2007",
+		"completed": true
 	}, {
 		"backgroundImage": "sioux-falls",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Me and Sue sue Sioux Falls as Sue Falls while listening to Su-Sussudio",
+		"id": "72157689257045661",
+		"page": "57",
+		"color": "black",
+		"date": "June 4, 2007 - June 5, 2007",
+		"completed": true
 	}, {
 		"backgroundImage": "boston",
 		"title": null,

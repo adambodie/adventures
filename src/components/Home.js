@@ -28,15 +28,19 @@ export default class Home extends Component {
 
 		render(){
 			let updates = [
-				{"description": "Added new projects - Show Me The Sights, A Pursuit of Enjoiment and My Great Adventure around Lake Michigan",
-				"date": "November 27, 2017"},
-				
-				{
-				"description": "Launched version 1.0",
+
+				{ "description": "Added New Projects: Rafting Down the Mississippi River and Me and Sue sue Sioux Falls as Sue Falls while listening to Su-Sussudio",
+				"date": "December 6, 2017"},
+				{"description": "Added new projects: Show Me The Sights, A Pursuit of Enjoiment and My Great Adventure around Lake Michigan",
+				"date": "November 27, 2017"},				
+				{ "description": "Launched version 1.0", 
 				"date": "November 23, 2017"
 			}];
 			let updateItems = updates.map((x, index) =>
+				<div>
+				<p>{x.title}</p>
 				<p key={index}>{x.description} - {x.date}</p>
+				</div>
 			) 
 			return (
 				<div className="primary">
