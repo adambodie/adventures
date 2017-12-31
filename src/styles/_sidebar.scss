@@ -64,13 +64,13 @@ $items: 68;
     }
 }
 .scrollarea .scrollbar-container.horizontal .scrollbar {
-    opacity: 1;
-    background: $primary-color;
-    margin-top: 2px;
+    opacity: 1!important;
+    background: $primary-color!important;
+    margin-top: 2px!important;
 }
 
 .scrollarea .scrollbar-container {
-    opacity: 1;
+    opacity: 1!important;
 }
 
 

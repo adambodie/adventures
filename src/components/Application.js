@@ -134,36 +134,36 @@ export default class Application extends Component {
 		"completed": true
 	}, {
 		"backgroundImage": "boston",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "A History of Boston with all the Tea you want (Even though we have to tax it)",
+		"id": "72157661549484707",
+		"page": "86",
+		"color": "black",
+		"date": "July 14, 2007 - July 17, 2007",
+		"completed": true
 	}, {
 		"backgroundImage": "italy",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Dodici giorni di divertitio: Un Viaggio Speciale in Italia",
+		"id": "72157663595965918",
+		"page": "197",
+		"color": "black",
+		"date": "August 7, 2007 - August 19, 2007",
+		"completed": true
 	}, {
 		"backgroundImage": "winter-2008",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "'Winter' in the Pacific Northwest(Not that I'd call it a real Winter)",
+		"id": "72157663952079258",
+		"page": "86",
+		"color": "black",
+		"date": "January-March 2008",
+		"completed": true
 	}, {
 		"backgroundImage": "spring-2008",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Spring in the Pacific Northwest (Almost the same as 'Winter'!)",
+		"id": "72157691419938085",
+		"page": "96",
+		"color": "black",
+		"date": "April-June 2008",
+		"completed": true
 	}, {
 		"backgroundImage": "denver",
 		"title": null,
@@ -174,12 +174,12 @@ export default class Application extends Component {
 		"completed": false
 	}, {
 		"backgroundImage": "summer-2008",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Summer in the Pacific Northwest: Warm like anywhere else but without the rain",
+		"id": "72157667948673899",
+		"page": "111",
+		"color": "black",
+		"date": "June-September 2008",
+		"completed": true
 	}, {
 		"backgroundImage": "seattle-2008",
 		"title": null,
@@ -198,12 +198,12 @@ export default class Application extends Component {
 		"completed": false
 	}, {
 		"backgroundImage": "fall-2008",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Fall in the Pacific Northwest (or is it Winter or Spring again, oh wait, the Pacific Northwest only has two seasons)",
+		"id": "72157664162253348",
+		"page": "112",
+		"color": "black",
+		"date": "September-December 2008",
+		"completed": true
 	}, {
 		"backgroundImage": "hawaii-2008",
 		"title": null,

@@ -28,7 +28,10 @@ export default class Home extends Component {
 
 		render(){
 			let updates = [
-
+				{ "description": "Added New Projects: Winter, Spring, Summer and Fall 2008 series.",
+				"date": "December 31, 2017"},				
+				{ "description": "Added New Projects: A History of Boston with all the Tea you want (Even though we have to tax it) and Dodici giorni di divertitio: Un Viaggio Speciale in Italia",
+				"date": "December 16, 2017"},
 				{ "description": "Added New Projects: Rafting Down the Mississippi River and Me and Sue sue Sioux Falls as Sue Falls while listening to Su-Sussudio",
 				"date": "December 6, 2017"},
 				{"description": "Added new projects: Show Me The Sights, A Pursuit of Enjoiment and My Great Adventure around Lake Michigan",
