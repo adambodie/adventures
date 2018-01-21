@@ -166,12 +166,12 @@ export default class Application extends Component {
 		"completed": true
 	}, {
 		"backgroundImage": "denver",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "One Mile Higher Than You in Denver",
+		"id": "72157691119632474",
+		"page": "127",
+		"color": "black",
+		"date": "May 2, 2008 - May 5, 2008",
+		"completed": true
 	}, {
 		"backgroundImage": "summer-2008",
 		"title": "Summer in the Pacific Northwest: Warm like anywhere else but without the rain",
@@ -182,20 +182,20 @@ export default class Application extends Component {
 		"completed": true
 	}, {
 		"backgroundImage": "seattle-2008",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Seattle 2008: On The Road Again (Without Willie Nelson)",
+		"id": "72157691119727204",
+		"page": "96",
+		"color": "black",
+		"date": "June 25, 2008 - June 27, 2008",
+		"completed": true
 	}, {
 		"backgroundImage": "san-francisco",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "11 Bags of Luggage & 16 Pairs of Shoes: A Trip to San Francisco",
+		"id": "72157691168971614",
+		"page": "108",
+		"color": "black",
+		"date": "August 26, 2008 - August 28, 2008",
+		"completed": true
 	}, {
 		"backgroundImage": "fall-2008",
 		"title": "Fall in the Pacific Northwest (or is it Winter or Spring again, oh wait, the Pacific Northwest only has two seasons)",
@@ -206,11 +206,11 @@ export default class Application extends Component {
 		"completed": true
 	}, {
 		"backgroundImage": "hawaii-2008",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
+		"title": "Māui Hawai'i 2008: Coasts, Mountains & Mom's Mai Tai's",
+		"id": "72157691168971614",
+		"page": "160",
+		"color": "black",
+		"date": "December 7, 2008 - December 13, 2008",
 		"completed": false
 	}, {
 		"backgroundImage": "newport",

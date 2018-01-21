@@ -28,6 +28,10 @@ export default class Home extends Component {
 
 		render(){
 			let updates = [
+				{ "description": "11 Bags of Luggage & 16 Pairs of Shoes: A Trip to San Francisco & Māui Hawai'i 2008: Coasts, Mountains & Mom's Mai Tai's",
+				"date": "January 21, 2018"},				
+				{ "description": "Added New Projects: One Mile Higher Than You in Denver & Seattle 2008 (On The Road Again (Without Willie Nelson)",
+				"date": "January 13, 2018"},
 				{ "description": "Added New Projects: Winter, Spring, Summer and Fall 2008 series.",
 				"date": "December 31, 2017"},				
 				{ "description": "Added New Projects: A History of Boston with all the Tea you want (Even though we have to tax it) and Dodici giorni di divertitio: Un Viaggio Speciale in Italia",
