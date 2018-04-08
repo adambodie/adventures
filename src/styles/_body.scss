@@ -20,6 +20,7 @@
 		font-size: 24px;
 		@include cover-text(0);
 		@include text-shadow($primary-color, $secondary-color);
+		text-align: center;
 	}		
 	img {
 		display: block;
@@ -27,8 +28,7 @@
 	}
 	margin-top: 20px;
 }
-.secondary {
-	
+.secondary {	
 	padding: 30px;
 }
 
@@ -41,8 +41,7 @@
 	-webkit-align-items: flex-start;
     align-items: flex-start; 
 }
-.secondary {
-	margin-top: 50px;
-	@include flex-item(1);
+	.secondary {
+		@include flex-item(1);
 	}
 }

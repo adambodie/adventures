@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
@@ -13,7 +13,6 @@ import ComingSoon from './ComingSoon';
 import axios from 'axios';
 import FontAwesome from 'react-fontawesome';
 import {Collapse} from 'react-collapse';
-import Headroom from 'react-headroom';
 
 export default class Application extends Component {
   constructor(props) {
@@ -31,19 +30,9 @@ export default class Application extends Component {
 			isOpened: !prevState.isOpened
 		}));
 	}
-	/*componentDidMount() {
-		let json = '../item.json';
-		  axios.get(json)
-			.then(response => {
-				this.setState({
-					items: response.data
-				});
-			})
-			.catch(error => {
-			  console.log('Error fetching and parsing Items data', error);
-			});
-		}*/
+
   render(){
+	const year = new Date().getFullYear();
 	let item = [{
 		"backgroundImage": "vegas",
 		"title": "High School Graduation Trip to Las Vegas",
@@ -211,127 +200,127 @@ export default class Application extends Component {
 		"page": "160",
 		"color": "black",
 		"date": "December 7, 2008 - December 13, 2008",
-		"completed": false
+		"completed": true
 	}, {
 		"backgroundImage": "newport",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Newport, Ain't a Damn Thang Changed",
+		"id": "72157665152227038",
+		"page": "41",
+		"color": "black",
+		"date": "January 15, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "eagle-creek",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Surviving the Trenches of Eagle Creek",
+		"id": "72157693309197595",
+		"page": "16",
+		"color": "black",
+		"date": "February 5, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "bonneville",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Adam went to a Dam: Bonneville Dam",
+		"id": "72157669460947509",
+		"page": "24",
+		"color": "black",
+		"date": "February 27, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "gorge",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Perfecting My Art and Toning My Skills at the Columbia River Gorge",
+		"id": "72157669461141049",
+		"page": "18",
+		"color": "black",
+		"date": "March 5, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "florence",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Celebrating Adam Day in Florence, 5,800 miles from Florence",
+		"id": "72157692535924354",
+		"page": "45",
+		"color": "black",
+		"date": "March 12, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "mccord-creek",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Green With Envy at McCord Creek (On St. Patrick’s Day Nonetheless)",
+		"id": "72157691924241871",
+		"page": "14",
+		"color": "white",
+		"date": "March 17, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "mt-defiance",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Learning New Camera Tricks at Mt. Defiance and Having Way Too Much Fun Taking Advantage",
+		"id": "72157691924278431",
+		"page": "25",
+		"color": "black",
+		"date": "March 30, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "salem",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Blue & Pink in Salem",
+		"id": "72157664178325827",
+		"page": "25",
+		"color": "black",
+		"date": "April 5, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "rowena-crest",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Scrambled Eggs Beyond Mount Hood at the Columbia River Gorge",
+		"id": "72157692907184311",
+		"page": "33",
+		"color": "black",
+		"date": "April 6, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "cape-kiwanda",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Cape Kiwanda; Cape, Cape Kiwanda, Cape Kiwanda yeah, get her out of my heart",
+		"id": "72157694677989915",
+		"page": "34",
+		"color": "black",
+		"date": "April 20, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "multnomah-falls",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
-	}, {
+		"title": "Discovering the Sun at Multnomah Falls",
+		"id": "72157692907161901",
+		"page": "28",
+		"color": "black",
+		"date": "April 21, 2009",
+		"completed": true
+	},{
 		"backgroundImage": "beacon-rock",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Peakin' Up Beacon Rock",
+		"id": "72157689363170010",
+		"page": "23",
+		"color": "black",
+		"date": "May 8, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "mount-hood",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Pre-Birthday Trip to Mount Hood",
+		"id": "72157694360806394",
+		"page": "28",
+		"color": "black",
+		"date": "May 9, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "smith-rock",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Exploring Smith Rock myself without the 'Haleakala Moment'",
+		"id": "72157667448729618",
+		"page": "57",
+		"color": "black",
+		"date": "May 15, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "central-oregon",
-		"title": null,
-		"id": null,
-		"page": null,
-		"color": null,
-		"date": null,
-		"completed": false
+		"title": "Living Life to the Fullest in Central Oregon",
+		"id": "72157692250024342",
+		"page": "153",
+		"color": "black",
+		"date": "May 19, 2009 - May 23, 2009",
+		"completed": true
 	}, {
 		"backgroundImage": "panther-creek",
 		"title": null,
@@ -605,7 +594,6 @@ export default class Application extends Component {
     <Router>
       <div className="main-container">
 		<div className="primary-content">
-			<Headroom>
 			<div className="sidebar">
 				<div className="header">
 					
@@ -628,14 +616,13 @@ export default class Application extends Component {
 				/>
 			</Collapse>	
 			</div>
-			</Headroom>
 			<div className="carousel">
 				<Route exact path = "/" render={() => <Home/>}/>
 				{routes}																										
 			</div>
 		</div>
 		<div className="footer">
-			<h2>Adam Bodie &copy; 2017</h2>
+			<h2>Adam Bodie &copy; {year}</h2>
 		</div>
       </div>
       </Router>

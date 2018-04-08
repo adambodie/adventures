@@ -13,13 +13,11 @@ $items: 68;
 	@return $multiplier * $items;
 }
 
-.headroom-wrapper {
-	height: inherit!important;
-}
 .sidebar {
 	background-color: $primary-color;
 	.header {
 		@include flex-container;
+		height: 110px;
 	}
 	h1 {
 		@include cover-text(0.5em);
@@ -36,6 +34,7 @@ $items: 68;
 		border: none;
 		background-color: $primary-color;
 		margin: 0px 20px;
+		height: 75px;
 	}
 	.toggle {
 		position: static;

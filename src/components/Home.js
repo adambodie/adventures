@@ -1,54 +1,20 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import FeaturedPicture from './FeaturedPicture';
+import {
+	Link
+  } from 'react-router-dom';
 
-function formUrl(length) {
-	return `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=72157666519338749&user_id=8994820%40N07&extras=tags&per_page=${length}&format=json&nojsoncallback=1`;
-}
+const formUrl = (length) => `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=72157666519338749&user_id=8994820%40N07&extras=tags&per_page=${length}&format=json&nojsoncallback=1`;
 
 export default class Home extends Component {
 	constructor(props) {
-    super(props);
-    this.state = {		
-		updates: []
-		};
-	}
-	/*componentDidMount() {
-		const json = '../update.json';
-		axios.get(json)
-			.then(response => {
-				this.setState({
-					updates: response.data
-				});
-			})
-			.catch(error => {
-			  console.log('Error fetching and parsing Update data', error);
-			});
-		}	*/	
-
+    	super(props);
+    		this.state = {		
+				updates: []
+			};
+		}	
 		render(){
-			let updates = [
-				{ "description": "11 Bags of Luggage & 16 Pairs of Shoes: A Trip to San Francisco & Māui Hawai'i 2008: Coasts, Mountains & Mom's Mai Tai's",
-				"date": "January 21, 2018"},				
-				{ "description": "Added New Projects: One Mile Higher Than You in Denver & Seattle 2008 (On The Road Again (Without Willie Nelson)",
-				"date": "January 13, 2018"},
-				{ "description": "Added New Projects: Winter, Spring, Summer and Fall 2008 series.",
-				"date": "December 31, 2017"},				
-				{ "description": "Added New Projects: A History of Boston with all the Tea you want (Even though we have to tax it) and Dodici giorni di divertitio: Un Viaggio Speciale in Italia",
-				"date": "December 16, 2017"},
-				{ "description": "Added New Projects: Rafting Down the Mississippi River and Me and Sue sue Sioux Falls as Sue Falls while listening to Su-Sussudio",
-				"date": "December 6, 2017"},
-				{"description": "Added new projects: Show Me The Sights, A Pursuit of Enjoiment and My Great Adventure around Lake Michigan",
-				"date": "November 27, 2017"},				
-				{ "description": "Launched version 1.0", 
-				"date": "November 23, 2017"
-			}];
-			let updateItems = updates.map((x, index) =>
-				<div>
-				<p>{x.title}</p>
-				<p key={index}>{x.description} - {x.date}</p>
-				</div>
-			) 
 			return (
 				<div className="primary">
 				<div className="secondary">
@@ -57,7 +23,18 @@ export default class Home extends Component {
 					<p>That was then.   Now I'm able to make more creative and dynamic projects to show my photos, and with web projects, anyone can view them.   My best examples of this increased creativity can be viewed for my trips to the <a href="http://grand-canyon.bodiewebdesign.com">Grand Canyon</a> and to the <a href="http://nadm2.bodiewebdesign.com">East Coast</a>. But I do enjoy my slideshows from the past, so I made this project to showcase all of them on the web for anyone to view.  Be sure to come back and checkout out new slideshows being added.</p>
 					<p>For this project, I primarily used React for the front-end aspect of this page, using the React Router dependency for routing purposes.  I've also used the Flickr API to retrieve my photos, via the Axios depenency.  On the back end is Webpack, which bundles all the modules for production-ready capabilities.</p>
 					<h3>Recent Updates</h3>
-					{updateItems}
+						<p>Added Four new Projects: <Link to="/beacon-rock">Beacon Rock</Link>, <Link to="/mount-hood">Mount Hood</Link>, <Link to="/smith-rock">Smith Rock</Link> and <Link to="/central-oregon">Central Oregon</Link> - April 7, 2018</p>
+						<p>Added Four new Projects: <Link to="/salem">Salem</Link>, <Link to="/rowena-crest">Rowena Crest</Link>, <Link to="/cape-kiwanda">Cape Kiwanda</Link> and <Link to="/beacon-rock">Multnomah Falls</Link> - March 26, 2018</p>
+						<p>Added Two new Projects: <Link to="/mccord-creek">McCord Creek</Link> and <Link to="/mt-defiance">Mt. Defiance</Link> - February 25, 2018</p>
+						<p>Added Five new Projects: <Link to="/newport">Newport</Link>, <Link to="/eagle-creek">Eagle Creek</Link>, <Link to="/bonneville">Bonneville</Link>, <Link to="/gorge">Gorge</Link> and <Link to="/beacon-rock">Florence</Link> - February 12, 2018</p>
+						<p>Added Two new Projects: <Link to="/san-francisco">San Francisco</Link> and <Link to="/hawaii-2008">Hawaii 2008</Link> - January 21, 2018</p>
+						<p>Added Two new Projects: <Link to="/denver">Denver</Link> and <Link to="/seattle-2008">Seattle 2008</Link> - January 13, 2018</p>
+						<p>Added Four new Projects: <Link to="/winter-2008">Winter</Link>, <Link to="/spring-2008">Spring</Link>, <Link to="/summer-2008">Summer</Link> and <Link to="/fall-2008">Fall</Link> 2008 series - December 31, 2017</p>
+						<p>Added Two new Projects: <Link to="/boston">Boston</Link> and <Link to="/italy">Italy</Link> - December 16, 2017</p>
+						<p>Added Two new Projects: <Link to="/mississippi">Mississippi River</Link> and <Link to="/sioux-falls">Sioux Falls</Link> - December 6, 2017</p>
+						<p>Added Two new Projects: <Link to="/kansas-city">Kansas City</Link> and <Link to="/chicago">Chicago</Link> - November 27, 2017
+						</p>
+						<p>Launched version 1.0 - November 23, 2017</p>
 				</div>
 				<div className="secondary">
 					<FeaturedPicture />
@@ -65,4 +42,4 @@ export default class Home extends Component {
 			</div>
 			)
 		}
-}
+	}

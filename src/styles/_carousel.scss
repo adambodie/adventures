@@ -11,11 +11,16 @@ a {
 }
 
 h3, h6 {
-  text-align: center;
+	text-align: center;
 }
 h4 {
 	text-align: center;
 	text-transform:capitalize;
+	margin-top: -10px;
+}
+
+h6 {
+	margin-top: -10px;
 }
 ul,
 li {
@@ -39,7 +44,7 @@ li {
 }
 .fa {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	font-size: 3em;
 	color: white;
 	&:hover {
@@ -59,15 +64,16 @@ li {
 
 .slick-slide img {
     margin: 0 auto;
-    max-height: 200px;
+    max-height: 150px;
 }
 
 .slick-dots {
 	position: relative!important;
 	bottom: 0!important;
 	max-width: 500px;
-	display: block;
+	display: none!important;
 	margin: 0 auto!important;
+	margin-top: -20px!important;
 	padding: 10px;
 	li {
 		margin: 0;
@@ -97,14 +103,18 @@ li {
 
 
 @media (min-width: 550px) {
+	.slick-dots {
+		display: block!important;  
+	}
+
   .slick-slide img {
-      max-height: 340px;
+      max-height: 300px;
 	}
 	.slick-list {
 		padding: 10px;
 	}
 	.fa {
-		top: 55%;
+		top: 65%;
 	}
 	.left {
 		left: 2.5%;
@@ -124,6 +134,7 @@ li {
     float: left;
   }
   .slick-dots {
+	display: block!important;
   	max-width: 80%;
 	}
 	.slick-list {
@@ -131,7 +142,7 @@ li {
 	}
 	.fa {
 		margin: 20px;
-		top: 60%;
+		top: 80%;
 	}
 
 	.left {
@@ -145,7 +156,7 @@ li {
   .slick-slide {
 		width: 800px;
 		img {
-			max-height: 480px;
+			max-height: 400px;
 		}
   }
 
