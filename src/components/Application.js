@@ -39,7 +39,6 @@ export default class Application extends Component {
 		"id": "72157687042225613",
 		"page": "38",
 		"color": "lightblue",
-		"date": "July 13, 2003 - July 16, 2003",
 		"completed": true
 	}, {
 		"backgroundImage": "hawaii",
@@ -47,7 +46,6 @@ export default class Application extends Component {
 		"id": "72157686468511520",
 		"page": "77",
 		"color": "#FF9933",
-		"date": "September 1, 2004 - September 8, 2004",
 		"completed": true
 	}, {
 		"backgroundImage": "europe",
@@ -55,7 +53,6 @@ export default class Application extends Component {
 		"id": "72157686893038650",
 		"page": "139",
 		"color": "gold",
-		"date": "May 19, 2005 - June 4, 2005",
 		"completed": true
 	}, {
 		"backgroundImage": "seattle",
@@ -63,7 +60,6 @@ export default class Application extends Component {
 		"id": "72157687246355471",
 		"page": "33",
 		"color": "black",
-		"date": "May 12, 2006 - May 13, 2006",
 		"completed": true
 	}, {
 		"backgroundImage": "cross-country",
@@ -71,7 +67,6 @@ export default class Application extends Component {
 		"id": "72157688200510913",
 		"page": "67",
 		"color": "white",
-		"date": "August 29, 2006 - September 1, 2006",
 		"completed": true
 	}, {
 		"backgroundImage": "minnesota",
@@ -79,7 +74,6 @@ export default class Application extends Component {
 		"id": "72157688415662014",
 		"page": "83",
 		"color": "black",
-		"date": "September 4, 2006 - November 21, 2006",
 		"completed": true
 	}, {
 		"backgroundImage": "green-bay",
@@ -87,7 +81,6 @@ export default class Application extends Component {
 		"id": "72157688332691124",
 		"page": "46",
 		"color": "yellow",
-		"date": "December 19, 2006 - December 20, 2006",
 		"completed": true
 	}, {
 		"backgroundImage": "kansas-city",
@@ -95,7 +88,6 @@ export default class Application extends Component {
 		"id": "72157688936201011",
 		"page": "120",
 		"color": "white",
-		"date": "January 7, 2007 - January 9, 2007",
 		"completed": true
 	}, {
 		"backgroundImage": "chicago",
@@ -103,7 +95,6 @@ export default class Application extends Component {
 		"id": "72157691022168926",
 		"page": "130",
 		"color": "yellow",
-		"date": "March 10, 2007 - March 12, 2007",
 		"completed": true
 	}, {
 		"backgroundImage": "mississippi",
@@ -111,7 +102,6 @@ export default class Application extends Component {
 		"id": "72157663252243728",
 		"page": "188",
 		"color": "black",
-		"date": "May 17, 2007 - May 21, 2007",
 		"completed": true
 	}, {
 		"backgroundImage": "sioux-falls",
@@ -119,7 +109,6 @@ export default class Application extends Component {
 		"id": "72157689257045661",
 		"page": "57",
 		"color": "black",
-		"date": "June 4, 2007 - June 5, 2007",
 		"completed": true
 	}, {
 		"backgroundImage": "boston",
@@ -127,7 +116,6 @@ export default class Application extends Component {
 		"id": "72157661549484707",
 		"page": "86",
 		"color": "black",
-		"date": "July 14, 2007 - July 17, 2007",
 		"completed": true
 	}, {
 		"backgroundImage": "italy",
@@ -135,7 +123,6 @@ export default class Application extends Component {
 		"id": "72157663595965918",
 		"page": "197",
 		"color": "black",
-		"date": "August 7, 2007 - August 19, 2007",
 		"completed": true
 	}, {
 		"backgroundImage": "winter-2008",
@@ -143,7 +130,6 @@ export default class Application extends Component {
 		"id": "72157663952079258",
 		"page": "86",
 		"color": "black",
-		"date": "January-March 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "spring-2008",
@@ -151,7 +137,6 @@ export default class Application extends Component {
 		"id": "72157691419938085",
 		"page": "96",
 		"color": "black",
-		"date": "April-June 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "denver",
@@ -159,7 +144,6 @@ export default class Application extends Component {
 		"id": "72157691119632474",
 		"page": "127",
 		"color": "black",
-		"date": "May 2, 2008 - May 5, 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "summer-2008",
@@ -167,7 +151,6 @@ export default class Application extends Component {
 		"id": "72157667948673899",
 		"page": "111",
 		"color": "black",
-		"date": "June-September 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "seattle-2008",
@@ -175,15 +158,13 @@ export default class Application extends Component {
 		"id": "72157691119727204",
 		"page": "96",
 		"color": "black",
-		"date": "June 25, 2008 - June 27, 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "san-francisco",
 		"title": "11 Bags of Luggage & 16 Pairs of Shoes: A Trip to San Francisco",
-		"id": "72157691168971614",
+		"id": "72157668192188609",
 		"page": "108",
 		"color": "black",
-		"date": "August 26, 2008 - August 28, 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "fall-2008",
@@ -191,7 +172,6 @@ export default class Application extends Component {
 		"id": "72157664162253348",
 		"page": "112",
 		"color": "black",
-		"date": "September-December 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "hawaii-2008",
@@ -199,7 +179,6 @@ export default class Application extends Component {
 		"id": "72157691168971614",
 		"page": "160",
 		"color": "black",
-		"date": "December 7, 2008 - December 13, 2008",
 		"completed": true
 	}, {
 		"backgroundImage": "newport",
@@ -207,7 +186,6 @@ export default class Application extends Component {
 		"id": "72157665152227038",
 		"page": "41",
 		"color": "black",
-		"date": "January 15, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "eagle-creek",
@@ -215,7 +193,6 @@ export default class Application extends Component {
 		"id": "72157693309197595",
 		"page": "16",
 		"color": "black",
-		"date": "February 5, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "bonneville",
@@ -223,7 +200,6 @@ export default class Application extends Component {
 		"id": "72157669460947509",
 		"page": "24",
 		"color": "black",
-		"date": "February 27, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "gorge",
@@ -231,7 +207,6 @@ export default class Application extends Component {
 		"id": "72157669461141049",
 		"page": "18",
 		"color": "black",
-		"date": "March 5, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "florence",
@@ -239,7 +214,6 @@ export default class Application extends Component {
 		"id": "72157692535924354",
 		"page": "45",
 		"color": "black",
-		"date": "March 12, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "mccord-creek",
@@ -247,7 +221,6 @@ export default class Application extends Component {
 		"id": "72157691924241871",
 		"page": "14",
 		"color": "white",
-		"date": "March 17, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "mt-defiance",
@@ -255,7 +228,6 @@ export default class Application extends Component {
 		"id": "72157691924278431",
 		"page": "25",
 		"color": "black",
-		"date": "March 30, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "salem",
@@ -263,7 +235,6 @@ export default class Application extends Component {
 		"id": "72157664178325827",
 		"page": "25",
 		"color": "black",
-		"date": "April 5, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "rowena-crest",
@@ -271,7 +242,6 @@ export default class Application extends Component {
 		"id": "72157692907184311",
 		"page": "33",
 		"color": "black",
-		"date": "April 6, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "cape-kiwanda",
@@ -279,7 +249,6 @@ export default class Application extends Component {
 		"id": "72157694677989915",
 		"page": "34",
 		"color": "black",
-		"date": "April 20, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "multnomah-falls",
@@ -287,7 +256,6 @@ export default class Application extends Component {
 		"id": "72157692907161901",
 		"page": "28",
 		"color": "black",
-		"date": "April 21, 2009",
 		"completed": true
 	},{
 		"backgroundImage": "beacon-rock",
@@ -295,7 +263,6 @@ export default class Application extends Component {
 		"id": "72157689363170010",
 		"page": "23",
 		"color": "black",
-		"date": "May 8, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "mount-hood",
@@ -303,7 +270,6 @@ export default class Application extends Component {
 		"id": "72157694360806394",
 		"page": "28",
 		"color": "black",
-		"date": "May 9, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "smith-rock",
@@ -311,7 +277,6 @@ export default class Application extends Component {
 		"id": "72157667448729618",
 		"page": "57",
 		"color": "black",
-		"date": "May 15, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "central-oregon",
@@ -319,7 +284,6 @@ export default class Application extends Component {
 		"id": "72157692250024342",
 		"page": "153",
 		"color": "black",
-		"date": "May 19, 2009 - May 23, 2009",
 		"completed": true
 	}, {
 		"backgroundImage": "panther-creek",
@@ -327,7 +291,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "hood-river",
@@ -335,7 +298,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "the-dalles",
@@ -343,7 +305,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "clarno",
@@ -351,7 +312,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "klickitat",
@@ -359,7 +319,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "mt-angel",
@@ -367,7 +326,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "willamette-valley",
@@ -375,7 +333,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "mcminnville",
@@ -383,7 +340,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "oregon-college",
@@ -391,7 +347,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "oktoberfest",
@@ -399,7 +354,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "hollywood-video",
@@ -407,7 +361,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "seaside",
@@ -415,7 +368,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "coachella",
@@ -423,7 +375,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "tulip",
@@ -431,7 +382,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "detroit-lake",
@@ -439,7 +389,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "warm-springs",
@@ -447,7 +396,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "lewis-river",
@@ -455,7 +403,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "mckenzie-river",
@@ -463,7 +410,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "maryhill",
@@ -471,7 +417,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "eugene",
@@ -479,7 +424,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "mt-st-helens",
@@ -487,7 +431,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "cannon-beach",
@@ -495,7 +438,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "oneonta-gorge",
@@ -503,7 +445,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "olympia",
@@ -511,7 +452,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "alabama",
@@ -519,7 +459,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "three-capes",
@@ -527,7 +466,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "central-oregon-2008",
@@ -535,7 +473,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "two-mountains",
@@ -543,7 +480,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "wine-country",
@@ -551,7 +487,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "hood-river-2011",
@@ -559,7 +494,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "more-hood-river",
@@ -567,7 +501,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}, {
 		"backgroundImage": "portland",
@@ -575,7 +508,6 @@ export default class Application extends Component {
 		"id": null,
 		"page": null,
 		"color": null,
-		"date": null,
 		"completed": false
 	}
 	

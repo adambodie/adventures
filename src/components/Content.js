@@ -3,7 +3,7 @@ import axios from 'axios';
 import PhotoList from './PhotoList';
 import Loading from './Loading';
 
-const formUrl = (photoset_id, per_page) => `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&extras=tags&per_page=${per_page}&format=json&nojsoncallback=1`;
+const formUrl = (photoset_id, per_page) => `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&extras=tags%2Cdate_taken&per_page=${per_page}&format=json&nojsoncallback=1`;
 
 export default class Content extends Component {
   constructor(props) {
@@ -44,7 +44,7 @@ export default class Content extends Component {
 		const carouselStyle = {
 			backgroundImage: `url('https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/backgrounds/${this.state.background}.jpg')`,
       backgroundSize: 'cover',
-      height: '800px'
+      height: '900px'
 		}
 		const colorStyle = {
 			color: this.state.color

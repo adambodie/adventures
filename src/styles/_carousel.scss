@@ -6,6 +6,13 @@
   color: #4c4c4c;
   margin-top: -35px;
 }
+
+.slick-slider {
+	background-color: black;
+	width: 80%;
+	margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,7 +27,10 @@ h4 {
 }
 
 h6 {
-	margin-top: -10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	max-width: 200px;
+	margin: 0 auto;
 }
 ul,
 li {
@@ -37,43 +47,36 @@ li {
 	text-align: center;
 	padding: 10px;
 }
-.date {
-	text-indent: 4em;
-	margin: 0;
-	padding: 10px;
-}
 .fa {
 	position: absolute;
-	top: 55%;
-	font-size: 3em;
+	top: 65%;
+	font-size: 2em;
 	color: white;
 	&:hover {
 		color: gray;
 	}
 }
 .left {
-	left: 0%;
-
+	left: 1%;
 }
 .right {
-	right: 0%;
+	right: 1%;
 }
 .slick-arrow {
 	display: none!important;
 }
 
 .slick-slide img {
-    margin: 0 auto;
-    max-height: 150px;
+    margin: 20px auto;
+		height: 150px;
 }
 
 .slick-dots {
 	position: relative!important;
 	bottom: 0!important;
-	max-width: 500px;
+	max-width: 200px;
 	display: none!important;
-	margin: 0 auto!important;
-	margin-top: -20px!important;
+	margin: 10px auto!important;
 	padding: 10px;
 	li {
 		margin: 0;
@@ -101,14 +104,16 @@ li {
   Media Queries
 ==================================== */
 
-
 @media (min-width: 550px) {
+	h6 {
+		max-width: 400px;
+	}	
 	.slick-dots {
-		display: block!important;  
+		display: block!important;
+		max-width: 400px;
 	}
-
   .slick-slide img {
-      max-height: 300px;
+			height: 300px;
 	}
 	.slick-list {
 		padding: 10px;
@@ -117,16 +122,17 @@ li {
 		top: 65%;
 	}
 	.left {
-		left: 2.5%;
-	
+		left: 2.5%;	
 	}
 	.right {
 		right: 2.5%;
 	}
-
 }
 
 @media (min-width: 769px) {
+	h6 {
+		max-width: 533px;
+	}
 	.title {
 		font-size: 2.5em;
 	}
@@ -135,7 +141,7 @@ li {
   }
   .slick-dots {
 	display: block!important;
-  	max-width: 80%;
+	max-width: 533px;
 	}
 	.slick-list {
 		padding: 10px;
@@ -143,23 +149,14 @@ li {
 	.fa {
 		margin: 20px;
 		top: 80%;
-	}
-
-	.left {
-		left: 5%;
-	
-	}
-	.right {
-		right: 5%;
+		font-size: 3em;
 	}
 
   .slick-slide {
-		width: 800px;
 		img {
-			max-height: 400px;
+			height: 400px;
 		}
   }
-
 }
 
 
