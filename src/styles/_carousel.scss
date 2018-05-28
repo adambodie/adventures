@@ -3,12 +3,14 @@
 
 .carousel {
   font: 1em/1.5 'Roboto', sans-serif;
-  color: #4c4c4c;
-  margin-top: -35px;
+  margin-top: -30px;
+}
+
+.carousel-background {
+  height: 500px;
 }
 
 .slick-slider {
-	background-color: black;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -46,29 +48,16 @@ li {
 .title {
 	text-align: center;
 	padding: 10px;
+	line-height: 1.2;
 }
-.fa {
-	position: absolute;
-	top: 65%;
-	font-size: 2em;
-	color: white;
-	&:hover {
-		color: gray;
-	}
-}
-.left {
-	left: 1%;
-}
-.right {
-	right: 1%;
-}
+
 .slick-arrow {
-	display: none!important;
+	z-index: 1000;
 }
 
 .slick-slide img {
-    margin: 20px auto;
-		height: 150px;
+    margin: 0px auto;
+		height: 225px;
 }
 
 .slick-dots {
@@ -79,7 +68,7 @@ li {
 	margin: 10px auto!important;
 	padding: 10px;
 	li {
-		margin: 0;
+		margin: 0!important;
 		width: 10px;
 		height: 10px;
 		color: white!important;
@@ -105,6 +94,9 @@ li {
 ==================================== */
 
 @media (min-width: 550px) {
+	.carousel-background {
+		height: 700px;
+	}
 	h6 {
 		max-width: 400px;
 	}	
@@ -118,18 +110,16 @@ li {
 	.slick-list {
 		padding: 10px;
 	}
-	.fa {
-		top: 65%;
-	}
-	.left {
-		left: 2.5%;	
-	}
-	.right {
-		right: 2.5%;
+	.slick-prev:before, .slick-next:before {
+		font-size: 40px!important;
+		opacity: 1!important;
 	}
 }
 
 @media (min-width: 769px) {
+	.carousel-background {
+		height: 900px;
+	}	
 	h6 {
 		max-width: 533px;
 	}
@@ -145,11 +135,6 @@ li {
 	}
 	.slick-list {
 		padding: 10px;
-	}
-	.fa {
-		margin: 20px;
-		top: 80%;
-		font-size: 3em;
 	}
 
   .slick-slide {

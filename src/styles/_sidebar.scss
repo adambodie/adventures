@@ -23,6 +23,7 @@ $items: 68;
 		@include cover-text(0.5em);
 		@include text-shadow($secondary-color, $tertiary-color);
 		font-size: 1.5em;
+		line-height: 1.2em;
 	}
 	.home {
 		@include text-shadow($secondary-color, $tertiary-color);

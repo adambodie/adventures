@@ -17,7 +17,7 @@ const Photo = props => (
           <h4>{props.tags}</h4>
           <h4>{formatDate(new Date(props.datetaken))}</h4>
         </ReactTooltip>
-        <h6>{props.index} of {props.length}</h6>
+        <h6 style={{color: props.color}}>{props.index} of {props.length}</h6>
   </div>
 );
 

@@ -43,8 +43,7 @@ export default class Content extends Component {
 		const isLoaded = this.state.isLoaded;
 		const carouselStyle = {
 			backgroundImage: `url('https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/backgrounds/${this.state.background}.jpg')`,
-      backgroundSize: 'cover',
-      height: '900px'
+      backgroundSize: 'cover'
 		}
 		const colorStyle = {
 			color: this.state.color
@@ -52,7 +51,7 @@ export default class Content extends Component {
       return (
       <div>
 		    { isLoaded ? (
-          <div style={carouselStyle}>
+          <div style={carouselStyle} className='carousel-background'>
 				<h1 className="title" style={colorStyle}>{this.props.title}</h1>
             <PhotoList data={this.state.photographs} page={this.state.per_page} color={this.state.color} date={this.state.date}/>            
           </div> ) : (

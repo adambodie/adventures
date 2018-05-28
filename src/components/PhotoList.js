@@ -1,22 +1,8 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import Photo from './Photo';
-import FontAwesome from 'react-fontawesome';
-
 
 export default class PhotoList extends Component {
-	constructor(props) {
-		super(props)
-		this.next = this.next.bind(this);
-		this.previous = this.previous.bind(this);
-	}
-	next() {
-		this.slider.slickNext()
-	}
-	previous() {
-		this.slider.slickPrev()
-	}
-
 	render() {
 		let results = this.props.data;
 		const settings = {
@@ -38,21 +24,7 @@ export default class PhotoList extends Component {
   <div>
     <Slider ref={c => this.slider = c } {...settings}>
       {photos}
-    </Slider>
-    <div style={{display: 'flex', justifyContent: 'space-between'}}>
-			<FontAwesome 
-				className='left'
-				name='arrow-circle-left' 
-				style={{color: color}} 
-				onClick={this.previous}
-			/>
-			<FontAwesome 
-				className='right'
-				name='arrow-circle-right'
-				style={{color: color}}   
-				onClick={this.next}
-			/>
-    </div>	
+    </Slider>	
     </div>
   );
 }
