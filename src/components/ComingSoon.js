@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ComingSoon = props => (
+const ComingSoon = () => (
   <div className="primary">
 	<div className="secondary">
 		<h1>Coming Soon</h1>

@@ -1,20 +1,16 @@
 import React, { Component } from 'react'
 import ItemList from './ItemList';
 
-
 export default class Sidebar extends Component{
     constructor(props) {
       super(props);
-      this.state = {
-		  sidebarItems: this.props.items
-		}
 	}
 
     render() {
-		let sidebarItems = this.props.items;
+		const {items} = this.props;
 		return (
 			<div>
-				<ItemList data={sidebarItems} />
+				<ItemList data={items} />
 			</div>
 			)
 		}

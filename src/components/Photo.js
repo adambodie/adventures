@@ -9,15 +9,15 @@ const formatDate = date => {
   return monthNames[monthIndex] + ' ' + day + ', ' + year;
 }
 
-const Photo = props => (
+const Photo = ({farm, server, id, secret, title, tags, datetaken, color, index, length}) => (
   <div>
-        <a data-tip data-for='description'><img src={`https://farm${props.farm}.staticflickr.com/${props.server}/${props.id}_${props.secret}_z.jpg`} alt={props.title}/></a>
+        <a data-tip data-for='description'><img src={`https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_z.jpg`} alt={title}/></a>
         <ReactTooltip place='top' type='light' effect='float' id='description' aria-haspopup='true'>
-          <h3>{props.title}</h3>
-          <h4>{props.tags}</h4>
-          <h4>{formatDate(new Date(props.datetaken))}</h4>
+          <h3>{title}</h3>
+          <h4>{tags}</h4>
+          <h4>{formatDate(new Date(datetaken))}</h4>
         </ReactTooltip>
-        <h6 style={{color: props.color}}>{props.index} of {props.length}</h6>
+        <h6 style={{color: color}}>{index} of {length}</h6>
   </div>
 );
 
