@@ -49,14 +49,14 @@ export default class Content extends Component {
 			color: this.state.color
 		}
       return (
-      <div>
+		<div>
 		    { isLoaded ? (
-          <div style={carouselStyle} className='carousel-background'>
-				<h1 className="title" style={colorStyle}>{this.props.title}</h1>
-            <PhotoList data={this.state.photographs} page={this.state.per_page} color={this.state.color} date={this.state.date}/>            
-          </div> ) : (
-				<Loading isFailed={this.state.isFailed}/>
-          )}
+				<div style={carouselStyle} className='carousel-background'>
+					<h1 className="title" style={colorStyle}>{this.props.title}</h1>
+					<PhotoList data={this.state.photographs} page={this.state.per_page} color={this.state.color} date={this.state.date}/>            
+				</div> ) : (
+					<Loading isFailed={this.state.isFailed}/>
+			)}
         </div>
       );
     }

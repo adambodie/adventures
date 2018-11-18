@@ -2,9 +2,9 @@ import React from 'react';
 import {
   Link
 } from 'react-router-dom'
-const Item = props => (
-        <Link to={`/${props.backgroundImage}`}>
-                <img src={`https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/links/adventure${props.index}.jpg`} alt={props.backgroundImage}/>
+const Item = ({backgroundImage, index}) => (
+        <Link to={`/${backgroundImage}`}>
+                <img src={`https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/links/adventure${index}.jpg`} alt={backgroundImage}/>
         </Link>
 );
 
