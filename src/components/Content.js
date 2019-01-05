@@ -3,8 +3,6 @@ import axios from 'axios';
 import PhotoList from './PhotoList';
 import Loading from './Loading';
 
-const formUrl = (photoset_id, per_page) => `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&extras=tags%2Cdate_taken&per_page=${per_page}&format=json&nojsoncallback=1`;
-
 export default class Content extends Component {
   constructor(props) {
       super(props);
@@ -21,13 +19,11 @@ export default class Content extends Component {
     }
 
     componentDidMount() {
-      let photoset_id = this.props.id;
       let per_page = this.props.page;
-      const url = formUrl(photoset_id, per_page);
-      axios.get(url)
+      axios.get(`https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/${this.props.category}.json`)
         .then(response => {
           this.setState({
-            photographs: response.data.photoset.photo,
+            photographs: response.data,
             isLoaded: true
           });
         })
@@ -53,7 +49,7 @@ export default class Content extends Component {
 		    { isLoaded ? (
 				<div style={carouselStyle} className='carousel-background'>
 					<h1 className="title" style={colorStyle}>{this.props.title}</h1>
-					<PhotoList data={this.state.photographs} page={this.state.per_page} color={this.state.color} date={this.state.date}/>            
+					<PhotoList data={this.state.photographs} category={this.props.category} page={this.state.per_page} color={this.state.color} date={this.state.date}/>            
 				</div> ) : (
 					<Loading isFailed={this.state.isFailed}/>
 			)}

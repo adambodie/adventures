@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import FeaturedPicture from './FeaturedPicture';
-import {
-	Link
-  } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const formUrl = (length) => `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=72157666519338749&user_id=8994820%40N07&extras=tags&per_page=${length}&format=json&nojsoncallback=1`;
 const items = (number) => `Added ${number} new Projects: `;
 
 export default class Home extends Component {
@@ -108,9 +103,6 @@ export default class Home extends Component {
 							<Link to="/chicago">Chicago</Link> - November 27, 2017
 						</p>
 						<p>Launched version 1.0 - November 23, 2017</p>
-				</div>
-				<div className="secondary">
-					<FeaturedPicture />
 				</div>
 			</div>
 			)

@@ -4,7 +4,7 @@ import Photo from './Photo';
 
 export default class PhotoList extends Component {
 	render() {
-		const { data, page, color } = this.props;
+		const { data, page, color, category } = this.props;
 		const settings = {
 			dots: true,
 			infinite: true,
@@ -14,7 +14,7 @@ export default class PhotoList extends Component {
 		};
 		let photos = data.map((x, index) =>
 			<div key={x.id}>
-				<Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} tags={x.tags} datetaken={x.datetaken} index={index + 1} length={page} color={color}/>
+				<Photo id={x.id} title={x.title} category={category} index={index + 1} length={page} color={color}/>
 			</div>
 		)
 		return(

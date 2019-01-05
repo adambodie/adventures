@@ -48,7 +48,7 @@ export default class Application extends Component {
 	let isOpened = this.state.isOpened;
 	let routes = item.map((r) => {
 				if (r.completed) {
-					return <Route exact path={"/" + r.backgroundImage} render={() => <Content title={r.title} id={r.id} page={r.page} background={r.backgroundImage} color={r.color} date={r.date} />} /> 
+					return <Route exact path={"/" + r.backgroundImage} render={() => <Content title={r.title} category={r.category} id={r.id} page={r.page} background={r.backgroundImage} color={r.color} date={r.date} />} /> 
 				} else {
 					return <Route path={"/" + r.backgroundImage}  render={() => <ComingSoon />} />
 				}
@@ -62,7 +62,7 @@ export default class Application extends Component {
 					
 					<img src="https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/logo.jpg" alt="lighthouse" className="logo" />	
 					<h1>Adam&apos;s Adventures</h1>
-					<button onClick={this.handleClick} className="button">						
+					<button onClick={this.handleClick} className="button">
 						{ isOpened ? ( 
 							<FontAwesome className='toggle' name='angle-double-up' size='2x'/>
 						) : ( 
@@ -81,7 +81,7 @@ export default class Application extends Component {
 			</div>
 			<div className="carousel">
 				<Route exact path = "/" render={() => <Home/>}/>
-				{routes}																										
+				{routes}	
 			</div>
 		</div>
 		<div className="footer">
