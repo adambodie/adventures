@@ -3,9 +3,6 @@ import ScrollArea from 'react-scrollbar';
 import Item from './Item';
 
 export default class ItemList extends Component{
-    constructor(props) {
-      super(props);
-    }
     render(){
 		let adventures = this.props.data;
 		let itemList = adventures.map((x, index) =>

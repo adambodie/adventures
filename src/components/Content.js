@@ -19,7 +19,6 @@ export default class Content extends Component {
     }
 
     componentDidMount() {
-      let per_page = this.props.page;
       axios.get(`https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/${this.props.category}.json`)
         .then(response => {
           this.setState({

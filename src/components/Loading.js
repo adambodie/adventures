@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
 
 export default class Loading extends Component {
-  constructor(props) {
-      super(props);
-    }	
-
 	render() {
 		const { isFailed } = this.props;
 		return (
