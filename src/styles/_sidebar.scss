@@ -39,22 +39,22 @@ $items: 68;
 	}
 	.toggle {
 		position: static;
-		@include text-shadow($secondary-color, $tertiary-color);		
+		@include text-shadow($secondary-color, $tertiary-color);
 	}
 }
 
 .area	{
 	margin: 0 auto;
-    height: set-length($height, 29px);
+    height: set-length($height, 70px);
     background: #ac8fab;
     .content{
-		width: set-area-width(set-length($width, 29px), $items);
+		width: set-area-width(set-length($width, 70px), $items);
          button {
 			border: none;
          }
         img {
-			width: set-length($width, 25px);
-			height: set-length($height, 25px);
+			width: set-length($width, 63px);
+			height: set-length($height, 63px);
 			margin: 6px;
 		    display: inline-block;
 		    &:hover {
@@ -76,12 +76,12 @@ $items: 68;
 
 @media (min-width: 769px) {
 	.area {
-        height: set-length($height, 58px);
+        height: set-length($height, 150px);
         .content{
-            width: set-area-width(set-length($width, 54px), $items);
+            width: set-area-width(set-length($width, 145px), $items);
 			img {
-				width: set-length($width, 50px);
-                height: set-length($height, 50px);
+				width: set-length($width, 140px);
+                height: set-length($height, 140px);
 			}
         }
 	}

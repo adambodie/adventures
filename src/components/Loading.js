@@ -18,9 +18,7 @@ export default class Loading extends Component {
 					<FontAwesome name='spinner' spin />
 				</div>
 			  )}
-        </div>
-		
-		
+		</div>
 		)
 	}
 }

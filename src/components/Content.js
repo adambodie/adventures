@@ -8,11 +8,6 @@ export default class Content extends Component {
       super(props);
       this.state = {
         photographs: [],
-        per_page: this.props.page,
-        title: this.props.title,
-        background: this.props.background,
-        color: this.props.color,
-        date: this.props.date,
         isLoaded: false,
         isFailed: false,
       };
@@ -35,22 +30,23 @@ export default class Content extends Component {
     }
 
     render() {
-		const isLoaded = this.state.isLoaded;
+		const { color, title, category, background, page, date } = this.props;
+		const { photographs, isLoaded, isFailed } = this.state;
 		const carouselStyle = {
-			backgroundImage: `url('https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/backgrounds/${this.state.background}.jpg')`,
-      backgroundSize: 'cover'
+			backgroundImage: `url('https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/backgrounds/${background}.jpg')`,
+			backgroundSize: 'cover'
 		}
 		const colorStyle = {
-			color: this.state.color
+			color: color
 		}
       return (
 		<div>
 		    { isLoaded ? (
 				<div style={carouselStyle} className='carousel-background'>
-					<h1 className="title" style={colorStyle}>{this.props.title}</h1>
-					<PhotoList data={this.state.photographs} category={this.props.category} page={this.state.per_page} color={this.state.color} date={this.state.date}/>            
+					<h1 className="title" style={colorStyle}>{title}</h1>
+					<PhotoList data={photographs} category={category} page={page} color={color} date={date}/>            
 				</div> ) : (
-					<Loading isFailed={this.state.isFailed}/>
+					<Loading isFailed={isFailed}/>
 			)}
         </div>
       );

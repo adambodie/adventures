@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import ScrollArea from 'react-scrollbar';
 import Item from './Item';
 
-export default class ItemList extends Component{
-    render(){
-		let adventures = this.props.data;
-		let itemList = adventures.map((x, index) =>
+export default class ItemList extends Component {
+	render(){
+		const { data } = this.props; 
+		let itemList = data.map((x, index) =>
 			<Item backgroundImage={x.backgroundImage} index={index + 1} key={index}/>
 		)    
 		let scrollbarStyles = {borderRadius: 5};

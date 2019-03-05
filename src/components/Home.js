@@ -6,7 +6,7 @@ const items = (number) => `Added ${number} new Projects: `;
 export default class Home extends Component {
 	constructor(props) {
     	super(props);
-    		this.state = {		
+    		this.state = {
 				updates: []
 			};
 		}	

@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ItemList from './ItemList';
 
-export default class Sidebar extends Component{
-    render() {
-		const {items} = this.props;
-		return (
-			<div>
-				<ItemList data={items} />
-			</div>
-			)
-		}
-}
+const Sidebar =({items}) => (
+	<div>
+		<ItemList data={items} />
+	</div>
+)
+export default Sidebar;
