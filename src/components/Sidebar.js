@@ -2,7 +2,7 @@ import React from 'react'
 import ItemList from './ItemList';
 
 const Sidebar =({items}) => (
-	<div>
+	<div className="sidebarItems">
 		<ItemList data={items} />
 	</div>
 )

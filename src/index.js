@@ -1,11 +1,12 @@
-// Libs
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-// Components
+import store from "./store";
 import Application from './components/Application';
-
-// CSS
 import './styles/style.scss';
 
-ReactDOM.render(<Application />, document.getElementById('container'));
+const render  = () => ReactDOM.render(<Application />, document.getElementById('container'));
+
+render()
+store.subscribe(render)
+
+

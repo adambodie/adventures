@@ -11,23 +11,15 @@ import Home from './Home';
 import ComingSoon from './ComingSoon';
 import axios from 'axios';
 import FontAwesome from 'react-fontawesome';
-import {Collapse} from 'react-collapse';
+
 
 export default class Application extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-		items: [],
-		isOpened: true,
-		length: []
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-  
-	handleClick() {
-		this.setState(prevState => ({
-			isOpened: !prevState.isOpened
-		}));
+	constructor(props) {
+		super(props);
+		this.state = {
+			items: [],
+			length: []
+		};
 	}
 	componentDidMount() {
 		let json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/item.json';
@@ -41,50 +33,38 @@ export default class Application extends Component {
 			  console.log('Error fetching and parsing Items data', error);
 			});
 		}
-  render(){
-	const year = new Date().getFullYear();
-	const { items, isOpened } = this.state;
-	let routes = items.map((r, index) => {
-		if (r.completed) {
-			return <Route exact path={"/" + r.backgroundImage} key={index} render={() => <Content key={index} title={r.title} category={r.category} id={r.id} page={r.page} background={r.backgroundImage} color={r.color} date={r.date} />} /> 
-		} else {
-			return <Route path={"/" + r.backgroundImage} key={index} render={() => <ComingSoon />} />
-		}
-	})	
-    return (
-    <Router>
-      <div className="main-container">
-		<div className="primary-content">
-			<div className="sidebar">
-				<div className="header">
-					<img src="https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/logo.jpg" alt="lighthouse" className="logo" />	
-					<h1>Adam&apos;s Adventures</h1>
-					<button onClick={this.handleClick} className="button">
-						{ isOpened ? ( 
-							<FontAwesome className='toggle' name='angle-double-up' size='2x'/>
-						) : ( 
-							<FontAwesome className='toggle'	name='angle-double-down' size='2x'/>
-						)}
-					</button>
-					<Link to="/">
-							<FontAwesome className='home' name='home' />
-					</Link>
+	render(){
+		const year = new Date().getFullYear();
+		const { items } = this.state;
+		let routes = items.map((r, index) => {
+			if (r.completed) {
+				return <Route exact path={"/" + r.backgroundImage} key={index} render={() => <Content key={index} title={r.title} category={r.category} id={r.id} page={r.page} background={r.backgroundImage} color={r.color} date={r.date} />} /> 
+			} else {
+				return <Route path={"/" + r.backgroundImage} key={index} render={() => <ComingSoon />} />
+			}
+	})
+	return (
+		<Router>
+			<div className="main-container">
+				<div className="primary-content">
+					<div className="sidebar">
+						<div className="header">
+							<img src="https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/logo.jpg" alt="lighthouse" className="logo" />	
+							<h1>Adam's Adventures</h1>
+							<Link to="/"><FontAwesome className='home' name='home' /></Link>
+						</div>
+						<Sidebar items={items} />
+					</div>
+					<div className="carousel">
+						<Route exact path = "/" render={() => <Home/>}/>
+						{routes}
+					</div>
+				</div>
+				<div className="footer">
+					<h2>Adam Bodie &copy; {year}</h2>
+				</div>
 			</div>
-			<Collapse isOpened={isOpened}>
-				<Sidebar items={items} />
-			</Collapse>	
-			</div>
-			<div className="carousel">
-				<Route exact path = "/" render={() => <Home/>}/>
-				{routes}
-			</div>
-		</div>
-		<div className="footer">
-			<h2>Adam Bodie &copy; {year}</h2>
-		</div>
-      </div>
-      </Router>
-    );
-  }
+		</Router>
+		);
+	}
 }
-

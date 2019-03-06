@@ -8,9 +8,20 @@ $items: 68;
 	@return $variable * $multiplier;
 }
 
-//TODO: recalculate max-width
 @function set-area-width($multiplier, $items) {
 	@return $multiplier * $items;
+}
+
+.sidebarItems {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $secondary-color;
+	flex-direction: column;
+	img {
+		width: set-length($width, 130px);
+		height: set-length($height, 130px);
+	}
 }
 
 .sidebar {
@@ -43,48 +54,8 @@ $items: 68;
 	}
 }
 
-.area	{
-	margin: 0 auto;
-    height: set-length($height, 70px);
-    background: #ac8fab;
-    .content{
-		width: set-area-width(set-length($width, 70px), $items);
-         button {
-			border: none;
-         }
-        img {
-			width: set-length($width, 63px);
-			height: set-length($height, 63px);
-			margin: 6px;
-		    display: inline-block;
-		    &:hover {
-				transform: scale(1.1);
-		    }
-        }
-    }
-}
-.scrollarea .scrollbar-container.horizontal .scrollbar {
-    opacity: 1!important;
-    background: $primary-color!important;
-    margin-top: 2px!important;
-}
-
-.scrollarea .scrollbar-container {
-    opacity: 1!important;
-}
-
 
 @media (min-width: 769px) {
-	.area {
-        height: set-length($height, 150px);
-        .content{
-            width: set-area-width(set-length($width, 145px), $items);
-			img {
-				width: set-length($width, 140px);
-                height: set-length($height, 140px);
-			}
-        }
-	}
 	.sidebar {
 		h1 {
 			font-size: 2em;
