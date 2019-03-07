@@ -3,11 +3,8 @@
 .loading {
 	@include background-gradient;
 	@include flex-container;
-	-webkit-align-items: baseline;
 	align-items: baseline; 
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	margin-top: -30px;
 	height: 1000px;
 	h1 {
 		text-align: center;

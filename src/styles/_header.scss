@@ -1,0 +1,31 @@
+@import "_imports.scss";
+
+.header {
+	@include flex-container;
+	background-color: $primary-color;
+	height: 81px;
+	h1 {
+		@include cover-text(0.5em);
+		@include text-shadow($secondary-color, $tertiary-color);
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+	.home {
+		@include text-shadow($secondary-color, $tertiary-color);
+		position: static;
+		font-size: 2em;
+		margin: 20px;
+	}
+}
+
+
+@media (min-width: 769px) {
+	.header {
+		h1 {
+			font-size: 2em;
+		}
+		.button {
+			margin: 0px 50px;
+		}
+	}
+}

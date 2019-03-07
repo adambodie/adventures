@@ -12,17 +12,14 @@ export default class PhotoList extends Component {
 			slidesToScroll: 1,
 			fade: true,
 		};
-		let photos = data.map((x, index) =>
-			<div key={x.id}>
-				<Photo id={x.id} title={x.title} category={category} index={index + 1} length={page} color={color}/>
-			</div>
-		)
 		return(
-			<div>
 				<Slider ref={c => this.slider = c } {...settings}>
-					{photos}
-				</Slider>	
-			</div>
+					{data.map((x, index) =>
+						<div key={x.id}>
+							<Photo id={x.id} title={x.title} category={category} index={index + 1} length={page} color={color}/>
+						</div>
+					)}
+				</Slider>
 		);
 	}
 }
