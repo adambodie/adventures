@@ -1,14 +1,9 @@
 // Libs
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-} from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Header from './Header';
 import Footer from './Footer';
-import PhotoContainer from './PhotoContainer';
-import Home from './Home';
-import ComingSoon from './ComingSoon';
+import Routes from './Routes';
 import axios from 'axios';
 
 export default class Application extends Component {
@@ -37,34 +32,7 @@ export default class Application extends Component {
 			<div className="main-container">
 				<Header />
 				<div className="primary-content">
-					<div className="carousel">
-						<Route exact path = "/" render={() => <Home items={items}/>}/>
-						{items.map((r, index) => {
-							if (r.completed) {
-								return <Route exact path={"/" + r.backgroundImage} 
-											key={index} 
-											render={() => 
-												<PhotoContainer 
-													key={index} 
-													title={r.title} 
-													category={r.category} 
-													id={r.id} 
-													page={r.page} 
-													background={r.backgroundImage} 
-													color={r.color} 
-													date={r.date} 
-													/>
-											} 
-										/> 
-							} else {
-								return <Route 
-											path={"/" + r.backgroundImage} 
-											key={index} 
-											render={() => <ComingSoon />} 
-										/>
-							}
-					})}
-					</div>
+					<Routes items={items} />
 				</div>
 				<Footer />
 			</div>

@@ -2,46 +2,43 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import PhotoList from './PhotoList';
 import Loading from './Loading';
+import store from '../store';
 
 export default class PhotoContainer extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			photographs: [],
-			isLoaded: false,
-			isFailed: false,
 		};
 	}
 	componentDidMount() {
 		axios.get(`https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/${this.props.category}.json`)
 			.then(response => {
+				store.dispatch({ type: 'LOADED' });
 				this.setState({
-					photographs: response.data,
-					isLoaded: true
+					photographs: response.data,					
 				});
 			})
 			.catch(error => {
 				console.log('Error fetching and parsing Photographs data', error);
-				this.setState({
-					isFailed: true
-				});
+				store.dispatch({ type: 'FAILED' })
 			});
 		}
 		render() {
 			const { color, title, category, background, page, date } = this.props;
-			const { photographs, isLoaded, isFailed } = this.state;
+			const { photographs } = this.state;
 			const carouselStyle = {
 				backgroundImage: `url('https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/backgrounds/${background}.jpg')`,
 				backgroundSize: 'cover'
 			}
 			return (
 			<React.Fragment>
-				{ isLoaded ? (
+				{ store.getState().isLoaded ? (
 					<div style={carouselStyle} className='carousel-background'>
 						<h1 className="title" style={{color: color}}>{title}</h1>
 						<PhotoList data={photographs} category={category} page={page} color={color} date={date}/>            
 					</div> ) : (
-						<Loading isFailed={isFailed}/>
+						<Loading isFailed={store.getState().isFailed}/>
 					)}
 			</React.Fragment>
 		);
