@@ -16,7 +16,7 @@ export default class PhotoContainer extends Component {
 			.then(response => {
 				store.dispatch({ type: 'LOADED' });
 				this.setState({
-					photographs: response.data,					
+					photographs: response.data,
 				});
 			})
 			.catch(error => {

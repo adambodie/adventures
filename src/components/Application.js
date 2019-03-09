@@ -28,15 +28,15 @@ export default class Application extends Component {
 	render(){
 		const { items } = this.state;
 		return (
-		<Router>
-			<div className="main-container">
-				<Header />
-				<div className="primary-content">
-					<Routes items={items} />
+			<Router>
+				<div className="main-container">
+					<Header />
+					<div className="primary-content">
+						<Routes items={items} />
+					</div>
+					<Footer />
 				</div>
-				<Footer />
-			</div>
-		</Router>
+			</Router>
 		);
 	}
 }
