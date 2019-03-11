@@ -5,17 +5,42 @@ import store from '../store';
 
 export default class BannerList extends Component {
 	render(){
+		const opacStyle = { opacity: 0.1};
+		const hiddenStyle = { opacity: 0 };
 		const { data } = this.props;
+		let counter = store.getState().counter;
 		return (
 			<React.Fragment>
+				<div className="banners">
 				{data.map((x, index) => {
-					if (index === store.getState().counter) {
-						return <BannerItem count={store.getState().counter} backgroundImage={x.backgroundImage} index={index + 1} key={index}/>
+					if (index === counter) {
+						return (
+							<BannerItem 
+								count={counter} 
+								backgroundImage={x.backgroundImage} 
+								index={index + 1} 
+								key={index}
+								/>
+							)
 					}
-				return null;
-		})}
+					if (index - 1 === counter || index + 1 === counter) {
+						return (
+							<BannerItem 
+								opacStyle={opacStyle} 
+								hiddenStyle={hiddenStyle}
+								count={counter} 
+								backgroundImage={x.backgroundImage} 
+								index={index + 1} 
+								key={index}
+								/>
+							)
+						}
+					return null;
+					}
+				)}
+			</div>
 				<BannerButtons
-					count={store.getState().counter}
+					count={counter}
 					onIncrement={() => store.dispatch({ type: 'INCREMENT' })}
 					onDecrement={() => store.dispatch({ type: 'DECREMENT' })}
 				/>

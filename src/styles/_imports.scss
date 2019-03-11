@@ -5,9 +5,7 @@ $secondary-color: #B4BAC6;
 $tertiary-color: #59657B;
 
 @mixin flex-container {
-	display: -webkit-flex;
     display: flex;
-	-webkit-align-items: center;
 	align-items: center;    
 }
 

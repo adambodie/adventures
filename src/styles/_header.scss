@@ -15,6 +15,9 @@
 		position: static;
 		font-size: 2em;
 		margin: 20px;
+		&:hover {
+			color: darken($secondary-color, 10%);
+		}
 	}
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { projectItems, projectArray } from '../api/data';
 import { aOne, aTwo, aThree, aFour, aFive, aSix, aSeven, aEight, aNine, aTen, aEleven, aTwelve, aThirteen, aFourteen } from '../api/data';
 

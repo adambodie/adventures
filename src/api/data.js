@@ -1,3 +1,5 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
 export const projectItems = (number) => `Added ${number} new Projects: `;
 
 export const projectArray = (arrays) => {
@@ -11,7 +13,7 @@ export const projectArray = (arrays) => {
 			} else {
 				delimiter = ', '
 			}
-			return (<React.Fragment><Link to={`/${x.link}`}>{x.name}</Link>{delimiter}</React.Fragment>)
+			return (<span key={index}><Link to={`/${x.link}`}>{x.name}</Link>{delimiter}</span>)
 			}
 		)
 	)
