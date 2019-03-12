@@ -2,8 +2,9 @@
 
 .sidebarItems {
 	background-color: $secondary-color;
+	overflow: hidden;
 	img {
-		width: 100%;
+		height: 250px;
 	}
 	p {
 		margin: 0;
@@ -23,7 +24,7 @@
 			height: 50px;
 			border-radius: 100%;
 			color: $secondary-color;
-			margin-top: -300px;
+			margin-top: -200px;
 			font-weight: bold;
 			font-size: 2em;
 			border: none;
@@ -45,8 +46,12 @@
 @media (min-width: 769px) {
 	.sidebarItems {
 		img {
-			width: inherit;
 			height: 350px;
+		}
+		.buttons {
+			button {
+				margin-top: -300px;
+			}
 		}
 	}
 }
