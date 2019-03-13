@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Banner from './Banner';
+import Banner from '../Banner/Banner';
 import Update from './Update';
 
 export default class Home extends Component {

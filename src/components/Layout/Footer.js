@@ -1,5 +1,5 @@
 import React from 'react';
-import store from "../store";
+import store from "../../store";
 
 const Footer = () => {
 	return (
@@ -10,4 +10,3 @@ const Footer = () => {
 }
 
 export default Footer;
-//

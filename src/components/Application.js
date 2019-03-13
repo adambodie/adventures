@@ -1,9 +1,9 @@
 // Libs
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
-import Header from './Header';
-import Footer from './Footer';
-import Routes from './Routes';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+import Routes from './Layout/Routes';
 import axios from 'axios';
 
 export default class Application extends Component {

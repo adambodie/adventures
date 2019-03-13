@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import PhotoContainer from './PhotoContainer';
-import Home from './Home';
-import ComingSoon from './ComingSoon';
+import PhotoContainer from '../Photos/PhotoContainer';
+import Home from '../Other/Home';
+import ComingSoon from '../Other/ComingSoon';
 
 const Routes = ({items}) => {
 	return (

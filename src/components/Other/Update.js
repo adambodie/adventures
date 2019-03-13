@@ -1,6 +1,6 @@
 import React from 'react'
-import { projectItems, projectArray } from '../api/data';
-import { aOne, aTwo, aThree, aFour, aFive, aSix, aSeven, aEight, aNine, aTen, aEleven, aTwelve, aThirteen, aFourteen } from '../api/data';
+import { projectItems, projectArray } from '../../api/data';
+import { aOne, aTwo, aThree, aFour, aFive, aSix, aSeven, aEight, aNine, aTen, aEleven, aTwelve, aThirteen, aFourteen } from '../../api/data';
 
 const Update = () => {
 	return (

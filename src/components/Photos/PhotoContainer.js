@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import PhotoList from './PhotoList';
-import Loading from './Loading';
-import store from '../store';
+import Loading from '../Other/Loading';
+import store from '../../store';
 
 export default class PhotoContainer extends Component {
 	constructor(props) {
