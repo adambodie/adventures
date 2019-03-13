@@ -1,0 +1,656 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Creates Snapshot for Application 1`] = `
+<div
+  className="main-container"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="lighthouse"
+      className="logo"
+      src="https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/photos/logo.jpg"
+    />
+    <h1>
+      Adam's Adventures
+    </h1>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-home home"
+      />
+    </a>
+  </div>
+  <div
+    className="primary-content"
+  >
+    <div
+      className="carousel"
+    >
+      <div
+        className="sidebarItems"
+      >
+        <div
+          className="banners"
+        />
+        <div
+          className="buttons"
+        >
+          <button
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-angle-left angle-left"
+            />
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-angle-right angle-right"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        className="primary"
+      >
+        <div
+          className="secondary"
+        >
+          <h1>
+            Welcome to Adam's Adventures
+          </h1>
+          <p>
+            Over the years, I've made numerous trips throughout the U.S. and a few in Europe.  Travelling and photography are two things I've excelled at over the years.  It's a true passion I've always held.  As such, I enjoyed showing off my photos to whoever I could show them to. I typically made slideshows of my photos with Microsoft Powerpoint, including facts and other tidbits to make it more than just a picture gallery.
+          </p>
+          <p>
+            That was then.   Now I'm able to make more creative and dynamic projects to show my photos, and with web projects, anyone can view them.   My best examples of this increased creativity can be viewed for my trips to the 
+            <a
+              href="http://grand-canyon.bodiewebdesign.com"
+            >
+              Grand Canyon
+            </a>
+             and to the 
+            <a
+              href="http://nadm2.bodiewebdesign.com"
+            >
+              East Coast
+            </a>
+            . But I do enjoy my slideshows from the past, so I made this project to showcase all of them on the web for anyone to view.  Be sure to come back and checkout out new slideshows being added.
+          </p>
+          <p>
+            For this project, I primarily used React for the front-end aspect of this page, using the React Router dependency for routing purposes.  I've also used the Flickr API to retrieve my photos, via the Axios depenency.  On the back end is Webpack, which bundles all the modules for production-ready capabilities.
+          </p>
+          <p>
+            <strong>
+              Version 1.1:
+            </strong>
+             Recent updates for this project include better visibility of text and Slick Dots, along with the addition of Tooltip to view picture information by hovering over images.
+          </p>
+        </div>
+        <div
+          className="secondary"
+        >
+          <h3>
+            Recent Updates
+          </h3>
+          <p>
+            Added Nine new Projects: 
+            <span>
+              <a
+                href="/warm-springs"
+                onClick={[Function]}
+              >
+                Warm Springs
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/lewis-river"
+                onClick={[Function]}
+              >
+                Lewis River
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/mckenzie-river"
+                onClick={[Function]}
+              >
+                McKenzie River
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/maryhill"
+                onClick={[Function]}
+              >
+                Maryhill
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/eugene"
+                onClick={[Function]}
+              >
+                Eugene
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/mt-st-helens"
+                onClick={[Function]}
+              >
+                Mt. St. Helens
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/cannon-beach"
+                onClick={[Function]}
+              >
+                Cannon Beach
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/oneonta-gorge"
+                onClick={[Function]}
+              >
+                Oneonta Gorge
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/olympia"
+                onClick={[Function]}
+              >
+                Olympia
+              </a>
+               
+            </span>
+             - October 21, 2018
+          </p>
+          <p>
+            Added Three new Projects: 
+            <span>
+              <a
+                href="/coachella"
+                onClick={[Function]}
+              >
+                Coachella Valley
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/tulip"
+                onClick={[Function]}
+              >
+                Wooden Shoe Tulip Farm
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/detroit-lake"
+                onClick={[Function]}
+              >
+                Detroit Lake
+              </a>
+               
+            </span>
+             - August 28, 2018
+          </p>
+          <p>
+            Added Eight new Projects: 
+            <span>
+              <a
+                href="/klickitat"
+                onClick={[Function]}
+              >
+                Klickitat River
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/mt-angel"
+                onClick={[Function]}
+              >
+                Mt. Angel
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/willamette-valley"
+                onClick={[Function]}
+              >
+                Willamette Valley
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/mcminnville"
+                onClick={[Function]}
+              >
+                McMinnville
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/oregon-college"
+                onClick={[Function]}
+              >
+                Oregon Colleges
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/oktoberfest"
+                onClick={[Function]}
+              >
+                Oktoberfest
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/hollywood-video"
+                onClick={[Function]}
+              >
+                Hollywood Video
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/seaside"
+                onClick={[Function]}
+              >
+                Seaside
+              </a>
+               
+            </span>
+             - July 19, 2018
+          </p>
+          <p>
+            Added Four new Projects: 
+            <span>
+              <a
+                href="/panther-creek"
+                onClick={[Function]}
+              >
+                Panther Creek
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/hood-river"
+                onClick={[Function]}
+              >
+                Hood River
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/the-dalles"
+                onClick={[Function]}
+              >
+                The Dalles
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/clarno"
+                onClick={[Function]}
+              >
+                John Day Fossil Beds Clarno Unit
+              </a>
+               
+            </span>
+             - July 2, 2018
+          </p>
+          <p>
+            Launched version 1.1 - April 8, 2018
+          </p>
+          <p>
+            Added Four new Projects: 
+            <span>
+              <a
+                href="/beacon-rock"
+                onClick={[Function]}
+              >
+                Beacon Rock
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/mount-hood"
+                onClick={[Function]}
+              >
+                Mount Hood
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/smith-rock"
+                onClick={[Function]}
+              >
+                Smith Rock
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/central-oregon"
+                onClick={[Function]}
+              >
+                Central Oregon
+              </a>
+               
+            </span>
+             - April 7, 2018
+          </p>
+          <p>
+            Added Four new Projects: 
+            <span>
+              <a
+                href="/salem"
+                onClick={[Function]}
+              >
+                Salem
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/rowena-crest"
+                onClick={[Function]}
+              >
+                Rowena Crest
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/cape-kiwanda"
+                onClick={[Function]}
+              >
+                Cape Kiwanda
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/multnomah-falls"
+                onClick={[Function]}
+              >
+                Multnomah Falls
+              </a>
+               
+            </span>
+             - March 26, 2018
+          </p>
+          <p>
+            Added Two new Projects: 
+            <span>
+              <a
+                href="/mccord-creek"
+                onClick={[Function]}
+              >
+                McCord Creek
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/mt-defiance"
+                onClick={[Function]}
+              >
+                Mt. Defiance
+              </a>
+               
+            </span>
+             - February 25, 2018
+          </p>
+          <p>
+            Added Five new Projects: 
+            <span>
+              <a
+                href="/newport"
+                onClick={[Function]}
+              >
+                Newport
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/eagle-creek"
+                onClick={[Function]}
+              >
+                Eagle Creek
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/bonneville"
+                onClick={[Function]}
+              >
+                Bonneville
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/gorge"
+                onClick={[Function]}
+              >
+                Gorge
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/florence"
+                onClick={[Function]}
+              >
+                Florence
+              </a>
+               
+            </span>
+             - February 12, 2018
+          </p>
+          <p>
+            Added Two new Projects: 
+            <span>
+              <a
+                href="/san-francisco"
+                onClick={[Function]}
+              >
+                San Francisco
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/hawaii-2008"
+                onClick={[Function]}
+              >
+                Hawaii 2008
+              </a>
+               
+            </span>
+             - January 21, 2018
+          </p>
+          <p>
+            Added Two new Projects: 
+            <span>
+              <a
+                href="/denver"
+                onClick={[Function]}
+              >
+                Denver
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/seattle-2008"
+                onClick={[Function]}
+              >
+                Seattle 2008
+              </a>
+               
+            </span>
+             - January 13, 2018
+          </p>
+          <p>
+            Added Four new Projects: 
+            <span>
+              <a
+                href="/winter-2008"
+                onClick={[Function]}
+              >
+                Winter
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/spring-2008"
+                onClick={[Function]}
+              >
+                Spring
+              </a>
+              , 
+            </span>
+            <span>
+              <a
+                href="/summer-2008"
+                onClick={[Function]}
+              >
+                Summer
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/fall-2008"
+                onClick={[Function]}
+              >
+                Fall
+              </a>
+               
+            </span>
+             2008 series - December 31, 2017
+          </p>
+          <p>
+            Added Two new Projects: 
+            <span>
+              <a
+                href="/boston"
+                onClick={[Function]}
+              >
+                Boston
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/italy"
+                onClick={[Function]}
+              >
+                Italy
+              </a>
+               
+            </span>
+             - December 16, 2017
+          </p>
+          <p>
+            Added Two new Projects: 
+            <span>
+              <a
+                href="/mississippi"
+                onClick={[Function]}
+              >
+                Mississippi River
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/sioux-falls"
+                onClick={[Function]}
+              >
+                Sioux Falls
+              </a>
+               
+            </span>
+             - December 6, 2017
+          </p>
+          <p>
+            Added Two new Projects: 
+            <span>
+              <a
+                href="/kansas-city"
+                onClick={[Function]}
+              >
+                Kansas City
+              </a>
+               and 
+            </span>
+            <span>
+              <a
+                href="/chicago"
+                onClick={[Function]}
+              >
+                Chicago
+              </a>
+               
+            </span>
+             - November 27, 2017
+          </p>
+          <p>
+            Launched version 1.0 - November 23, 2017
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer"
+  >
+    <h2>
+      Adam Bodie © 
+      2019
+    </h2>
+  </div>
+</div>
+`;
