@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BannerButtons from './BannerButtons';
 import BannerItem from './BannerItem';
 import store from '../../store';
+import { increment, decrement } from '../../store/actions';
 
 export default class BannerList extends Component {
 	render(){
@@ -40,8 +41,8 @@ export default class BannerList extends Component {
 			</div>
 				<BannerButtons
 					count={counter}
-					onIncrement={() => store.dispatch({ type: 'INCREMENT' })}
-					onDecrement={() => store.dispatch({ type: 'DECREMENT' })}
+					onIncrement={() => store.dispatch( increment(1))}
+					onDecrement={() => store.dispatch( decrement(1))}
 				/>
 			</React.Fragment>
 		);
