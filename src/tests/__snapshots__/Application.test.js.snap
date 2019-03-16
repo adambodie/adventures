@@ -41,6 +41,7 @@ exports[`Creates Snapshot for Application 1`] = `
           className="buttons"
         >
           <button
+            data-testid="angle-left"
             onClick={[Function]}
           >
             <span
@@ -49,6 +50,7 @@ exports[`Creates Snapshot for Application 1`] = `
             />
           </button>
           <button
+            data-testid="angle-right"
             onClick={[Function]}
           >
             <span

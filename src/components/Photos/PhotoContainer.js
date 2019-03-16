@@ -12,7 +12,7 @@ export default class PhotoContainer extends Component {
 		};
 	}
 	componentDidMount() {
-		axios.get(`https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/${this.props.category}.json`)
+		axios.get(`https://adventures.bodiewebdesign.com/data/${this.props.category}.json`)
 			.then(response => {
 				store.dispatch({ type: 'LOADED' });
 				this.setState({

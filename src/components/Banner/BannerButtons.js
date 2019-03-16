@@ -1,11 +1,11 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
+import BannerButton from './BannerButton';
 
 const BannerButtons = ({onIncrement, onDecrement}) => {
 	return (
 		<div className='buttons'>
-			<button onClick={onDecrement}><FontAwesome className='angle-left' name='angle-left' /></button>
-			<button onClick={onIncrement}><FontAwesome className='angle-right' name='angle-right' /></button>
+			<BannerButton onChange={onDecrement} className={'angle-left'} />
+			<BannerButton onChange={onIncrement} className={'angle-right'} />
 		</div>
 	)
 }

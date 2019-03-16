@@ -14,7 +14,7 @@ export default class Application extends Component {
 		};
 	}
 	componentDidMount() {
-		let json = 'https://s3-us-west-2.amazonaws.com/adventures.bodiewebdesign.com/data/item.json';
+		let json = 'https://adventures.bodiewebdesign.com/data/item.json';
 		  axios.get(json)
 			.then(response => {
 				this.setState({
