@@ -6,7 +6,7 @@
 }
 
 .carousel-background {
-	margin-top: -27px;
+	margin-top: -30px;
 }
 
 a {
@@ -15,6 +15,7 @@ a {
 
 h3, h6 {
 	text-align: center;
+	margin: 0;
 }
 h4 {
 	text-align: center;
@@ -23,8 +24,6 @@ h4 {
 }
 
 h6 {
-	margin-top: 0px;
-	margin-bottom: 0px;
 	max-width: 200px;
 	margin: 0 auto;
 }
@@ -69,7 +68,7 @@ ul, li {
 	background-color: $primary-color;
 	position: relative!important;
 	bottom: 0!important;
-	display: none!important;
+	padding: 10px!important;
 	li {
 		margin: 0!important;
 		width: 10px;
@@ -98,18 +97,29 @@ ul, li {
 
 @media (max-width: 512px) {
 	.carousel-background {
-	  margin-top: -20px;
-	  height: 80vh;
+	  height: 85vh;
 	}
+	.slick-dots {
+		display: none!important;
+	}
+	.slick-list {
+		height: 50vh;
+	}
+
+.slick-prev {
+	left: 0px!important;
+}
+
+.slick-next {
+	right: 0px!important;
+}	
+	
 }
 
 @media (min-width: 550px) {
 	h6 {
 		max-width: 400px;
 	}	
-	.slick-dots {
-		display: block!important;
-	}
   .slick-slide img {
 		height: 300px;
 	}
@@ -132,9 +142,6 @@ ul, li {
   .main-title {
     float: left;
   }
-  .slick-dots {
-	display: block!important;
-	}
 	.slick-list {
 		padding: 10px;
 	}
@@ -146,5 +153,28 @@ ul, li {
   }
 }
 
+@media (min-height: 1024px) {
+	.slick-list {
+		height: 80vh;
+	}
+	.carousel-background {
+	  height: 90vh;
+	}
+	h6 {
+		max-width: 800px;
+	}
+	.title {
+		font-size: 2.5em;
+	}
+  .main-title {
+    float: left;
+  }
+
+  .slick-slide {
+		img {
+			height: 600px;
+		}
+  }
+}
 
 

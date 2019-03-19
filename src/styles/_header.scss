@@ -3,7 +3,7 @@
 .header {
 	@include flex-container;
 	background-color: $primary-color;
-	height: 81px;
+	height: 90px;
 	h1 {
 		@include cover-text(0.5em);
 		@include text-shadow($secondary-color, $tertiary-color);
