@@ -6,27 +6,27 @@ import Header from './Header'
 export default () => (
   <StaticQuery
     query={graphql`
-      query JsonQuery {
-		allLettersJson {
+      query ItemQuery {
+		allItemJson {
 			edges {
 				node {
-					value,
-					name
+					backgroundImage
 				}
 			}
 		}
       }
     `}
     render={data => (
-      <header>
+      <div>
 		<Header />
-        {data.allLettersJson.edges.map((x, index) => (
-				<div key={index} >
-				<p>{x.node.value}</p>
-				<p>{x.node.name}</p>
-				</div>
+		<div className="frontPage">
+        {data.allItemJson.edges.map((x, index) => (
+			<div className="item" key={index} >
+				<img src={`https://adventures.bodiewebdesign.com/photos/links/adventure${index+1}.jpg`} alt={x.node.backgroundImage} />
+			</div>
 		))}
-      </header>
+		</div>
+      </div>
     )}
   />
 )
