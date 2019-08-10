@@ -1,0 +1,9 @@
+div {
+  color: white;
+}
+header {
+    display: flex;
+	align-items: center; 
+	height: 110px;
+	background: #992d3c;
+}
