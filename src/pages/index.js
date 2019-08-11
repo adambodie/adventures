@@ -17,6 +17,7 @@ export default () => (
 								backgroundImage
 								title
 								color
+								completed
 							}
 						}
 					}
