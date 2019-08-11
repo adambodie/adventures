@@ -1,24 +1,32 @@
 import React from 'react'
 import '../styles/index.css'
+import Content from './Content'
 import ComingSoon from './ComingSoon'
 import { Route } from 'react-router-dom'
-
-//~ item.map((r) => {
-	//~ if (r.completed) {
-	//~ return <Route exact path={"/" + r.backgroundImage} render={() => <Content title={r.title} category={r.category} id={r.id} page={r.page} background={r.backgroundImage} color={r.color} date={r.date} />} /> 
-	//~ } else {
-	//~ return <Route path={"/" + r.backgroundImage}  render={() => <ComingSoon />} />
-	//~ }
-//~ })
-
 
 const Routes = ({ data }) => {
 	return (
 		data.map((x, index) => {
 			if (x.node.completed) {
-				return <Route 	exact path={"/" + x.node.backgroundImage} key={index} render={() => <h1 style={{color: x.node.color}}>{x.node.title}</h1>} />
+				return (
+						<Route exact path={"/" + x.node.backgroundImage} 
+								key={index} 
+								render={() => 
+											<Content 
+												pictures={x.node.pictures}
+												title={x.node.title} 
+												category={x.node.category} 
+												id={x.node.id} 
+												page={x.node.page} 
+												backgroundImage={x.node.backgroundImage} 
+												color={x.node.color} 
+												date={x.node.date} 
+										/>
+								} 
+							/>
+						)
 			} else {
-				return <Route path={"/" + x.node.backgroundImage}  render={() => <ComingSoon />} />
+				return <Route path={"/" + x.node.backgroundImage} key={index} render={() => <ComingSoon />} />
 			} 
 		})
 	)

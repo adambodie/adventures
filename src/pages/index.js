@@ -16,8 +16,14 @@ export default () => (
 							node {
 								backgroundImage
 								title
+								category
+								page
 								color
 								completed
+								pictures {
+									id
+									title
+								}
 							}
 						}
 					}
