@@ -1,33 +1,35 @@
 import React from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 import { StaticQuery, graphql } from "gatsby"
-import "../index.css"
-import Header from './Header'
+
+import Header from "../components/Header"
+import Home from "../components/Home"
+import Routes from "../components/Routes"
 
 export default () => (
-  <StaticQuery
-    query={graphql`
-      query ItemQuery {
-		allItemJson {
-			edges {
-				node {
-					backgroundImage
+	<Router>
+		<StaticQuery
+			query={graphql`
+				query ItemQuery {
+					allItemJson {
+						edges {
+							node {
+								backgroundImage
+								title
+								color
+							}
+						}
+					}
 				}
-			}
-		}
-      }
-    `}
-    render={data => (
-      <div>
-		<Header />
-		<div className="frontPage">
-        {data.allItemJson.edges.map((x, index) => (
-			<div className="item" key={index} >
-				<img src={`https://adventures.bodiewebdesign.com/photos/links/adventure${index+1}.jpg`} alt={x.node.backgroundImage} />
-			</div>
-		))}
-		</div>
-      </div>
-    )}
-  />
+			`}
+			render={data => (
+				<div>
+					<Header />
+					<Route exact path = "/" render={() => <Home data={data.allItemJson.edges} />}/>
+					<Routes data={data.allItemJson.edges} />
+				</div>
+			)}
+		/>
+	</Router>
 )
 
