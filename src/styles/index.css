@@ -1,32 +1,32 @@
 body {
-background: linear-gradient(#59657b,#b4bac6);
+	background-color: #59657b!important;
 }
 div {
   color: white;
 }
 header {
-    display: flex;
+	display: flex!important;
 	align-items: center; 
-	height: 110px;
+	height: 80px;
 	background: #992d3c;
 }
-
-.frontPage {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
+header h1 {
+	font-family: 'Permanent Marker', cursive;
+	color: #b4bac6;
+	text-shadow: 4px 4px 4px #59657b;
 }
 
-.item {
-	display: flex;	
-	justify-content: center;
-	align-items: center;
-	width: 30%;
-	height: 100%;
-	padding: 10px;
-}
-
-.item img {	
+header > img {
 	margin-bottom: 0;
+}
+
+.container h1 {
+	font-family: 'Permanent Marker', cursive;
+	color: #992d3c;
+	text-shadow: 4px 4px 4px #b4bac6;
+	text-align: center;
+}
+
+.cards {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 }
