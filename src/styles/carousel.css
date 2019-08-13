@@ -7,7 +7,7 @@
 }
 
 .carousel-background {
-	height: 500px;
+	min-height: 600px;
 }
 
 .slick-slider {
@@ -64,7 +64,7 @@ ul,li {
 	bottom: 0!important;
 	max-width: 200px;
 	display: none!important;
-	margin: 10px auto!important;
+	margin: -30px auto!important;
 	padding: 10px;
 }
 .slick-dots li {
@@ -91,9 +91,6 @@ ul,li {
 ==================================== */
 
 @media (min-width: 550px) {
-	.carousel-background {
-		height: 700px;
-	}
 	h6 {
 		max-width: 400px;
 	}	
@@ -113,10 +110,7 @@ ul,li {
 	}
 }
 
-@media (min-width: 769px) {
-	.carousel-background {
-		height: 900px;
-	}	
+@media (min-width: 769px) {	
 	h6 {
 		max-width: 533px;
 	}

@@ -4,29 +4,4 @@ body {
 div {
   color: white;
 }
-header {
-	display: flex!important;
-	align-items: center; 
-	height: 80px;
-	background: #992d3c;
-}
-header h1 {
-	font-family: 'Permanent Marker', cursive;
-	color: #b4bac6;
-	text-shadow: 4px 4px 4px #59657b;
-}
 
-header > img {
-	margin-bottom: 0;
-}
-
-.container h1 {
-	font-family: 'Permanent Marker', cursive;
-	color: #992d3c;
-	text-shadow: 4px 4px 4px #b4bac6;
-	text-align: center;
-}
-
-.cards {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
-}

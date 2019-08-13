@@ -6,7 +6,8 @@ export default class Content extends Component {
 		const { backgroundImage, color, title, pictures, category, page, date } = this.props;
 		const carouselStyle = {
 			backgroundImage: `url('https://adventures.bodiewebdesign.com/photos/backgrounds/${backgroundImage}.jpg')`,
-			backgroundSize: 'cover'
+			backgroundSize: 'cover',
+			textShadow: '-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white'
 		}
 		const colorStyle = { color: color }
 		return (

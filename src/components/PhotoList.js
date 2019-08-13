@@ -14,15 +14,13 @@ export default class PhotoList extends Component {
 			fade: true,
 		};
 		return(
-			<div>
-				<Slider ref={c => this.slider = c } {...settings}>
-					{pictures.map((x, index) =>
-						<div key={index}>
-							<Photo id={x.id} title={x.title} category={category} index={index + 1} length={page} color={color}/>
-						</div>
-					)}
-				</Slider>
-			</div>
+			<Slider ref={c => this.slider = c } {...settings}>
+				{pictures.map((x, index) =>
+					<div key={index}>
+						<Photo id={x.id} title={x.title} category={category} index={index + 1} length={page} color={color}/>
+					</div>
+				)}
+			</Slider>
 		);
 	}
 }
