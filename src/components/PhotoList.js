@@ -5,7 +5,7 @@ import Photo from './Photo';
 
 export default class PhotoList extends Component {
 	render() {
-		const { pictures, page, color, category } = this.props;
+		const { pictures, page, color, backgroundColor, category } = this.props;
 		const settings = {
 			dots: true,
 			infinite: true,
@@ -17,7 +17,15 @@ export default class PhotoList extends Component {
 			<Slider ref={c => this.slider = c } {...settings}>
 				{pictures.map((x, index) =>
 					<div key={index}>
-						<Photo id={x.id} title={x.title} category={category} index={index + 1} length={page} color={color}/>
+						<Photo 
+							id={x.id} 
+							title={x.title} 
+							category={category} 
+							index={index + 1} 
+							length={page} 
+							color={color} 
+							backgroundColor={backgroundColor} 
+							/>
 					</div>
 				)}
 			</Slider>

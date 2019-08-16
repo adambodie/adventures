@@ -27,8 +27,10 @@ export default () => (
 								category
 								page
 								color
+								backgroundColor
 								completed
 								year
+								description
 								pictures {
 									id
 									title

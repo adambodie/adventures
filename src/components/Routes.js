@@ -9,19 +9,20 @@ const Routes = ({ data }) => {
 		data.map((x, index) => {
 			if (x.node.completed) {
 				return (
-						<Route exact path={"/" + x.node.backgroundImage} 
-								key={index} 
+					<Route exact path={"/" + x.node.backgroundImage} 
+							key={index} 
 								render={() => 
-											<Content 
-												pictures={x.node.pictures}
-												title={x.node.title} 
-												category={x.node.category} 
-												id={x.node.id} 
-												page={x.node.page} 
-												backgroundImage={x.node.backgroundImage} 
-												color={x.node.color} 
-												date={x.node.date} 
-										/>
+										<Content 
+											pictures={x.node.pictures}
+											title={x.node.title} 
+											category={x.node.category} 
+											id={x.node.id} 
+											page={x.node.page} 
+											backgroundImage={x.node.backgroundImage} 
+											color={x.node.color} 
+											backgroundColor={x.node.backgroundColor} 
+											date={x.node.date} 
+									/>
 								} 
 							/>
 						)
