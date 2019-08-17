@@ -1,53 +1,58 @@
 import React from "react"
-import { BrowserRouter as Router, Route } from "react-router-dom"
-import {Helmet} from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import "../styles/home.css"
+import { Link } from "gatsby"
+import Layout from '../components/Layout';
 
-import Header from "../components/Header"
-import Home from "../components/Home"
-import Routes from "../components/Routes"
-
-export default () => (
-	<Router>
-		<Helmet>
-			<meta charSet="utf-8" />
-			<title>Adam's Adventures</title>
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-			<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet" />
-		</Helmet>
-		<StaticQuery
-			query={graphql`
-				query ItemQuery {
-					allItemJson {
-						edges {
-							node {
-								backgroundImage
-								title
-								category
-								page
-								color
-								backgroundColor
-								completed
-								year
-								description
-								pictures {
-									id
-									title
-								}
-							}
-						}
-					}
+export default ({ data }) => {
+	return (
+		<Layout>
+			<div className="container">
+			<h1>Gallery</h1>
+			<div className="row">
+				{data.allItemJson.edges.map((x, index) => (
+					<div className="col-md-3" key={index} >
+					<Link to={`/${x.node.backgroundImage}`}>
+						<div className="flip-card">
+							<div className="flip-card-inner">
+								<div className="flip-card-front">
+									<img src={`https://adventures.bodiewebdesign.com/photos/links/adventure${index+1}.jpg`} alt={x.node.backgroundImage} className="cards" />
+								</div>
+								<div className="flip-card-back" style={{backgroundColor: x.node.backgroundColor}}>
+									<p style={{color: x.node.color, fontWeight: 'bold'}}>{x.node.description}</p>
+								</div>
+							</div>
+						</div>
+					</Link>
+					</div>
+			))}
+			</div>
+	</div>
+	</Layout>
+  )
+}
+export const query = graphql`
+  query {
+    allItemJson {
+		edges {
+			node {
+			backgroundImage
+			title
+			category
+			page
+			color
+			backgroundColor
+			completed
+			year
+			description
+			pictures {
+				id
+				title
 				}
-			`}
-			render={data => (
-				<div>
-					<Header />
-					<Route exact path = "/" render={() => <Home data={data.allItemJson.edges} />}/>
-					<Routes data={data.allItemJson.edges} />
-				</div>
-			)}
-		/>
-	</Router>
-)
+			}
+		}
+	}
+}
+`
+
 
