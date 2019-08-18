@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/header.css"
+import "../styles/header.scss"
 import { Link } from "gatsby"
 import FontAwesome from "react-fontawesome";
 

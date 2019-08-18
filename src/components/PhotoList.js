@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import '../styles/carousel.css'
+import '../styles/carousel.scss'
 import Photo from './Photo';
 
 export default class PhotoList extends Component {

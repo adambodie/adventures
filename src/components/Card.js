@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby"
-import '../styles/home.css'
+import '../styles/home.scss'
 
 export default class Card extends Component {
 	render() {

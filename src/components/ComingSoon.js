@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/comingSoon.css';
+import '../styles/comingSoon.scss';
 const ComingSoon = () => (
 	<div className="coming-soon">
 		<h1>Coming Soon</h1>
