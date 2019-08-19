@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import PhotoList from "../components/PhotoList"
 import ComingSoon from "../components/ComingSoon"
 
-const Content = ({data}) => (
+const Content = ({ data }) => (
 	<Layout>
 		{data.itemJson.completed ? (
 			<div style={{
@@ -30,7 +30,6 @@ export default Content;
 export const query = graphql`
 	query($id: String) {
 		itemJson(id: { eq: $id }) {
-			id
 			backgroundImage
 			title
 			category

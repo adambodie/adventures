@@ -1,5 +1,6 @@
 [
 {
+		"mainId": "1",
 		"backgroundImage": "vegas",
 		"title": "High School Graduation Trip to Las Vegas",
 		"category": "vegas",
@@ -51,6 +52,7 @@
 			  { "id": "36583263393", "title": "Henderson"}
 			]
 	}, {
+		"mainId": "2",
 		"backgroundImage": "hawaii",
 		"title": "Mahalo Fora Maui",
 		"category": "maui",
@@ -141,6 +143,7 @@
 		  { "id": "37436368026", "title": "Sun God"}
 		]
 	}, {
+		"mainId": "3",
 		"backgroundImage": "europe",
 		"title": "My Trip to Europe",
 		"category": "europe",
@@ -293,6 +296,7 @@
 			  { "id": "23632147498", "title": "Adam all suited up"}
 			]
 	}, {
+		"mainId": "4",
 		"backgroundImage": "seattle",
 		"title": "Birthday Trip to Seattle",
 		"category": "seattle",
@@ -339,6 +343,7 @@
 			  { "id": "23932627148", "title": "Jenn & Adam at the Space Needle"}
 			]
 	}, {
+		"mainId": "5",
 		"backgroundImage": "cross-country",
 		"title": "Cross Country Trip to Minnesota",
 		"category": "cross-country",
@@ -419,6 +424,7 @@
 			  { "id": "37785697041", "title": "Minneapolis, Minnesota"}
 			]
 	}, {
+		"mainId": "6",
 		"backgroundImage": "minnesota",
 		"title": "Getting Adjusted to the Midwest with the Twin Cities and surrounding areas",
 		"category": "midwest",
@@ -515,6 +521,7 @@
 			  { "id": "24102903958", "title": "Minneapolis Skyline"}
 			]
 	}, {
+		"mainId": "7",
 		"backgroundImage": "green-bay",
 		"title": "My Cheesy Trip to Green Bay",
 		"category": "green-bay",
@@ -574,6 +581,7 @@
 			  { "id": "37915130091", "title": "Rib Mountain"}
 			]
 	}, {
+		"mainId": "8",
 		"backgroundImage": "kansas-city",
 		"title": "Show Me The Sights, A Pursuit of Enjoiment",
 		"category": "kansas-city",
@@ -707,6 +715,7 @@
 			  { "id": "26894094329", "title": "State Capitol"}
 			]
 	}, {
+		"mainId": "9",
 		"backgroundImage": "chicago",
 		"title": "My Great Adventure around Lake Michigan",
 		"category": "chicago",
@@ -850,6 +859,7 @@
 		  { "id": "37782837265", "title": "Houdini Center"}
 		]
 	}, {
+		"mainId": "10",
 		"backgroundImage": "mississippi",
 		"title": "Rafting Down the Mississippi River",
 		"category": "mississippi",
@@ -1051,6 +1061,7 @@
 			  { "id": "27023314919", "title": ""}
 			]
 	}, {
+		"mainId": "11",
 		"backgroundImage": "sioux-falls",
 		"title": "Me and Sue sue Sioux Falls as Sue Falls while listening to Su-Sussudio",
 		"category": "sioux-falls",
@@ -1121,6 +1132,7 @@
 			  { "id": "24990262168", "title": "Kasota Buffalo"}
 			]
 	}, {
+		"mainId": "12",
 		"backgroundImage": "boston",
 		"title": "A History of Boston with all the Tea you want (Even though we have to tax it)",
 		"category": "boston",
@@ -1220,6 +1232,7 @@
 		  { "id": "38306064184", "title": "Mmmmmmmmm...Boston Cream Pie"}
 		]
 	}, {
+		"mainId": "13",
 		"backgroundImage": "italy",
 		"title": "Dodici giorni di divertitio: Un Viaggio Speciale in Italia",
 		"category": "italy",
@@ -1430,6 +1443,7 @@
 			  { "id": "39022331081", "title": "Saint Peter's Basilica Dome"}
 			]
 	}, {
+		"mainId": "14",
 		"backgroundImage": "winter-2008",
 		"title": "'Winter' in the Pacific Northwest(Not that I'd call it a real Winter)",
 		"category": "winter-2008",
@@ -1529,6 +1543,7 @@
 			  { "id": "27487653559", "title": "Mosier Creek"}
 			]
 	}, {
+		"mainId": "15",
 		"backgroundImage": "spring-2008",
 		"title": "Spring in the Pacific Northwest (Almost the same as 'Winter'!)",
 		"category": "spring-2008",
@@ -1638,6 +1653,7 @@
 			  { "id": "39235019662", "title": "Duck"}
 			]
 	}, {
+		"mainId": "16",
 		"backgroundImage": "denver",
 		"title": "One Mile Higher Than You in Denver",
 		"category": "denver",
@@ -1778,6 +1794,7 @@
 			  { "id": "25639952998", "title": "Denver International Airport"}
 			]
 	}, {
+		"mainId": "17",
 		"backgroundImage": "summer-2008",
 		"title": "Summer in the Pacific Northwest: Warm like anywhere else but without the rain",
 		"category": "summer-2008",
@@ -1902,6 +1919,7 @@
 			  { "id": "24531899807", "title": "Vista House"}
 			]
 	}, {
+		"mainId": "18",
 		"backgroundImage": "seattle-2008",
 		"title": "Seattle 2008: On The Road Again (Without Willie Nelson)",
 		"category": "seattle-2008",
@@ -2011,6 +2029,7 @@
 			  { "id": "38802193024", "title": "Capitol Lake"}
 			]
 	}, {
+		"mainId": "19",
 		"backgroundImage": "san-francisco",
 		"title": "11 Bags of Luggage & 16 Pairs of Shoes: A Trip to San Francisco",
 		"category": "san-francisco",
@@ -2132,6 +2151,7 @@
 			  { "id": "24671080087", "title": "Hebrew Writing on the Wall Translated into English"}
 			]
 	}, {
+		"mainId": "20",
 		"backgroundImage": "fall-2008",
 		"title": "Fall in the Pacific Northwest (or is it Winter or Spring again, oh wait, the Pacific Northwest only has two seasons)",
 		"category": "fall-2008",
@@ -2257,6 +2277,7 @@
 			  { "id": "27620345529", "title": "Sunset from Home"}
 			]
 	}, {
+		"mainId": "21",
 		"backgroundImage": "hawaii-2008",
 		"title": "Māui Hawai'i 2008: Coasts, Mountains & Mom's Mai Tai's",
 		"category": "hawaii-2008",
@@ -2430,6 +2451,7 @@
 			  { "id": "38642803555", "title": "Road to Hana"}
 			]
 	}, {
+		"mainId": "22",
 		"backgroundImage": "newport",
 		"title": "Newport, Ain't a Damn Thang Changed",
 		"category": "newport",
@@ -2484,6 +2506,7 @@
 			  { "id": "39241059194", "title": "Yaquina Bay"}
 			]
 	}, {
+		"mainId": "23",
 		"backgroundImage": "eagle-creek",
 		"title": "Surviving the Trenches of Eagle Creek",
 		"category": "eagle-creek",
@@ -2513,6 +2536,7 @@
 			  { "id": "39311932735", "title": "Green Trees"}
 			]
 	}, {
+		"mainId": "24",
 		"backgroundImage": "bonneville",
 		"title": "Adam went to a Dam: Bonneville Dam",
 		"category": "bonneville",
@@ -2550,6 +2574,7 @@
 		  { "id": "40176754892", "title": "Adam at Cape Horn"}
 		]
 	}, {
+		"mainId": "25",
 		"backgroundImage": "gorge",
 		"title": "Perfecting My Art and Toning My Skills at the Columbia River Gorge",
 		"category": "gorge",
@@ -2581,6 +2606,7 @@
 			  { "id": "25338492257", "title": "Yellow Lichen"}
 			]
 	}, {
+		"mainId": "26",
 		"backgroundImage": "florence",
 		"title": "Celebrating Adam Day in Florence, 5,800 miles from Florence",
 		"category": "florence",
@@ -2639,6 +2665,7 @@
 			  { "id": "25338538737", "title": "Siuslaw River"}
 			]
 	}, {
+		"mainId": "27",
 		"backgroundImage": "mccord-creek",
 		"title": "Green With Envy at McCord Creek (On St. Patrick’s Day Nonetheless)",
 		"category": "mccord-creek",
@@ -2666,6 +2693,7 @@
 			  { "id": "26513081298", "title": "Elowah Falls"}
 			]
 	}, {
+		"mainId": "28",
 		"backgroundImage": "mt-defiance",
 		"title": "Learning New Camera Tricks at Mt. Defiance and Having Way Too Much Fun Taking Advantage",
 		"category": "mt-defiance",
@@ -2704,6 +2732,7 @@
 			  { "id": "40384676241", "title": "Columbia River"}
 			]
 	}, {
+		"mainId": "29",
 		"backgroundImage": "salem",
 		"title": "Blue & Pink in Salem",
 		"category": "salem",
@@ -2742,6 +2771,7 @@
 			  { "id": "39631462495", "title": "Adam in Salem"}
 			]
 	}, {
+		"mainId": "30",
 		"backgroundImage": "rowena-crest",
 		"title": "Scrambled Eggs Beyond Mount Hood at the Columbia River Gorge",
 		"category": "rowena-crest",
@@ -2788,6 +2818,7 @@
 			  { "id": "40015684115", "title": "Adam at Memaloose"}
 			]
 	}, {
+		"mainId": "31",
 		"backgroundImage": "cape-kiwanda",
 		"title": "Cape Kiwanda; Cape, Cape Kiwanda, Cape Kiwanda yeah, get her out of my heart",
 		"category": "cape-kiwanda",
@@ -2835,6 +2866,7 @@
 		  { "id": "26036580867", "title": "Cape Kiwanda"}
 		]
 	}, {
+		"mainId": "32",
 		"backgroundImage": "multnomah-falls",
 		"title": "Discovering the Sun at Multnomah Falls",
 		"category": "multnomah-falls",
@@ -2876,6 +2908,7 @@
 			  { "id": "26036612587", "title": "Flowers"}
 			]
 	}, {
+		"mainId": "33",
 		"backgroundImage": "beacon-rock",
 		"title": "Peakin' Up Beacon Rock",
 		"category": "beacon-rock",
@@ -2912,6 +2945,7 @@
 			  { "id": "41095772772", "title": "Little Rock"}
 			]
 	}, {
+		"mainId": "34",
 		"backgroundImage": "mount-hood",
 		"title": "Pre-Birthday Trip to Mount Hood",
 		"category": "mount-hood",
@@ -2953,6 +2987,7 @@
 			  { "id": "41095917702", "title": "Mount Hood Valley"}
 			]
 	}, {
+		"mainId": "35",
 		"backgroundImage": "smith-rock",
 		"title": "Exploring Smith Rock myself without the 'Haleakala Moment'",
 		"category": "smith-rock",
@@ -3023,6 +3058,7 @@
 			  { "id": "27367849788", "title": "Mount Hood"}
 			]
 	}, {
+		"mainId": "36",
 		"backgroundImage": "central-oregon",
 		"title": "Living Life to the Fullest in Central Oregon",
 		"category": "central-oregon",
@@ -3189,6 +3225,7 @@
 			  { "id": "41297347511", "title": "Three Fingered Jack"}
 			]
 	}, {
+		"mainId": "37",
 		"backgroundImage": "panther-creek",
 		"title": "Walking with a Panther eventually gets you to the Columbia",
 		"category": "panther-creek",
@@ -3218,6 +3255,7 @@
 			  { "id": "41957014764", "title": "Wind River"}
 			]
 	}, {
+		"mainId": "38",
 		"backgroundImage": "hood-river",
 		"title": "Hood River: The More Hoods Than One Edition",
 		"category": "hood-river",
@@ -3272,6 +3310,7 @@
 			  { "id": "43034647091", "title": "Columbia River"}
 			]
 	}, {
+		"mainId": "39",
 		"backgroundImage": "the-dalles",
 		"title": "Moonwalking Around The Dalles",
 		"category": "the-dalles",
@@ -3320,6 +3359,7 @@
 			  { "id": "28804529958", "title": "Columbia River"}
 			]
 	}, {
+		"mainId": "40",
 		"backgroundImage": "clarno",
 		"title": "A Journey Through Time: How Time Has Changed",
 		"category": "clarno",
@@ -3382,6 +3422,7 @@
 			  { "id": "42762452841", "title": "Tygh Valley"}
 			]
 	}, {
+		"mainId": "41",
 		"backgroundImage": "klickitat",
 		"title": "Larches, Klickitats and the Sandy One",
 		"category": "klickitat",
@@ -3409,6 +3450,7 @@
 			  { "id": "42316678195", "title": "Sandy River"}
 			]
 	}, {
+		"mainId": "42",
 		"backgroundImage": "mt-angel",
 		"title": "Going to Germany Without Being in Germany",
 		"category": "mt-angel",
@@ -3439,6 +3481,7 @@
 			  { "id": "28351508267", "title": "The Glockenspiel"}
 			]
 	}, {
+		"mainId": "43",
 		"backgroundImage": "willamette-valley",
 		"title": "Mehr Mt. Angel and der Willamette Valley: Abwarten, warts ab!",
 		"category": "willamette-valley",
@@ -3491,6 +3534,7 @@
 			  { "id": "43171815902", "title": "Willamette Valley"}
 			]
 	}, {
+		"mainId": "44",
 		"backgroundImage": "mcminnville",
 		"title": "Stop Your Wineing and Enjoy This Show",
 		"category": "mcminnville",
@@ -3521,6 +3565,7 @@
 			  { "id": "28545056967", "title": "Chehalem Valley"}
 			]
 	}, {
+		"mainId": "45",
 		"backgroundImage": "oregon-college",
 		"title": "The Great Oregon College Tour 2009",
 		"category": "oregon-college",
@@ -3617,6 +3662,7 @@
 			  { "id": "42698121514", "title": "Library"}
 			]
 	}, {
+		"mainId": "46",
 		"backgroundImage": "oktoberfest",
 		"title": "Genießend der leben Deutsche zu Oktoberfest in Mt. Angel",
 		"category": "oktoberfest",
@@ -3659,6 +3705,7 @@
 			  { "id": "41672342940", "title": "Sowie Tracht nein Kleidung für jemand"}
 			]
 	}, {
+		"mainId": "47",
 		"backgroundImage": "hollywood-video",
 		"title": "A Rare Glimpse inside the Headquarters of Movie Gallery/Hollywood Video (Plus a Game I Like to Call 'Name That Movie')",
 		"category": "hollywood-video",
@@ -3693,6 +3740,7 @@
 			  { "id": "42763486964", "title": "Name That Movie Question 14"}
 			]
 	}, {
+		"mainId": "48",
 		"backgroundImage": "seaside",
 		"title": "One Last Hurrah in 2009 at the Oh Ray Gun Coast",
 		"category": "seaside",
@@ -3733,6 +3781,7 @@
 			  { "id": "43480247961", "title": "Pacific Ocean"}
 			]
 	}, {
+		"mainId": "49",
 		"backgroundImage": "coachella",
 		"title": "Attack of the Retired Tanned Wrinkled Coachella Valley Residents: The Best Cure is the Scenery",
 		"category": "coachella",
@@ -3865,6 +3914,7 @@
 			  { "id": "42232775570", "title": ""}
 			]
 	}, {
+		"mainId": "50",
 		"backgroundImage": "tulip",
 		"title": "Lots and Lots of Tulips",
 		"category": "tulip",
@@ -3912,6 +3962,7 @@
 			  { "id": "42415070540", "title": "Never seen this man before"}
 			]
 	}, {
+		"mainId": "51",
 		"backgroundImage": "detroit-lake",
 		"title": "Detroit Lake: Eminem wouldn't go There Twice, but I Had To",
 		"category": "detroit-lake",
@@ -3950,6 +4001,7 @@
 			  { "id": "44194127962", "title": "Baby Longhorn gets Up"}
 			]
 	}, {
+		"mainId": "52",
 		"backgroundImage": "warm-springs",
 		"title": "Pina kw'aianinam wiyanin wiyaninta chna in Warm Springs (more on that later…)",
 		"category": "warm-springs",
@@ -3988,6 +4040,7 @@
 			  { "id": "44370026901", "title": "And because someone figured I might have been near Mt. Hood"}
 			]
 	}, {
+		"mainId": "53",
 		"backgroundImage": "lewis-river",
 		"title": "The Lewis River: Water in Every Picture or your Money Back",
 		"category": "lewis-river",
@@ -4016,6 +4069,7 @@
 			  { "id": "29808086787", "title": "Swift Canal"}
 			]
 	}, {
+		"mainId": "54",
 		"backgroundImage": "mckenzie-river",
 		"title": "Skol-ing to the McKenzie River with Vikings",
 		"category": "mckenzie-river",
@@ -4044,6 +4098,7 @@
 			  { "id": "43836201545", "title": "Mt. Washington"}
 			]
 	}, {
+		"mainId": "55",
 		"backgroundImage": "maryhill",
 		"title": "The Emergency Trip",
 		"category": "maryhill",
@@ -4074,6 +4129,7 @@
 			  { "id": "44652028894", "title": "Mosier Creek"}
 			]
 	}, {
+		"mainId": "56",
 		"backgroundImage": "eugene",
 		"title": "Lane County, Oregon: More than Just My Old School",
 		"category": "eugene",
@@ -4101,6 +4157,7 @@
 			  { "id": "45376463961", "title": "Row River"}
 			]
 	}, {
+		"mainId": "57",
 		"backgroundImage": "mt-st-helens",
 		"title": "Mt. St. Helen's: Lella's Mountain",
 		"category": "mt-st-helens",
@@ -4134,6 +4191,7 @@
 			  { "id": "45376567971", "title": "Bridge"}
 			]
 	}, {
+		"mainId": "58",
 		"backgroundImage": "cannon-beach",
 		"title": "Cannon Beach: Plenty of Old Fun plus a New Twist",
 		"category": "cannon-beach",
@@ -4171,6 +4229,7 @@
 			  { "id": "45325802442", "title": "Coast Ranges"}
 			]
 	}, {
+		"mainId": "59",
 		"backgroundImage": "oneonta-gorge",
 		"title": "400 + 424 = Unexpected Fun in the Oneonta Gorge",
 		"category": "oneonta-gorge",
@@ -4203,6 +4262,7 @@
 			  { "id": "31501265848", "title": "Columbia River"}
 			]
 	}, {
+		"mainId": "60",
 		"backgroundImage": "olympia",
 		"title": "Pocket Gophers in Olympia: The True Story",
 		"category": "olympia",
@@ -4243,6 +4303,7 @@
 			  { "id": "45325880242", "title": "Mount Rainier"}
 			]
 	}, {
+		"mainId": "61",
 		"backgroundImage": "alabama",
 		"title": null,
 		"category": "alabama",
@@ -4254,6 +4315,7 @@
 		"description": "Coming Soon...",
 		"visible": true
 	}, {
+		"mainId": "62",
 		"backgroundImage": "three-capes",
 		"title": null,
 		"category": "three-capes",
@@ -4265,6 +4327,7 @@
 		"description": "Coming Soon...",
 		"visible": true
 	}, {
+		"mainId": "63",
 		"backgroundImage": "central-oregon-2011",
 		"title": null,
 		"category": "central-oregon-2011",
@@ -4276,6 +4339,7 @@
 		"description": "Coming Soon...",
 		"visible": true
 	}, {
+		"mainId": "64",
 		"backgroundImage": "two-mountains",
 		"title": null,
 		"category": "two-mountains",
@@ -4287,6 +4351,7 @@
 		"description": "Coming Soon...",
 		"visible": true
 	}, {
+		"mainId": "65",
 		"backgroundImage": "wine-country",
 		"title": null,
 		"category": "wine-country",
@@ -4298,6 +4363,7 @@
 		"description": "Coming Soon...",
 		"visible": true
 	}, {
+		"mainId": "66",
 		"backgroundImage": "hood-river-2011",
 		"title": null,
 		"category": "hood-river-2011",
@@ -4309,6 +4375,7 @@
 		"description": "Coming Soon...",
 		"visible": true
 	}, {
+		"mainId": "67",
 		"backgroundImage": "more-hood-river",
 		"title": null,
 		"category": "more-hood-river",
@@ -4320,6 +4387,7 @@
 		"description": "Coming Soon...",
 		"visible": true
 	}, {
+		"mainId": "68",
 		"backgroundImage": "portland",
 		"title": null,
 		"category": "portland",
