@@ -8,7 +8,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 		allItemJson {
 			edges {
 				node {
-					id
+					mainId
 					backgroundImage
 					title
 					category
