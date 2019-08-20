@@ -6,8 +6,9 @@ export default class Pagination extends Component {
 	render() {
 		const { isFirst, prevPage, numPages, nextPage, isLast } = this.props;
 		return(
+			<div className="paginate">
 				<ul>
-					{!isFirst && (<Link to={prevPage} rel="prev">← Prev</Link>)}
+					{!isFirst && (<li><Link to={prevPage} rel="prev">← Prev</Link></li>)}
 					{Array.from({ length: numPages }, (_, i) => (
 						<li key={`pagination-number${i + 1}`}>
 							<Link to={`/${i === 0 ? '' : i + 1}`}>
@@ -15,8 +16,9 @@ export default class Pagination extends Component {
 								</Link>
 							</li>
 						))}
-					{!isLast && (<Link to={nextPage} rel="next">Next →</Link>)}
+					{!isLast && (<li><Link to={nextPage} rel="next">Next →</Link></li>)}
 				</ul>
+			</div>
 		);
 	}
 }

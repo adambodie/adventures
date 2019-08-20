@@ -7,7 +7,6 @@ import ComingSoon from "../components/ComingSoon"
 export default class Content extends Component {
 	render() {
 		const { data } = this.props;
-		console.log(data.itemJson);
 		return(
 			<Layout>
 			{data.itemJson.completed ? (

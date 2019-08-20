@@ -1,12 +1,16 @@
+$red: #992d3c;
+$lightblue: #b4bac6;
+$darkblue: #59657b;
+
 header {
 	display: flex!important;
 	align-items: center; 
 	height: 80px;
-	background: #992d3c;
+	background: $red;
 	h1 {
 		font-family: 'Permanent Marker', cursive;
-		color: #b4bac6;
-		text-shadow: 4px 4px 4px #59657b;
+		color: $lightblue;
+		text-shadow: 4px 4px 4px $darkblue;
 		font-size: 1.75em;
 	}
 	img {
@@ -16,7 +20,7 @@ header {
 
 .home {
 	color: #B4BAC6;
-	text-shadow: 4px 4px 4px #59657B;
+	text-shadow: 4px 4px 4px $darkblue;
 	position: static;
 	margin: 20px;
 }

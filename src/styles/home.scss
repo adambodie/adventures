@@ -1,7 +1,10 @@
+$red: #992d3c;
+$lightblue: #b4bac6;
+
 .container h1 {
 	font-family: 'Permanent Marker', cursive;
-	color: #992d3c;
-	text-shadow: 4px 4px 4px #b4bac6;
+	color: $red;
+	text-shadow: 4px 4px 4px $lightblue;
 	text-align: center;
 }
 
@@ -44,14 +47,26 @@
 	padding: 10px;
 	transform: rotateY(180deg);
 }
-
+.paginate {
+	display: flex;
+	justify-content: center;
+}
 ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	width: 75%;
 	list-style: none;
-	li {
+	font-weight: bold;
+	a {
+		color: $red;
+		background: $lightblue;
 		padding: 10px;
+		&:hover {
+			text-decoration: none;
+			color: darken($red, 10);
+			background: darken($lightblue, 10);
+		}
 	}
 }
