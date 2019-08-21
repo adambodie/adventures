@@ -11,8 +11,6 @@ export default class List extends Component {
 		const { data, pageContext } = this.props;
 		const posts = data.allItemJson.edges;
 		const { currentPage, numPages } = pageContext;
-		const isFirst = currentPage === 1;
-		const isLast = currentPage === numPages;
 		const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
 		const nextPage = (currentPage + 1).toString();
 		return (
@@ -21,7 +19,7 @@ export default class List extends Component {
 					<h1>Gallery</h1>
 					<div className="row">
 						{posts.map((x, index) => (
-							<div className="col-md-3" key={index} >
+							<div className="col-md-4 link" key={index} >
 								<Card
 									mainId={x.node.mainId}
 									backgroundImage={x.node.backgroundImage}
@@ -33,11 +31,9 @@ export default class List extends Component {
 						))}
 					</div>
 					<Pagination 
-						isFirst={isFirst} 
 						prevPage={prevPage} 
 						numPages={numPages} 
 						nextPage={nextPage}
-						isLast={isLast} 
 						/>
 				</div>
 			</Layout>

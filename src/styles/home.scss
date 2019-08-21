@@ -1,18 +1,20 @@
-$red: #992d3c;
-$lightblue: #b4bac6;
+@import './_imports.scss';
 
 .container h1 {
-	font-family: 'Permanent Marker', cursive;
+	font-family: $fontfamily;
 	color: $red;
 	text-shadow: 4px 4px 4px $lightblue;
 	text-align: center;
 }
 
-
+.link {
+	display: flex;
+	justify-content: center;
+}
 .flip-card {
 	background-color: transparent;
-	width: calc(792px/3);
-	height: calc(486px/3);
+	width: calc(792px/4);
+	height: calc(486px/4);
 	perspective: 1000px;
 	margin: 20px;
 }
@@ -50,23 +52,34 @@ $lightblue: #b4bac6;
 .paginate {
 	display: flex;
 	justify-content: center;
+	margin-top: 20px;
 }
 ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 75%;
 	list-style: none;
 	font-weight: bold;
+	margin: 0;
 	a {
 		color: $red;
 		background: $lightblue;
-		padding: 10px;
+		font-family: $fontfamily;
+		text-shadow: 4px 4px 4px $darkblue;
+		font-size: 1.5em;
+		padding: 15px;
 		&:hover {
 			text-decoration: none;
 			color: darken($red, 10);
 			background: darken($lightblue, 10);
 		}
+	}
+}
+
+@media (min-width: 767px) {
+	.flip-card {
+		width: calc(792px/3);
+		height: calc(486px/3);
 	}
 }
