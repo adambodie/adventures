@@ -9,13 +9,12 @@ const Header = () => (
 		<img src={"../logo.jpg"} alt="Logo" className="img-fluid" />
 		<h1>Adam&apos;s Adventures</h1>
 		<Link to="/">
-			<FontAwesome className='home' size='2x' name='home' />
+			<FontAwesome className='icon' size='2x' name='home' />
+		</Link>
+		<Link to="/tags">
+			<FontAwesome className='icon' size='2x' name='tags' />
 		</Link>
 	</div>
-		<div className="search">
-			<input type="text" placeholder="Search.."/>
-			<button type="submit"><FontAwesome name='search' /></button>
-		</div>
 	</header>
 )
 

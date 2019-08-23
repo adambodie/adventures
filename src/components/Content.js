@@ -22,6 +22,7 @@ export default class Content extends Component {
 					color={data.itemJson.color}
 					backgroundColor={data.itemJson.backgroundColor} 
 					date={data.itemJson.date}
+					tags={data.itemJson.tags}
 					/>
 				</div>
 				) : (<ComingSoon/>)
@@ -42,8 +43,7 @@ export const query = graphql`
 			color
 			backgroundColor
 			completed
-			year
-			description
+			tags
 			pictures {
 				id
 				title

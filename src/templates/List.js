@@ -26,6 +26,7 @@ export default class List extends Component {
 									backgroundColor={x.node.backgroundColor}
 									color={x.node.color}
 									description={x.node.description}
+									tags={x.node.tags}
 								/>
 							</div>
 						))}
@@ -58,6 +59,7 @@ export const listQuery = graphql`
 				backgroundColor
 				year
 				description
+				tags
 			}
 		}
 	}

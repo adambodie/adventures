@@ -7,7 +7,7 @@ export default class Pagination extends Component {
 		const { prevPage, numPages, nextPage } = this.props;
 		return(
 			<div className="paginate">
-				<ul>
+				<ul className="paginate-pages">
 					<li><Link to={`${prevPage > 0 ? prevPage : '/'}`} rel="prev">← Prev</Link></li>
 					{Array.from({ length: numPages }, (_, i) => (
 						<li key={`pagination-number${i + 1}`}>
