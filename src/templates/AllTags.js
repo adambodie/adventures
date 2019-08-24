@@ -4,7 +4,6 @@ import kebabCase from "lodash/kebabCase";
 import "../styles/tags.scss";
 import Layout from '../components/Layout';
 
-
 export default class AllTags extends Component {
 	render() {
 		const { data } = this.props;
@@ -13,15 +12,14 @@ export default class AllTags extends Component {
 			<Layout>
 				<div className="container">
 					<h1>Tags</h1>
-						<ul className="tags">
+						<ul className="tags row">
 						{tags.map((x, index) => (
-							<li key={index}>
+							<li className="col-md-4" key={index}>
 								<Link to={`/tags/${kebabCase(x.fieldValue)}`}>{x.fieldValue} ({x.totalCount})</Link>
 							</li>
 						))}
 						</ul>
 				</div>
-
 			</Layout>
 		)
 	}

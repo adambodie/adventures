@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
-import "../styles/home.scss";
-import "../styles/index.scss"
+import "../styles/tags.scss";
 import Layout from '../components/Layout';
 import Card from "../components/Card";
 
@@ -11,11 +10,11 @@ export default class Tags extends Component {
 		const { data, pageContext } = this.props;
 		const { tag } = pageContext;
 		const { edges, totalCount } = data.allItemJson;
-		const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged with "${tag}"`;
 		return (
 			<Layout>
 				<div className="container">
-					<h1>{tagHeader}</h1>
+					<h1>{tag}</h1>
+					<h4 className="tagResults">Results: {totalCount} post{totalCount === 1 ? "" : "s"}</h4>
 					<div className="row">
 						{edges.map((x, index) => {
 								return (
@@ -41,7 +40,6 @@ export default class Tags extends Component {
 export const listQuery = graphql`
   	query projectTagQuery($tag: String)  {
 		allItemJson(
-			limit: 2000
 			sort: { fields: year, order: ASC }
 			filter: { tags: { in: [$tag] }  }
 		) {

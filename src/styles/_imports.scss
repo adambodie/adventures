@@ -2,3 +2,9 @@ $red: #992d3c;
 $lightblue: #b4bac6;
 $darkblue: #59657b;
 $fontfamily: 'Permanent Marker', cursive;
+
+@mixin font-style ($color, $shadow) {
+	font-family: $fontfamily;
+	color: $color;
+	text-shadow: 4px 4px 4px $shadow;
+}

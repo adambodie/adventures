@@ -1,13 +1,7 @@
 @import './_imports.scss';
 
 .container h1 {
-	font-family: $fontfamily;
-	color: $red;
-	text-shadow: 4px 4px 4px $lightblue;
-	text-align: center;
-}
-
-.link {
+	@include font-style($red, $lightblue);
 	display: flex;
 	justify-content: center;
 }
@@ -63,10 +57,8 @@
 	font-weight: bold;
 	margin: 0;
 	a {
-		color: $red;
+		@include font-style($red, $darkblue);
 		background: $lightblue;
-		font-family: $fontfamily;
-		text-shadow: 4px 4px 4px $darkblue;
 		font-size: 1.5em;
 		padding: 15px;
 		&:hover {

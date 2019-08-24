@@ -1,24 +1,23 @@
 @import './_imports.scss';
 
 .tags {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
 	li {
 		padding: 10px;
 		background-color: $lightblue;
+		border: 1px solid darken($lightblue, 10);
 		&:hover {
 			background-color: darken($lightblue, 10);
 		}
-		&:nth-child(even) {
-			background-color: darken($lightblue, 20);
-			&:hover {
-				background-color: darken($lightblue, 40);
-			}
-		}
+
 		a {
 			color: white;
 			text-decoration: none;
 		}
 	}
+}
+
+.tagResults {
+	@include font-style($red, $lightblue);
+	text-indent: 2em;
+	text-align: left;
 }

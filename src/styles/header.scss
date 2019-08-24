@@ -8,9 +8,7 @@ header {
 	height: 130px;
 	background: $red;
 	h1 {
-		font-family: $fontfamily;
-		color: $lightblue;
-		text-shadow: 4px 4px 4px $darkblue;
+		@include font-style($lightblue, $darkblue);
 		font-size: 1.55em;
 	}
 	img {

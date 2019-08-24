@@ -63,7 +63,7 @@
 		"completed": true,
 		"year": "2004",
 		"description": "First family trip to Maui, exploring Lahaina, Kaanapali and more",
-		"tags": ["Maui", "Hawaii", "Lahaina", "Kaanapali", "Maalaea"],
+		"tags": ["Maui", "Hawaii", "Lahaina", "Kaanapali"],
 		"visible": true,
 		"pictures": [
 		  { "id": "38128058951", "title": ""},
@@ -156,7 +156,7 @@
 		"completed": true,
 		"year": "2005",
 		"visible": true,
-		"tags": ["Washington D.C.", "Vienna", "Austria", "Salzburg", "Czech Republic", "Prague", "Slovakia", "Bratislava", "Hungary", "Budapest"],
+		"tags": ["Washington D.C.", "Vienna", "Austria", "Salzburg", "Czech Republic", "Prague", "Slovakia", "Hungary", "Budapest"],
 		"pictures": [
 			  { "id": "37418801964", "title": ""},
 			  { "id": "37226406760", "title": "U.S. Capitol"},
@@ -1081,7 +1081,7 @@
 		"completed": true,
 		"year": "2007",
 		"description": "Road trip to Sioux Falls and Pipestone National Monument",
-		"tags": ["Minnesota", "South Dakota", "Sioux Falls", "Mitchell", "Pipestone National Monument"],
+		"tags": ["Minnesota", "South Dakota", "Sioux Falls", "Pipestone National Monument"],
 		"visible": true,
 		"pictures": [
 			  { "id": "23997456067", "title": ""},
@@ -1466,7 +1466,7 @@
 		"completed": true,
 		"year": "2008",
 		"description": "A Collection of Pictures from Oregon, Washington from January to March 2008",
-		"tags": ["Oregon", "Washington", "Olympia", "Portland", "Silver Falls State Park", "Columbia River Gorge"],
+		"tags": ["Oregon", "Washington", "Olympia", "Portland", "Cascades", "Oregon Coast", "Mt. Hood", "Mt. St. Helens", "Silver Falls State Park", "Columbia River Gorge"],
 		"visible": true,
 		"pictures": [
 			  { "id": "38555892594", "title": "Gospodor Monument"},
@@ -1567,7 +1567,7 @@
 		"completed": true,
 		"year": "2008",
 		"description": "A Collection of Pictures from Oregon, Washington from April to June 2008",
-		"tags": ["Oregon", "Washington", "Columbia River Gorge", "Maryhill", "Silver Falls State Park"],
+		"tags": ["Oregon", "Washington", "Columbia River Gorge", "Mt. Hood", "Silver Falls State Park", "Cascades", "Mt. St. Helens", "Eugene", "Willamette Valley"],
 		"visible": true,
 		"pictures": [
 			  { "id": "25396919178", "title": "Sam Hill's Stonehenge"},
@@ -1631,7 +1631,7 @@
 			  { "id": "25542988328", "title": "At Mt. Hood"},
 			  { "id": "39235020702", "title": "Mt. Hood"},
 			  { "id": "38555975994", "title": "Elk"},
-			  { "id": "39235020542", "title": "Toutler River"},
+			  { "id": "39235020542", "title": "Toutle River"},
 			  { "id": "39235020622", "title": "Mt. St. Helens"},
 			  { "id": "38386404455", "title": "The path to Johnston Ridge"},
 			  { "id": "25396922168", "title": "Mt. St. Helens"},
@@ -1678,7 +1678,7 @@
 		"completed": true,
 		"year": "2008",
 		"description": "Birthday trip to Denver with my sister, along with Boulder and Red Rocks Park",
-		"tags": ["Colorado", "Denver", "Boulder", "Red Rocks Park"],
+		"tags": ["Colorado", "Denver", "Boulder"],
 		"visible": true,
 		"pictures": [
 			  { "id": "25639958068", "title": "Jenn's choice: The Testicle Car"},
@@ -1820,7 +1820,7 @@
 		"completed": true,
 		"year": "2008",
 		"description": "A Collection of Pictures from Oregon from July to September 2008",
-		"tags": ["Oregon", "Portland", "Mt. Hood", "Columbia River Gorge"],
+		"tags": ["Oregon", "Portland", "Mt. Hood", "Columbia River Gorge", "Cascades", "Oregon Coast"],
 		"visible": true,
 		"pictures": [
 			  { "id": "39381812982", "title": "Salmon Street Springs"},
@@ -1946,7 +1946,7 @@
 		"completed": true,
 		"year": "2008",
 		"description": "Road trip to Seattle, Tacoma and Olympia",
-		"tags": ["Washington", "Seattle", "Tacoma", "Mt. Rainier", "Snoqualmie Falls", "Olympia"],
+		"tags": ["Washington", "Seattle", "Tacoma", "Mt. Rainier", "Olympia"],
 		"visible": true,
 		"pictures": [
 			  { "id": "38802190114", "title": "Tacoma Dome"},
@@ -2180,7 +2180,7 @@
 		"completed": true,
 		"year": "2008",
 		"description": "A Collection of Pictures from Oregon, Washington from October to December 2008",
-		"tags": ["Oregon", "Portland", "Silver Falls State Park", "Columbia River Gorge"],
+		"tags": ["Oregon", "Washington", "Portland", "Silver Falls State Park", "Columbia River Gorge", "Oregon Coast", "Willamette Valley", "Cascades"],
 		"visible": true,
 		"pictures": [
 			  { "id": "27620342789", "title": "The Horned Ram"},
@@ -2307,7 +2307,7 @@
 		"completed": true,
 		"year": "2008",
 		"description": "Second Family Vacation in Maui, with stops to Haleakala and Hana",
-		"tags": ["Hawaii", "Maui", "Kaanapali", "Iao Valley", "Haleakala", "Hana", "Lahaina"],
+		"tags": ["Hawaii", "Maui", "Kaanapali", "Haleakala", "Hana", "Lahaina"],
 		"visible": true,
 		"pictures": [
 			  { "id": "27762613089", "title": "West Maui Mountains"},
@@ -2482,7 +2482,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Daytrip to Newport, exploring the surrounding Oregon Coast",
-		"tags": ["Oregon", "Newport", "Oregon Coast"],
+		"tags": ["Oregon", "Oregon Coast", "Mt. Hood", "Mt. St. Helens"],
 		"visible": true,
 		"pictures": [
 			  { "id": "26078521828", "title": "Mt. Hood during a Sunrise"},
@@ -2810,7 +2810,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip to Rowena Crest, along the Columbia River Gorge",
-		"tags": ["Oregon", "Columbia River Gorge", "Mt. Hood"],
+		"tags": ["Oregon", "Columbia River Gorge", "Mt. Hood", "Mt. Adams"],
 		"visible": true,
 		"pictures": [
 			  { "id": "40015682335", "title": "Mount Hood"},
@@ -2988,7 +2988,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip exploring multiple sides of Mt. Hood",
-		"tags": ["Oregon", "Columbia River Gorge", "Mt. Hood", "Hood River"],
+		"tags": ["Oregon", "Columbia River Gorge", "Mt. Hood", "Hood River", "Cascades"],
 		"visible": true,
 		"pictures": [
 			  { "id": "41095921312", "title": "Columbia River"},
@@ -3031,7 +3031,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip to Smith Rock State Park in Central Oregon",
-		"tags": ["Oregon", "Smith Rock State Park", "Cascades", "Central Oregon"],
+		"tags": ["Oregon", "Smith Rock State Park", "Cascades", "Central Oregon", "Mt. Hood"],
 		"visible": true,
 		"pictures": [
 			  { "id": "39431446420", "title": "Mount Jefferson"},
@@ -3103,7 +3103,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Vacation in Central Oregon, exploring Bend and John Day Fossil Beds National Monument",
-		"tags": ["Oregon", "Central Oregon", "Cascades", "Bend", "John Day Fossil Beds National Monument"],
+		"tags": ["Oregon", "Central Oregon", "Cascades", "Bend", "Smith Rock State Park", "John Day Fossil Beds National Monument"],
 		"visible": true,
 		"pictures": [
 			  { "id": "41254604082", "title": "Sahalie Falls"},
@@ -3302,7 +3302,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip exploring Hood River, Oregon",
-		"tags": ["Oregon", "Columbia River Gorge", "Hood River"],
+		"tags": ["Oregon", "Columbia River Gorge", "Hood River", "Mt. Hood"],
 		"visible": true,
 		"pictures": [
 			  { "id": "42132189695", "title": "Columbia River"},
@@ -3358,7 +3358,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip exploring The Dalles, Oregon",
-		"tags": ["Oregon", "Columbia River Gorge", "The Dalles", "Washington"],
+		"tags": ["Oregon", "Columbia River Gorge", "Washington"],
 		"visible": true,
 		"pictures": [
 			  { "id": "40868727340", "title": "Columbia River"},
@@ -3408,7 +3408,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip to the Clarno Unit of the John Day Fossil Beds",
-		"tags": ["Oregon", "John Day Fossil Beds National Monument"],
+		"tags": ["Oregon", "John Day Fossil Beds National Monument", "Mt. Hood"],
 		"visible": true,
 		"pictures": [
 			  { "id": "40871004870", "title": "Shoe Tree"},
@@ -3472,7 +3472,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip to the Klickitat River, on Washington's side of the Columbia Gorge",
-		"tags": ["Oregon", "Columbia River Gorge", "Washington", "Klickitat River"],
+		"tags": ["Oregon", "Columbia River Gorge", "Washington", "Mt. Hood", "Mt. St. Helens"],
 		"visible": true,
 		"pictures": [
 			  { "id": "42316677955", "title": "Larch Mountain"},
@@ -3501,7 +3501,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip to Mt. Angel, Oregon's Bavarian Themed Town",
-		"tags": ["Oregon", "Mt. Angel"],
+		"tags": ["Oregon", "Mt. Angel", "Willamette Valley"],
 		"visible": true,
 		"pictures": [
 			  { "id": "28351508947", "title": "The Glockenspiel"},
@@ -3533,7 +3533,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip exploring the Willamette Valley",
-		"tags": ["Oregon", "Mt. Angel", "Silverton"],
+		"tags": ["Oregon", "Mt. Angel", "Willamette Valley"],
 		"visible": true,
 		"pictures": [
 			  { "id": "43171814782", "title": "The Glockenspiel"},
@@ -3587,7 +3587,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip to Oregon's Wine Country",
-		"tags": ["Oregon", "McMinnville"],
+		"tags": ["Oregon", "Willamette Valley"],
 		"visible": true,
 		"pictures": [
 			  { "id": "42698010324", "title": "Tualatin Valley"},
@@ -3619,7 +3619,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Trips visiting Oregon's many universities",
-		"tags": ["Oregon", "Salem", "Portland"],
+		"tags": ["Oregon", "Salem", "Portland", "Willamette Valley"],
 		"visible": true,
 		"pictures": [
 			  { "id": "42698121254", "title": "Hoover-Minthorn House"},
@@ -3717,7 +3717,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Visit to Oktoberfest in Mt. Angel, Oregon",
-		"tags": ["Oregon", "Mt. Angel"],
+		"tags": ["Oregon", "Mt. Angel", "Willamette Valley"],
 		"visible": true,
 		"pictures": [
 			  { "id": "42575325405", "title": "Denkmal Ertrag"},
@@ -3761,7 +3761,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Various pictures from my former workplace, Hollywood Video Headquarters in Wilsonville",
-		"tags": ["Oregon", "Wilsonville"],
+		"tags": ["Oregon"],
 		"visible": true,
 		"pictures": [
 			  { "id": "28593515317", "title": "Hollywood Entertainment"},
@@ -3797,7 +3797,7 @@
 		"completed": true,
 		"year": "2009",
 		"description": "Day trip to Seaside and nearby areas along the Oregon Coast",
-		"tags": ["Oregon", "Oregon Coast"],
+		"tags": ["Oregon", "Oregon Coast", "Mt. St. Helens"],
 		"visible": true,
 		"pictures": [
 			  { "id": "42575566825", "title": "Mt. St. Helens from Coast Ranges"},
@@ -3973,7 +3973,7 @@
 		"completed": true,
 		"year": "2010",
 		"description": "Tulips at the Wooden Shoe Tulip Festival near Woodburn, Oregon",
-		"tags": ["Oregon"],
+		"tags": ["Oregon", "Willamette Valley"],
 		"visible": true,
 		"pictures": [
 			  { "id": "42415077390", "title": "Mt. Hood Tulips"},
@@ -4022,7 +4022,7 @@
 		"completed": true,
 		"year": "2010",
 		"description": "Two trips to Detroit Lake, in the Oregon Cascades",
-		"tags": ["Oregon", "Detroit Lake"],
+		"tags": ["Oregon", "Cascades"],
 		"visible": true,
 		"pictures": [
 			  { "id": "29307289777", "title": "Breitenbush River"},
@@ -4162,7 +4162,7 @@
 		"completed": true,
 		"year": "2010",
 		"description": "Visiting the unique Washington town of Maryhill",
-		"tags": ["Washington", "Maryhill", "Oregon"],
+		"tags": ["Washington", "Columbia River Gorge", "Oregon"],
 		"visible": true,
 		"pictures": [
 			  { "id": "30436147907", "title": "Sam Hill Stonehenge"},
@@ -4373,6 +4373,7 @@
 		"completed": false,
 		"year": "2010",
 		"description": "Coming Soon...",
+		"tags": ["Alabama", "Tennessee", "Georgia", "Huntsville", "Nashville", "Rock City", "Utah"],
 		"visible": true
 	}, {
 		"mainId": "62",
@@ -4385,6 +4386,7 @@
 		"completed": false,
 		"year": "2011",
 		"description": "Coming Soon...",
+		"tags": ["Oregon", "Oregon Coast"],
 		"visible": true
 	}, {
 		"mainId": "63",
@@ -4397,6 +4399,7 @@
 		"completed": false,
 		"year": "2011",
 		"description": "Coming Soon...",
+		"tags": ["Oregon", "Central Oregon", "Bend", "Smith Rock State Park"],
 		"visible": true
 	}, {
 		"mainId": "64",
@@ -4409,6 +4412,7 @@
 		"completed": false,
 		"year": "2011",
 		"description": "Coming Soon...",
+		"tags": ["Oregon", "Washington", "Cascades", "Mt. St. Helens", "Mt. Adams"],
 		"visible": true
 	}, {
 		"mainId": "65",
@@ -4421,6 +4425,7 @@
 		"completed": false,
 		"year": "2011",
 		"description": "Coming Soon...",
+		"tags": ["Oregon", "Willamette Valley"],
 		"visible": true
 	}, {
 		"mainId": "66",
@@ -4433,6 +4438,7 @@
 		"completed": false,
 		"year": "2011",
 		"description": "Coming Soon...",
+		"tags": ["Oregon", "Hood River", "Columbia River Gorge"],
 		"visible": true
 	}, {
 		"mainId": "67",
@@ -4445,6 +4451,7 @@
 		"completed": false,
 		"year": "2011",
 		"description": "Coming Soon...",
+		"tags": ["Oregon", "Hood River", "Columbia River Gorge"],
 		"visible": true
 	}, {
 		"mainId": "68",
@@ -4457,6 +4464,7 @@
 		"completed": false,
 		"year": "2011",
 		"description": "Coming Soon...",
+		"tags": ["Oregon", "Portland"],
 		"visible": true
 	}
 ]
