@@ -1,4 +1,5 @@
 const path = require(`path`)
+const _ = require(`lodash`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
 	const { createPage } = actions
@@ -25,6 +26,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 					}
 				}
 			}
+			group(field: tags) {
+				fieldValue
+			}
+			
 		}
 	}
 `)
@@ -34,11 +39,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 		return
 	}
 
-	const Content = result.data.allItemJson.edges
+	const Content = result.data.allItemJson.edges;
+	const Tags = result.data.allItemJson.group;
 	
 	const postsPerPage = 12;
 	const numPages = Math.ceil(Content.length / postsPerPage);
-
+	
 	Array.from({ length: numPages }).forEach((_, i) => {
 		createPage({
 			path: i === 0 ? `/` : `/${i + 1}`,
@@ -67,6 +73,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	
 	createPage({
 		path: `/tags`,
-			component: path.resolve(`./src/templates/AllTags.js`),
-		});
+		component: path.resolve(`./src/templates/AllTags.js`),
+	});
+	
+	Tags.forEach(tag => {
+		createPage({
+			path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+			component: path.resolve(`./src/templates/Tags.js`),
+			context: {
+				tag: tag.fieldValue,
+			},
+		})
+	})
 }
+

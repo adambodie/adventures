@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from "gatsby"
-import Slider from 'react-slick';
-import '../styles/carousel.scss'
-import Photo from './Photo';
+import { Link } from "gatsby";
+import kebabCase from "lodash/kebabCase";
+import Slider from "react-slick";
+import "../styles/carousel.scss";
+import Photo from "./Photo";
 
 export default class PhotoList extends Component {
 	render() {
@@ -31,14 +32,13 @@ export default class PhotoList extends Component {
 					</div>
 				)}
 			</Slider>
-			<div className="tags">
+			<div className="content-tags">
 			<hr/>
 			<p style={{color: color}}><strong>Tags:</strong> {tags.map((x, index) => {
-				const replace = x.toLowerCase().replace(/ /g, "-").replace(/\./g, "")
 				const space = (index === tags.length - 1) ? '' : ', ';
 				return (
-				<React.Fragment>
-					<Link to={`/tags/${replace}`} key={index} style={{color: color}}>{x}</Link>
+				<React.Fragment key={index}>
+					<Link to={`/tags/${kebabCase(x)}`} style={{color: color}}>{x}</Link>
 					{space}
 				</React.Fragment>
 				)

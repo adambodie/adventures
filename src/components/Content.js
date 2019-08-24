@@ -7,22 +7,23 @@ import ComingSoon from "../components/ComingSoon"
 export default class Content extends Component {
 	render() {
 		const { data } = this.props;
+		const item = data.itemJson;
 		return(
 			<Layout>
-			{data.itemJson.completed ? (
+			{item.completed ? (
 				<div style={{
-					backgroundImage: `url('https://adventures.bodiewebdesign.com/photos/backgrounds/${data.itemJson.backgroundImage}.jpg')`,
+					backgroundImage: `url('https://adventures.bodiewebdesign.com/photos/backgrounds/${item.backgroundImage}.jpg')`,
 					backgroundSize: 'cover'
 				}} className='carousel-background'>
-				<h1 className="title" style={{ color: data.itemJson.color, textShadow: `-1px 0 ${data.itemJson.backgroundColor}, 0 1px ${data.itemJson.backgroundColor}, 1px 0 ${data.itemJson.backgroundColor}, 0 -1px ${data.itemJson.backgroundColor}` }}>{data.itemJson.title}</h1>
+				<h1 className="title" style={{ color: item.color, textShadow: `-1px 0 ${item.backgroundColor}, 0 1px ${item.backgroundColor}, 1px 0 ${item.backgroundColor}, 0 -1px ${item.backgroundColor}` }}>{item.title}</h1>
 				<PhotoList 
-					pictures={data.itemJson.pictures} 
-					category={data.itemJson.category} 
-					page={data.itemJson.page}
-					color={data.itemJson.color}
-					backgroundColor={data.itemJson.backgroundColor} 
-					date={data.itemJson.date}
-					tags={data.itemJson.tags}
+					pictures={item.pictures} 
+					category={item.category} 
+					page={item.page}
+					color={item.color}
+					backgroundColor={item.backgroundColor} 
+					date={item.date}
+					tags={item.tags}
 					/>
 				</div>
 				) : (<ComingSoon/>)

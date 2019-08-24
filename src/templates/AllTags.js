@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 export default class AllTags extends Component {
 	render() {
 		const { data } = this.props;
-		const tags = data.allItemJson.distinct;
+		const tags = data.allItemJson.group;
 		return (
 			<Layout>
 				<div className="container">
@@ -16,7 +16,7 @@ export default class AllTags extends Component {
 						<ul className="tags">
 						{tags.map((x, index) => (
 							<li key={index}>
-								<Link to={`/tags/${kebabCase(x)}`}>{x}</Link>
+								<Link to={`/tags/${kebabCase(x.fieldValue)}`}>{x.fieldValue} ({x.totalCount})</Link>
 							</li>
 						))}
 						</ul>
@@ -30,7 +30,10 @@ export default class AllTags extends Component {
 export const listQuery = graphql`
   	query allTagsQuery {
 		allItemJson {
-			distinct(field: tags)
+			group(field: tags) {
+				fieldValue
+				totalCount
+			}
 		}
-}
+	}
 `
