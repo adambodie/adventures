@@ -33,8 +33,7 @@ export default class PhotoList extends Component {
 				)}
 			</Slider>
 			<div className="content-tags">
-			<hr/>
-			<p style={{color: color}}><strong>Tags:</strong> {tags.map((x, index) => {
+			<p style={{color: color}}><strong>Related Tags:</strong> {tags.map((x, index) => {
 				const space = (index === tags.length - 1) ? '' : ', ';
 				return (
 				<React.Fragment key={index}>

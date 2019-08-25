@@ -9,10 +9,10 @@ const Header = () => (
 		<img src={"../logo.jpg"} alt="Logo" className="img-fluid" />
 		<h1>Adam&apos;s Adventures</h1>
 		<Link to="/">
-			<FontAwesome className='icon' size='2x' name='home' />
+			<FontAwesome className='icon' name='home' />
 		</Link>
 		<Link to="/tags">
-			<FontAwesome className='icon' size='2x' name='tags' />
+			<FontAwesome className='icon' name='tags' />
 		</Link>
 	</div>
 	</header>

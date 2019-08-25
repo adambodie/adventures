@@ -19,7 +19,7 @@ export default class List extends Component {
 					<h1>Gallery</h1>
 					<div className="row">
 						{posts.map((x, index) => (
-							<div className="col-md-4 link" key={index} >
+							<div className="col-md-4" key={index} >
 								<Card
 									mainId={x.node.mainId}
 									backgroundImage={x.node.backgroundImage}
