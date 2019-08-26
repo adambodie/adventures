@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import "../styles/home.scss";
 import "../styles/index.scss"
-import Layout from '../components/Layout';
-import Card from "../components/Card";
-import Pagination from "../components/Pagination";
+import Layout from './Layout';
+import Card from "./Card";
+import Pagination from "./Pagination";
 
-export default class List extends Component {
+export default class AllPages extends Component {
 	render() {
 		const { data, pageContext } = this.props;
 		const posts = data.allItemJson.edges;
@@ -19,7 +19,7 @@ export default class List extends Component {
 					<h1>Gallery</h1>
 					<div className="row">
 						{posts.map((x, index) => (
-							<div className="col-md-4" key={index} >
+							<div className="col-lg-4" key={index} >
 								<Card
 									mainId={x.node.mainId}
 									backgroundImage={x.node.backgroundImage}

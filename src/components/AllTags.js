@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, graphql } from 'gatsby';
 import kebabCase from "lodash/kebabCase";
 import "../styles/tags.scss";
-import Layout from '../components/Layout';
+import Layout from './Layout';
 
 export default class AllTags extends Component {
 	render() {

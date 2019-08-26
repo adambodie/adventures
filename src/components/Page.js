@@ -1,10 +1,10 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import PhotoList from "../components/PhotoList"
-import ComingSoon from "../components/ComingSoon"
+import Layout from "./Layout"
+import PhotoList from "./PhotoList"
+import ComingSoon from "./ComingSoon"
 
-export default class Content extends Component {
+export default class Page extends Component {
 	render() {
 		const { data } = this.props;
 		const item = data.itemJson;

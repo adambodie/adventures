@@ -3,7 +3,7 @@ const _ = require(`lodash`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
 	const { createPage } = actions
-	const ContentTemplate = path.resolve("./src/components/Content.js")
+	const PageTemplate = path.resolve("./src/components/Page.js")
 	const result = await graphql(`
 		{
 		allItemJson {
@@ -39,24 +39,24 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 		return
 	}
 
-	const Content = result.data.allItemJson.edges;
+	const Page = result.data.allItemJson.edges;
 	const Tags = result.data.allItemJson.group;
 	
 	const postsPerPage = 12;
-	const numPages = Math.ceil(Content.length / postsPerPage);
+	const numPages = Math.ceil(Page.length / postsPerPage);
 	
 	Array.from({ length: numPages }).forEach((_, i) => {
 		createPage({
 			path: i === 0 ? `/` : `/${i + 1}`,
-			component: path.resolve(`./src/templates/List.js`),
+			component: path.resolve(`./src/components/AllPages.js`),
 			context: { limit: postsPerPage, skip: i * postsPerPage, numPages, currentPage: i + 1} }
 			);
 		});
 
-	Content.forEach(post => {
+	Page.forEach(post => {
 		createPage({
 			path: `${post.node.backgroundImage}`,
-			component: ContentTemplate,
+			component: PageTemplate,
 			context: {
 				mainId: post.node.mainId,
 				backgroundImage: post.node.backgroundImage,
@@ -73,13 +73,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	
 	createPage({
 		path: `/tags`,
-		component: path.resolve(`./src/templates/AllTags.js`),
+		component: path.resolve(`./src/components/AllTags.js`),
 	});
 	
 	Tags.forEach(tag => {
 		createPage({
 			path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-			component: path.resolve(`./src/templates/Tags.js`),
+			component: path.resolve(`./src/components/Tags.js`),
 			context: {
 				tag: tag.fieldValue,
 			},

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import "../styles/tags.scss";
-import Layout from '../components/Layout';
-import Card from "../components/Card";
+import Layout from './Layout';
+import Card from "./Card";
 
 
 export default class Tags extends Component {
