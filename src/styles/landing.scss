@@ -1,0 +1,29 @@
+@import './_imports.scss';
+
+.landing {
+	.container {
+		height: 90vh;
+		h1 {
+			@include font-style($red, $lightblue);
+		}
+		p {
+			text-align: center;
+			@include font-style($red, $lightblue);
+		}
+		.btn-landing {
+			background: $red;
+			display: block;
+			margin: 0 auto;
+			width: 150px;
+			color: $lightblue;
+			padding: 10px;
+			font-family: $fontfamily;
+			box-shadow: 4px 4px 4px $lightblue;
+			font-size: 2em;
+			height: 75px;
+			&:hover {
+				background: darken($red, 10);
+			}
+		}
+	}
+}

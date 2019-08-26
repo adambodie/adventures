@@ -8,14 +8,14 @@ const Header = () => (
 	<div className="header-logo">
 		<img src={"../logo.jpg"} alt="Logo" className="img-fluid" />
 		<h1>Adam&apos;s Adventures</h1>
-		<Link to="/">
-			<FontAwesome className='icon' name='home' />
+		<Link to="/pages">
+			<FontAwesome className='icon' name='home'/>
 		</Link>
 		<Link to="/tags">
-			<FontAwesome className='icon' name='tags' />
+			<FontAwesome className='icon' name='tags' data-toggle="tooltip" title="Tags" />
 		</Link>
 	</div>
 	</header>
 )
 
-export default Header
+export default Header;

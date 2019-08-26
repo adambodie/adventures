@@ -16,7 +16,7 @@ export default class AllPages extends Component {
 		return (
 			<Layout>
 				<div className="container">
-					<h1>Gallery</h1>
+					<h1>Projects</h1>
 					<div className="row">
 						{posts.map((x, index) => (
 							<div className="col-lg-4" key={index} >

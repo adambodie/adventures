@@ -39,20 +39,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 		return
 	}
 
+	//Home page
+	createPage({
+		path: `/`,
+		component: path.resolve(`./src/components/Home.js`),
+	});
+
+
 	const Page = result.data.allItemJson.edges;
 	const Tags = result.data.allItemJson.group;
 	
 	const postsPerPage = 12;
 	const numPages = Math.ceil(Page.length / postsPerPage);
 	
+	
+	// Pages with pagination
 	Array.from({ length: numPages }).forEach((_, i) => {
 		createPage({
-			path: i === 0 ? `/` : `/${i + 1}`,
+			path: i === 0 ? `/pages/` : `/pages/${i + 1}`,
 			component: path.resolve(`./src/components/AllPages.js`),
 			context: { limit: postsPerPage, skip: i * postsPerPage, numPages, currentPage: i + 1} }
 			);
 		});
-
+	// Pages master
 	Page.forEach(post => {
 		createPage({
 			path: `${post.node.backgroundImage}`,
@@ -71,11 +80,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 		})
 	})
 	
+	//Tags master
 	createPage({
 		path: `/tags`,
 		component: path.resolve(`./src/components/AllTags.js`),
 	});
 	
+	//Individual tags
 	Tags.forEach(tag => {
 		createPage({
 			path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
