@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header>
+  <div
+    className="header-logo"
+  >
+    <img
+      alt="Logo"
+      className="img-fluid"
+      src="../logo.jpg"
+    />
+    <h1
+      data-testid="header-title"
+    >
+      Adam's Adventures
+    </h1>
+    <a
+      href="/pages"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-home icon"
+      />
+    </a>
+    <a
+      href="/tags"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-tags icon"
+      />
+    </a>
+  </div>
+</header>
+`;

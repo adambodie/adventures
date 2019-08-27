@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Photo renders correctly 1`] = `
+<div>
+  <img
+    alt="Title"
+    src="https://adventures.bodiewebdesign.com/photos/images/vegas/1_o.jpg"
+  />
+  <h3
+    style={
+      Object {
+        "color": "black",
+        "textShadow": "-1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue",
+      }
+    }
+  >
+    Title
+  </h3>
+  <h6
+    style={
+      Object {
+        "color": "black",
+        "textShadow": "-1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue",
+      }
+    }
+  >
+    2
+     of 
+    45
+  </h6>
+</div>
+`;

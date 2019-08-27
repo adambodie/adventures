@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly 1`] = `
+<a
+  href="/vegas"
+>
+  <div
+    className="flip-card"
+  >
+    <div
+      className="flip-card-inner"
+    >
+      <div
+        className="flip-card-front"
+        style={
+          Object {
+            "backgroundImage": "url('https://adventures.bodiewebdesign.com/photos/links/adventure1.jpg')",
+            "backgroundPosition": "top",
+            "backgroundSize": "cover",
+          }
+        }
+      />
+      <div
+        className="flip-card-back"
+        style={
+          Object {
+            "backgroundColor": "blue",
+          }
+        }
+      >
+        <p
+          style={
+            Object {
+              "color": "white",
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Random description
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+`;
