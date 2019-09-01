@@ -2,7 +2,9 @@
 
 .landing {
 	.container {
-		height: 90vh;
+		background-size: cover; 
+		background-position: center;
+		height: 0vh;
 		h1 {
 			@include font-style($red, $lightblue);
 		}
@@ -27,3 +29,12 @@
 		}
 	}
 }
+
+@media (min-width: 769px) {
+.landing {
+	.container {
+		height: 90vh;
+		}
+	}
+}
+

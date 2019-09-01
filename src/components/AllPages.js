@@ -27,6 +27,7 @@ export default class AllPages extends Component {
 									color={x.node.color}
 									description={x.node.description}
 									tags={x.node.tags}
+									date={x.node.date}
 								/>
 							</div>
 						))}
@@ -60,6 +61,7 @@ export const listQuery = graphql`
 				year
 				description
 				tags
+				date
 			}
 		}
 	}
