@@ -28,6 +28,8 @@ export default class AllPages extends Component {
 									description={x.node.description}
 									tags={x.node.tags}
 									date={x.node.date}
+									startDate={x.node.startDate}
+									endDate={x.node.endDate}
 								/>
 							</div>
 						))}
@@ -58,6 +60,8 @@ export const listQuery = graphql`
 				category
 				color
 				backgroundColor
+				startDate
+				endDate
 				year
 				description
 				tags

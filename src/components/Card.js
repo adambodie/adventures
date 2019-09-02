@@ -5,12 +5,13 @@ import moment from 'moment'
 
 export default class Card extends Component {
 	render() {
-		const { backgroundImage, color, backgroundColor, description, mainId, date } = this.props;
+		const { backgroundImage, color, backgroundColor, description, mainId, date, startDate, endDate } = this.props;
 		const frontStyle = {
 			backgroundImage: `url('https://adventures.bodiewebdesign.com/photos/links/adventure${mainId}.jpg')`, 
 			backgroundSize: 'cover', 
 			backgroundPosition: 'top'
 		};
+		const formatDate = (date) => moment(date).format("MMMM DD, YYYY");
 		return(
 		<Link to={`/${backgroundImage}`}>
 			<div className="flip-card">
@@ -27,7 +28,12 @@ export default class Card extends Component {
 					</div>
 					<div className="flip-card-back" style={{backgroundColor: backgroundColor}}>
 						<p style={{color: color, fontWeight: 'bold'}}>{description}</p>
-						<p style={{color: color}}>Added: {date}</p>
+						{moment(startDate).isValid() && (
+							<React.Fragment>
+								<p style={{color: color}}>{formatDate(startDate)} {!moment(startDate).isSame(endDate) && (` to ${formatDate(endDate)}`)}</p>
+								<p style={{color: color}}>Added: {formatDate(date)}</p>
+							</React.Fragment>
+						)}
 					</div>
 				</div>
 			</div>

@@ -17,8 +17,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 					color
 					backgroundColor
 					completed
+					startDate
+					endDate
 					year
 					description
+					date
 					tags
 					pictures {
 						id
