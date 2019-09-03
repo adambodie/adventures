@@ -48,7 +48,7 @@ export default class AllPages extends Component {
 export const listQuery = graphql`
   	query projectListQuery($skip: Int!, $limit: Int!)  {
 		allItemJson( 
-			sort: { fields: year, order: ASC }
+			sort: {fields: [startDate, mainId], order: [DESC, DESC]}
 			limit: $limit 
 			skip: $skip
 			) {
@@ -62,7 +62,6 @@ export const listQuery = graphql`
 				backgroundColor
 				startDate
 				endDate
-				year
 				description
 				tags
 				date

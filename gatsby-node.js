@@ -19,7 +19,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 					completed
 					startDate
 					endDate
-					year
 					description
 					date
 					tags

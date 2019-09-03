@@ -28,9 +28,9 @@ export default class Card extends Component {
 					</div>
 					<div className="flip-card-back" style={{backgroundColor: backgroundColor}}>
 						<p style={{color: color, fontWeight: 'bold'}}>{description}</p>
-						{moment(startDate).isValid() && (
+						{moment(date).isValid() && (
 							<React.Fragment>
-								<p style={{color: color}}>{formatDate(startDate)} {!moment(startDate).isSame(endDate) && (` to ${formatDate(endDate)}`)}</p>
+								<p style={{color: color}}>Visit: {formatDate(startDate)} {!moment(startDate).isSame(endDate) && (` to ${formatDate(endDate)}`)}</p>
 								<p style={{color: color}}>Added: {formatDate(date)}</p>
 							</React.Fragment>
 						)}

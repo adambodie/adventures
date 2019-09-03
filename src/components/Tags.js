@@ -14,7 +14,7 @@ export default class Tags extends Component {
 			<Layout>
 				<div className="container">
 					<h1>{tag}</h1>
-					<h4 className="tagResults">Results: {totalCount} post{totalCount === 1 ? "" : "s"}</h4>
+					<h4 className="tagResults">Results: {totalCount} Project{totalCount === 1 ? "" : "s"}</h4>
 					<div className="row">
 						{edges.map((x, index) => {
 								return (
@@ -43,7 +43,7 @@ export default class Tags extends Component {
 export const listQuery = graphql`
   	query projectTagQuery($tag: String)  {
 		allItemJson(
-			sort: { fields: year, order: ASC }
+			sort: {fields: [startDate, mainId], order: [DESC, DESC]}
 			filter: { tags: { in: [$tag] }  }
 		) {
 		totalCount
@@ -58,7 +58,6 @@ export const listQuery = graphql`
 				startDate
 				endDate
 				date
-				year
 				description
 				tags
 			}
