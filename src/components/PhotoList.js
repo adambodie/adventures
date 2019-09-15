@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from "gatsby";
-import kebabCase from "lodash/kebabCase";
-import Slider from "react-slick";
-import "../styles/carousel.scss";
-import Photo from "./Photo";
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
+import Slider from 'react-slick'
+import '../styles/carousel.scss'
+import Photo from './Photo'
 
 export default class PhotoList extends Component {
 	render() {
@@ -32,7 +32,7 @@ export default class PhotoList extends Component {
 					</div>
 				)}
 			</Slider>
-			<div className="content-tags">
+			<div className='content-tags'>
 			<p style={{color: color}}><strong>Related Tags:</strong> {tags.map((x, index) => {
 				const space = (index === tags.length - 1) ? '' : ', ';
 				return (

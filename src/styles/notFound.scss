@@ -1,0 +1,16 @@
+@import './_imports.scss';
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        @include font-style($red, $lightblue)
+    }
+    img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

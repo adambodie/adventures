@@ -6,7 +6,7 @@ export default class CardDescription extends Component {
 	render() {
 		//Two weeks
 		const { description, color, startDate, endDate, date } = this.props;
-		const formatDate = (date) => moment(date).format("MMMM DD, YYYY");
+		const formatDate = (date) => moment(date).format('MMMM DD, YYYY');
 		return(
 		<React.Fragment>
 		<p style={{color: color, fontWeight: 'bold'}}>{description}</p>

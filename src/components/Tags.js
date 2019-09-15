@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { graphql } from 'gatsby';
-import "../styles/tags.scss";
-import Layout from './Layout';
-import Card from "./Card";
+import React, { Component } from 'react'
+import { graphql } from 'gatsby'
+import '../styles/tags.scss'
+import Layout from './Layout'
+import Card from './Card'
 
 
 export default class Tags extends Component {
@@ -12,13 +12,13 @@ export default class Tags extends Component {
 		const { edges, totalCount } = data.allItemJson;
 		return (
 			<Layout>
-				<div className="container">
+				<div className='container'>
 					<h1>{tag}</h1>
-					<h4 className="tagResults">Results: {totalCount} Project{totalCount === 1 ? "" : "s"}</h4>
-					<div className="row">
+					<h4 className='tagResults'>Results: {totalCount} Project{totalCount === 1 ? '' : 's'}</h4>
+					<div className='row'>
 						{edges.map((x, index) => {
 								return (
-								<div className="col-md-4 link" key={index} >
+								<div className='col-md-4 link' key={index} >
 									<Card
 										mainId={x.node.mainId}
 										backgroundImage={x.node.backgroundImage}

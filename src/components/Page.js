@@ -1,8 +1,7 @@
-import React, { Component } from "react"
-import { graphql } from "gatsby"
-import Layout from "./Layout"
-import PhotoList from "./PhotoList"
-import ComingSoon from "./ComingSoon"
+import React, { Component } from 'react'
+import { graphql } from 'gatsby'
+import Layout from './Layout'
+import PhotoList from './PhotoList'
 
 export default class Page extends Component {
 	render() {
@@ -10,12 +9,11 @@ export default class Page extends Component {
 		const item = data.itemJson;
 		return(
 			<Layout>
-			{item.completed ? (
 				<div style={{
-					backgroundImage: `url('https://adventures.bodiewebdesign.com/photos/backgrounds/${item.backgroundImage}.jpg')`,
+					backgroundImage: `url('https://adventures.bodiewebdesign.com/_photos/backgrounds/${item.backgroundImage}.jpg')`,
 					backgroundSize: 'cover'
 				}} className='carousel-background'>
-				<h1 className="title" style={{ color: item.color, textShadow: `-1px 0 ${item.backgroundColor}, 0 1px ${item.backgroundColor}, 1px 0 ${item.backgroundColor}, 0 -1px ${item.backgroundColor}` }}>{item.title}</h1>
+				<h1 className='title' style={{ color: item.color, textShadow: `-1px 0 ${item.backgroundColor}, 0 1px ${item.backgroundColor}, 1px 0 ${item.backgroundColor}, 0 -1px ${item.backgroundColor}` }}>{item.title}</h1>
 				<PhotoList 
 					pictures={item.pictures} 
 					category={item.category} 
@@ -26,8 +24,6 @@ export default class Page extends Component {
 					tags={item.tags}
 					/>
 				</div>
-				) : (<ComingSoon/>)
-				}
 		</Layout>
 		)
 	}

@@ -14,12 +14,17 @@ exports[`Card renders correctly 1`] = `
         className="flip-card-front"
         style={
           Object {
-            "backgroundImage": "url('https://adventures.bodiewebdesign.com/photos/links/adventure1.jpg')",
+            "backgroundImage": "url('https://adventures.bodiewebdesign.com/_photos/links/adventure1.jpg')",
             "backgroundPosition": "top",
             "backgroundSize": "cover",
           }
         }
-      />
+      >
+        <span />
+        <h6>
+          New
+        </h6>
+      </div>
       <div
         className="flip-card-back"
         style={
@@ -37,6 +42,27 @@ exports[`Card renders correctly 1`] = `
           }
         >
           Random description
+        </p>
+        <p
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          Visit: 
+          September 15, 2019
+           
+        </p>
+        <p
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          Added: 
+          September 15, 2019
         </p>
       </div>
     </div>

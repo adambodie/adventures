@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { graphql } from 'gatsby';
-import "../styles/home.scss";
-import "../styles/index.scss"
-import Layout from './Layout';
-import Card from "./Card";
-import Pagination from "./Pagination";
+import React, { Component } from 'react'
+import { graphql } from 'gatsby'
+import '../styles/home.scss'
+import '../styles/index.scss'
+import Layout from './Layout'
+import Card from './Card'
+import Pagination from './Pagination'
 
 export default class AllPages extends Component {
 	render() {
@@ -15,11 +15,11 @@ export default class AllPages extends Component {
 		const nextPage = (currentPage + 1).toString();
 		return (
 			<Layout>
-				<div className="container">
+				<div className='container'>
 					<h1>Projects</h1>
-					<div className="row">
+					<div className='row'>
 						{posts.map((x, index) => (
-							<div className="col-lg-4" key={index} >
+							<div className='col-lg-4' key={index} >
 								<Card
 									mainId={x.node.mainId}
 									backgroundImage={x.node.backgroundImage}

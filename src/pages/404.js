@@ -1,8 +1,13 @@
-import React from 'react';
-import Layout from "../components/Layout"
+import React from 'react'
+import Layout from '../components/Layout'
+import '../styles/notFound.scss'
+
 const NotFound = () => (
 <Layout>
-	<h1>Page Not Found</h1>
+	<div className='notFound'>
+		<h1>Page Not Found</h1>
+		<img src={'https://adventures.bodiewebdesign.com/_photos/frown.gif'} alt='Logo' className='img-fluid' />
+	</div>
 </Layout>
 )
 

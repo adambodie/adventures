@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Photo renders correctly 1`] = `
-<div>
+<div
+  className="image-caption"
+>
   <img
     alt="Title"
-    src="https://adventures.bodiewebdesign.com/photos/images/vegas/1_o.jpg"
+    src="https://adventures.bodiewebdesign.com/_photos/images/vegas/1_o.jpg"
   />
   <h3
     style={

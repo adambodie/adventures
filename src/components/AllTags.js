@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Link, graphql } from 'gatsby';
-import kebabCase from "lodash/kebabCase";
-import "../styles/tags.scss";
-import Layout from './Layout';
+import React, { Component } from 'react'
+import { Link, graphql } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
+import '../styles/tags.scss'
+import Layout from './Layout'
 
 export default class AllTags extends Component {
 	render() {
@@ -10,11 +10,11 @@ export default class AllTags extends Component {
 		const tags = data.allItemJson.group;
 		return (
 			<Layout>
-				<div className="container">
+				<div className='container'>
 					<h1>Tags</h1>
-						<ul className="tags row">
+						<ul className='tags row'>
 						{tags.map((x, index) => (
-							<li className="col-md-4" key={index}>
+							<li className='col-md-4' key={index}>
 								<Link to={`/tags/${kebabCase(x.fieldValue)}`}>{x.fieldValue} ({x.totalCount})</Link>
 							</li>
 						))}
