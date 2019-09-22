@@ -39,7 +39,7 @@ export const query = graphql`
 			page
 			color
 			backgroundColor
-			completed
+			isExternal
 			tags
 			pictures {
 				id

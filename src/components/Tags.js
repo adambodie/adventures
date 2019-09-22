@@ -26,6 +26,7 @@ export default class Tags extends Component {
 										color={x.node.color}
 										description={x.node.description}
 										tags={x.node.tags}
+										isExternal={x.node.isExternal}
 										date={x.node.date}
 										startDate={x.node.startDate}
 										endDate={x.node.endDate}
@@ -59,6 +60,7 @@ export const listQuery = graphql`
 				endDate
 				date
 				description
+				isExternal
 				tags
 			}
 		}

@@ -30,6 +30,7 @@ export default class AllPages extends Component {
 									date={x.node.date}
 									startDate={x.node.startDate}
 									endDate={x.node.endDate}
+									isExternal={x.node.isExternal}
 								/>
 							</div>
 						))}
@@ -63,6 +64,7 @@ export const listQuery = graphql`
 				startDate
 				endDate
 				description
+				isExternal
 				tags
 				date
 			}

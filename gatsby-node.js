@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 					page
 					color
 					backgroundColor
-					completed
+					isExternal
 					startDate
 					endDate
 					description
@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 				category: post.node.category,
 				page: post.node.page,
 				color: post.node.color,
-				completed: post.node.completed,
+				isExternal: post.node.isExternal,
 				backgroundColor: post.node.backgroundColor,
 				pictures: post.node.pictures
 			},
