@@ -22,16 +22,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 					description
 					date
 					tags
+					type
 					pictures {
 						id
 						title
 					}
 				}
 			}
-			group(field: tags) {
+			locationGroup: group(field: tags) {
 				fieldValue
 			}
-			
+			typeGroup: group(field: type) {
+				fieldValue
+			}
 		}
 	}
 `)
@@ -49,8 +52,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 
 	const Page = result.data.allItemJson.edges;
-	const Tags = result.data.allItemJson.group;
-	
+	const Tags = result.data.allItemJson.locationGroup;
+	const TagTypes = result.data.allItemJson.typeGroup;
 	const postsPerPage = 12;
 	const numPages = Math.ceil(Page.length / postsPerPage);
 	
@@ -65,36 +68,55 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 		});
 	// Pages master
 	Page.forEach(post => {
+		if (!post.node.isExternal) {
+			createPage({
+				path: `${post.node.backgroundImage}`,
+				component: PageTemplate,
+				context: {
+					mainId: post.node.mainId,
+					backgroundImage: post.node.backgroundImage,
+					title: post.node.title,
+					category: post.node.category,
+					page: post.node.page,
+					color: post.node.color,
+					isExternal: post.node.isExternal,
+					backgroundColor: post.node.backgroundColor,
+					pictures: post.node.pictures
+				},
+			})
+		}
+	})
+	
+	//Tags By Location master
+	createPage({
+		path: `/tags/location/`,
+		component: path.resolve(`./src/components/AllTagsByLocation.js`),
+	});
+	
+	//Individual tags by Locatiom
+	Tags.forEach(tag => {
 		createPage({
-			path: `${post.node.backgroundImage}`,
-			component: PageTemplate,
+			path: `/tags/location/${_.kebabCase(tag.fieldValue)}/`,
+			component: path.resolve(`./src/components/TagsByLocation.js`),
 			context: {
-				mainId: post.node.mainId,
-				backgroundImage: post.node.backgroundImage,
-				title: post.node.title,
-				category: post.node.category,
-				page: post.node.page,
-				color: post.node.color,
-				isExternal: post.node.isExternal,
-				backgroundColor: post.node.backgroundColor,
-				pictures: post.node.pictures
+				tag: tag.fieldValue,
 			},
 		})
 	})
-	
-	//Tags master
+
+	//Tags by Type master
 	createPage({
-		path: `/tags`,
-		component: path.resolve(`./src/components/AllTags.js`),
+		path: `/tags/type/`,
+		component: path.resolve(`./src/components/AllTagsByType.js`),
 	});
 	
-	//Individual tags
-	Tags.forEach(tag => {
+	//Individual tags by type
+	TagTypes.forEach(type => {
 		createPage({
-			path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-			component: path.resolve(`./src/components/Tags.js`),
+			path: `/tags/type/${_.kebabCase(type.fieldValue)}/`,
+			component: path.resolve(`./src/components/TagsByType.js`),
 			context: {
-				tag: tag.fieldValue,
+				type: type.fieldValue,
 			},
 		})
 	})
