@@ -11,11 +11,11 @@ export default class AllTags extends Component {
 		return (
 			<Layout>
 				<div className='container'>
-					<h1>Tags</h1>
+					<h1>Tags by Location</h1>
 						<ul className='tags row'>
 						{tags.map((x, index) => (
 							<li className='col-md-4' key={index}>
-								<Link to={`/tags/${kebabCase(x.fieldValue)}`}>{x.fieldValue} ({x.totalCount})</Link>
+								<Link to={`/tags/location/${kebabCase(x.fieldValue)}`}>{x.fieldValue} ({x.totalCount})</Link>
 							</li>
 						))}
 						</ul>

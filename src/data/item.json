@@ -13,6 +13,7 @@
 		"description": "High school graduation trip to Las Vegas",
 		"tags": ["Las Vegas", "Nevada"],
 		"date": "2017-11-23",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "38096650732", "title": ""},
 			  { "id": "36583264353", "title": "MGM Grand Hotel"},
@@ -65,8 +66,9 @@
 		"startDate": "2004-09-01",
 		"endDate": "2004-09-08",
 		"description": "First family trip to Maui, exploring Lahaina, Kaanapali and more",
-		"tags": ["Maui", "Hawaii", "Lahaina", "Kaanapali"],
+		"tags": ["Maui", "Hawaii"],
 		"date": "2017-11-23",
+		"type": "Vacation",
 		"pictures": [
 		  { "id": "38128058951", "title": ""},
 		  { "id": "37226671192", "title": "Backyard to the Ocean at the Shangri-La"},
@@ -158,8 +160,9 @@
 		"isExternal": false,
 		"startDate": "2005-05-20",
 		"endDate": "2005-06-05",
-		"tags": ["Washington D.C.", "Vienna", "Austria", "Salzburg", "Czech Republic", "Prague", "Slovakia", "Hungary", "Budapest"],
+		"tags": ["Washington D.C.", "Austria", "Czech Republic", "Hungary"],
 		"date": "2017-11-23",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "37418801964", "title": ""},
 			  { "id": "37226406760", "title": "U.S. Capitol"},
@@ -315,6 +318,7 @@
 		"description": "21st Birthday Trip to Seattle",
 		"tags": ["Seattle", "Washington"],
 		"date": "2017-11-23",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "38128058771", "title": ""},
 			  { "id": "37075974844", "title": "Safeco Field"},
@@ -362,8 +366,9 @@
 		"startDate": "2006-08-29",
 		"endDate": "2006-09-01",
 		"description": "Cross Country trip from Portland to Minneapolis, seeing Yellowstone and Mt. Rushmore",
-		"tags": ["Washington", "Idaho", "Montana", "Wyoming", "Yellowstone National Park", "Mt. Rushmore", "South Dakota", "Minnesota", "Minneapolis"],
+		"tags": ["Washington", "Idaho", "Montana", "Wyoming", "Yellowstone National Park", "Mt. Rushmore", "South Dakota", "Minnesota"],
 		"date": "2017-11-23",
+		"type": "Road Trip",
 		"pictures": [
 			  { "id": "38073553646", "title": ""},
 			  { "id": "37736726066", "title": "Eastern Washington"},
@@ -445,8 +450,9 @@
 		"startDate": "2006-09-04",
 		"endDate": "2006-12-18",
 		"description": "Various trips exploring Minnesota and nearby states of Wisconsin and Iowa",
-		"tags": ["Minnesota", "Wisconsin", "Iowa", "Minneapolis", "St. Paul"],
+		"tags": ["Minnesota", "Wisconsin", "Iowa", "Minneapolis"],
 		"date": "2017-11-23",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "38096650642", "title": ""},
 			  { "id": "24102904068", "title": "Minneapolis City Hall"},
@@ -546,6 +552,7 @@
 		"description": "Weekend Getaway to Green Bay and Upper Peninsula of Michigan",
 		"tags": ["Wisconsin", "Michigan", "Green Bay"],
 		"date": "2017-11-23",
+		"type": "Road Trip",
 		"pictures": [
 			  { "id": "38128059121", "title": ""},
 			  { "id": "37915129601", "title": "Sunrise"},
@@ -606,8 +613,9 @@
 		"startDate": "2007-01-07",
 		"endDate": "2007-01-09",
 		"description": "Road Trip to Kansas City with visits to Omaha and Des Moines",
-		"tags": ["Kansas City", "Missouri", "Nebraska", "Iowa", "Omaha", "Des Moines", "Kansas"],
+		"tags": ["Kansas City", "Missouri", "Nebraska", "Iowa", "Des Moines"],
 		"date": "2017-11-27",
+		"type": "Road Trip",
 		"pictures": [
 			  { "id": "38691091761", "title": ""},
 			  { "id": "38638273022", "title": "Sunrise"},
@@ -742,8 +750,9 @@
 		"startDate": "2007-03-10",
 		"endDate": "2007-03-12",
 		"description": "Road trip to Milwaukee and Chicago",
-		"tags": ["Wisconsin", "Illinois", "Indiana",  "Madison", "Milwaukee", "Chicago"],
+		"tags": ["Wisconsin", "Illinois", "Milwaukee", "Chicago"],
 		"date": "2017-11-27",
+		"type": "Road Trip",
 		"pictures": [
 		  { "id": "38691091671", "title": ""},
 		  { "id": "38614222136", "title": "Trojan Horse"},
@@ -888,8 +897,9 @@
 		"startDate": "2007-05-17",
 		"endDate": "2007-05-21",
 		"description": "Road trip along to Mississippi River to St. Louis and Memphis",
-		"tags": ["Wisconsin", "Illinois", "Missouri", "Tennessee", "Springfield", "St. Louis", "Memphis", "Iowa"],
+		"tags": ["Wisconsin", "Illinois", "Missouri", "Tennessee", "St. Louis", "Memphis", "Iowa"],
 		"date": "2017-12-06",
+		"type": "Road Trip",
 		"pictures": [
 			  { "id": "27023326399", "title": ""},
 			  { "id": "24925631558", "title": "Stone Water Tower"},
@@ -1094,6 +1104,7 @@
 		"description": "Road trip to Sioux Falls and Pipestone National Monument",
 		"tags": ["Minnesota", "South Dakota", "Sioux Falls", "Pipestone National Monument"],
 		"date": "2017-12-06",
+		"type": "Road Trip",
 		"pictures": [
 			  { "id": "23997456067", "title": ""},
 			  { "id": "38862155851", "title": "The Jolly Green Giant"},
@@ -1167,6 +1178,7 @@
 		"isExternal": false,
 		"startDate": "2007-07-14",
 		"endDate": "2007-07-17",
+		"type": "Vacation",
 		"pictures": [
 		  { "id": "38331379174", "title": ""},
 		  { "id": "24157986357", "title": "Boston Skyline"},
@@ -1267,8 +1279,9 @@
 		"startDate": "2007-08-08",
 		"endDate": "2007-08-19",
 		"description": "Twelve Day vacation in Italy, from Rome to Venice",
-		"tags": ["Italy", "Vatican", "San Marino", "Rome", "Florence", "Milan", "Venice"],
+		"tags": ["Italy", "Vatican", "San Marino"],
 		"date": "2017-12-16",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "27316683829", "title": ""},
 			  { "id": "38135799735", "title": "Hotel in Rome"},
@@ -1482,6 +1495,7 @@
 		"description": "A Collection of Pictures from Oregon, Washington from January to March 2008",
 		"tags": ["Oregon", "Washington", "Olympia", "Portland", "Cascades", "Oregon Coast", "Mt. Hood", "Mt. St. Helens", "Silver Falls State Park", "Columbia River Gorge"],
 		"date": "2017-12-31",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "38555892594", "title": "Gospodor Monument"},
 			  { "id": "24400988527", "title": "World's Largest Egg"},
@@ -1584,6 +1598,7 @@
 		"description": "A Collection of Pictures from Oregon, Washington from April to June 2008",
 		"tags": ["Oregon", "Washington", "Columbia River Gorge", "Mt. Hood", "Silver Falls State Park", "Cascades", "Mt. St. Helens", "Eugene", "Willamette Valley"],
 		"date": "2017-12-31",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "25396919178", "title": "Sam Hill's Stonehenge"},
 			  { "id": "27487737079", "title": "Sam Hill's Stonehenge"},
@@ -1696,6 +1711,7 @@
 		"description": "Birthday trip to Denver with my sister, along with Boulder and Red Rocks Park",
 		"tags": ["Colorado", "Denver", "Boulder"],
 		"date": "2018-01-13",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "25639958068", "title": "Jenn's choice: The Testicle Car"},
 			  { "id": "39480082752", "title": "Denver Skyline"},
@@ -1839,6 +1855,7 @@
 		"description": "A Collection of Pictures from Oregon from July to September 2008",
 		"tags": ["Oregon", "Portland", "Mt. Hood", "Columbia River Gorge", "Cascades", "Oregon Coast"],
 		"date": "2017-12-31",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "39381812982", "title": "Salmon Street Springs"},
 			  { "id": "39381813492", "title": "Salmon Street Springs"},
@@ -1964,8 +1981,9 @@
 		"startDate": "2008-06-26",
 		"endDate": "2008-06-28",
 		"description": "Road trip to Seattle, Tacoma and Olympia",
-		"tags": ["Washington", "Seattle", "Tacoma", "Mt. Rainier", "Olympia"],
+		"tags": ["Washington", "Seattle", "Mt. Rainier", "Olympia"],
 		"date": "2018-01-13",
+		"type": "Road Trip",
 		"pictures": [
 			  { "id": "38802190114", "title": "Tacoma Dome"},
 			  { "id": "38802189934", "title": "Museum of Glass"},
@@ -2076,8 +2094,9 @@
 		"startDate": "2008-08-26",
 		"endDate": "2008-08-28",
 		"description": "Family Vacation in the San Francisco Bay Area",
-		"tags": ["California", "San Francisco", "Oakland"],
+		"tags": ["California", "San Francisco"],
 		"date": "2018-01-21",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "27762559829", "title": "Coit Tower"},
 			  { "id": "38642748615", "title": "Martin Luther King, Jr. Memorial"},
@@ -2202,6 +2221,7 @@
 		"description": "A Collection of Pictures from Oregon, Washington from October to December 2008",
 		"tags": ["Oregon", "Washington", "Portland", "Silver Falls State Park", "Columbia River Gorge", "Oregon Coast", "Willamette Valley", "Cascades"],
 		"date": "2017-12-31",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "27620342789", "title": "The Horned Ram"},
 			  { "id": "39397589631", "title": "Pinky & Piglet"},
@@ -2328,8 +2348,9 @@
 		"startDate": "2008-12-06",
 		"endDate": "2008-12-13",
 		"description": "Second Family Vacation in Maui, with stops to Haleakala and Hana",
-		"tags": ["Hawaii", "Maui", "Kaanapali", "Haleakala", "Hana", "Lahaina"],
+		"tags": ["Hawaii", "Maui"],
 		"date": "2018-01-21",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "27762613089", "title": "West Maui Mountains"},
 			  { "id": "27762617549", "title": "Jenn is Slap Happy"},
@@ -2506,6 +2527,7 @@
 		"description": "Daytrip to Newport, exploring the surrounding Oregon Coast",
 		"tags": ["Oregon", "Oregon Coast", "Mt. Hood", "Mt. St. Helens"],
 		"date": "2018-02-12",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "26078521828", "title": "Mt. Hood during a Sunrise"},
 			  { "id": "39241061184", "title": "Mt. St. Helens rises over fog filled valley"},
@@ -2563,6 +2585,7 @@
 		"description": "Day trip to Eagle Creek in the Columbia River Gorge",
 		"tags": ["Oregon", "Columbia River Gorge"],
 		"date": "2018-02-12",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "39311934055", "title": "Eagle Creek"},
 			  { "id": "39311935725", "title": "Eagle Creek"},
@@ -2595,6 +2618,7 @@
 		"description": "Day trip to Bonneville Dam along the Columbia River Gorge",
 		"tags": ["Oregon", "Columbia River Gorge"],
 		"date": "2018-02-12",
+		"type": "Day Trip",
 		"pictures": [
 		  { "id": "40209507731", "title": "Columbia River"},
 		  { "id": "40176754812", "title": "Columbia River"},
@@ -2635,6 +2659,7 @@
 		"description": "Various waterfalls in the Columbia River Gorge",
 		"tags": ["Oregon", "Columbia River Gorge"],
 		"date": "2018-02-12",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "25338493247", "title": "Wahkeena Falls"},
 			  { "id": "25338489847", "title": "Wahkeena Falls"},
@@ -2669,6 +2694,7 @@
 		"description": "Day trip to Florence and surrounding Oregon Coast",
 		"tags": ["Oregon", "Oregon Coast"],
 		"date": "2018-02-12",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "40176909492", "title": "Seal Rock"},
 			  { "id": "40176909292", "title": "Explosive Water"},
@@ -2730,6 +2756,7 @@
 		"description": "Day trip to McCord Creek within the Columbia Gorge",
 		"tags": ["Oregon", "Columbia River Gorge"],
 		"date": "2018-02-25",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "26513088848", "title": "Grassy Rock"},
 			  { "id": "26513088338", "title": "Green Trees"},
@@ -2760,6 +2787,7 @@
 		"description": "Day trip to Mt. Defiance, along the Columbia Gorge",
 		"tags": ["Oregon", "Columbia River Gorge", "Washington"],
 		"date": "2018-02-25",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "39673712374", "title": "Cabin Creek Falls"},
 			  { "id": "40339382872", "title": "Hole-In-The-Wall Falls"},
@@ -2799,8 +2827,9 @@
 		"startDate": "2009-04-05",
 		"endDate": "2009-04-05",
 		"description": "Day trip to Oregon's Capital, Salem",
-		"tags": ["Oregon", "Salem"],
+		"tags": ["Oregon", "Salem", "Willamette Valley"],
 		"date": "2018-03-26",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "39631464495", "title": "Oregon State Capitol"},
 			  { "id": "39631461315", "title": "Oregon State Capitol"},
@@ -2842,6 +2871,7 @@
 		"description": "Day trip to Rowena Crest, along the Columbia River Gorge",
 		"tags": ["Oregon", "Columbia River Gorge", "Mt. Hood", "Mt. Adams"],
 		"date": "2018-03-26",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "40015682335", "title": "Mount Hood"},
 			  { "id": "40015684095", "title": "Hood River Valley"},
@@ -2891,6 +2921,7 @@
 		"description": "Day trip to Cape Kiwanda, along the Oregon Coast",
 		"tags": ["Oregon", "Oregon Coast"],
 		"date": "2018-03-26",
+		"type": "Day Trip",
 		"pictures": [
 		  { "id": "40909407531", "title": "Pacific Ocean"},
 		  { "id": "27038303778", "title": "Pacific Ocean"},
@@ -2941,6 +2972,7 @@
 		"description": "Hike up to the top of Multnomah Falls",
 		"tags": ["Oregon", "Columbia River Gorge"],
 		"date": "2018-03-26",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "26036612217", "title": "Multnomah Falls"},
 			  { "id": "26036612497", "title": "Multnomah Falls"},
@@ -2985,6 +3017,7 @@
 		"description": "Hike up Beacon Rock, along the Washington side of the Columbia Gorge",
 		"tags": ["Washington", "Columbia River Gorge"],
 		"date": "2018-04-07",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "40243977495", "title": "Columbia River"},
 			  { "id": "40243977675", "title": "Columbia River"},
@@ -3024,6 +3057,7 @@
 		"description": "Day trip exploring multiple sides of Mt. Hood",
 		"tags": ["Oregon", "Columbia River Gorge", "Mt. Hood", "Hood River", "Cascades"],
 		"date": "2018-04-07",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "41095921312", "title": "Columbia River"},
 			  { "id": "40427645474", "title": "Columbia River"},
@@ -3068,6 +3102,7 @@
 		"description": "Day trip to Smith Rock State Park in Central Oregon",
 		"tags": ["Oregon", "Smith Rock State Park", "Cascades", "Central Oregon", "Mt. Hood"],
 		"date": "2018-04-07",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "39431446420", "title": "Mount Jefferson"},
 			  { "id": "39431446400", "title": "Deschutes River"},
@@ -3141,6 +3176,7 @@
 		"description": "Vacation in Central Oregon, exploring Bend and John Day Fossil Beds National Monument",
 		"tags": ["Oregon", "Central Oregon", "Cascades", "Bend", "Smith Rock State Park", "John Day Fossil Beds National Monument"],
 		"date": "2018-04-07",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "41254604082", "title": "Sahalie Falls"},
 			  { "id": "41297347381", "title": "McKenzie River"},
@@ -3310,6 +3346,7 @@
 		"description": "Day trip to Panther Creek Falls, deep within Washington's Gifford Pinchot Forest",
 		"tags": ["Washington"],
 		"date": "2018-07-02",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "28802016128", "title": "Panther Creek Falls"},
 			  { "id": "27806709917", "title": "Panther Creek Falls"},
@@ -3342,6 +3379,7 @@
 		"description": "Day trip exploring Hood River, Oregon",
 		"tags": ["Oregon", "Columbia River Gorge", "Hood River", "Mt. Hood"],
 		"date": "2018-07-02",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "42132189695", "title": "Columbia River"},
 			  { "id": "42315804834", "title": "Bird"},
@@ -3399,6 +3437,7 @@
 		"description": "Day trip exploring The Dalles, Oregon",
 		"tags": ["Oregon", "Columbia River Gorge", "Washington"],
 		"date": "2018-07-02",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "40868727340", "title": "Columbia River"},
 			  { "id": "40868728920", "title": "Columbia River"},
@@ -3450,6 +3489,7 @@
 		"description": "Day trip to the Clarno Unit of the John Day Fossil Beds",
 		"tags": ["Oregon", "John Day Fossil Beds National Monument", "Mt. Hood"],
 		"date": "2018-07-02",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "40871004870", "title": "Shoe Tree"},
 			  { "id": "28806723338", "title": "Shoe Tree"},
@@ -3515,6 +3555,7 @@
 		"description": "Day trip to the Klickitat River, on Washington's side of the Columbia Gorge",
 		"tags": ["Oregon", "Columbia River Gorge", "Washington", "Mt. Hood", "Mt. St. Helens"],
 		"date": "2018-07-19",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "42316677955", "title": "Larch Mountain"},
 			  { "id": "29349487968", "title": "Mount Hood"},
@@ -3545,6 +3586,7 @@
 		"description": "Day trip to Mt. Angel, Oregon's Bavarian Themed Town",
 		"tags": ["Oregon", "Mt. Angel", "Willamette Valley"],
 		"date": "2018-07-19",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "28351508947", "title": "The Glockenspiel"},
 			  { "id": "28351508877", "title": "Frank-N-Steins"},
@@ -3578,6 +3620,7 @@
 		"description": "Day trip exploring the Willamette Valley",
 		"tags": ["Oregon", "Mt. Angel", "Willamette Valley"],
 		"date": "2018-07-19",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "43171814782", "title": "The Glockenspiel"},
 			  { "id": "41411155180", "title": "The Glockenspiel"},
@@ -3666,6 +3709,7 @@
 		"description": "Trips visiting Oregon's many universities",
 		"tags": ["Oregon", "Salem", "Portland", "Willamette Valley"],
 		"date": "2018-07-19",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "42698121254", "title": "Hoover-Minthorn House"},
 			  { "id": "42698121344", "title": "Hoover-Minthorn House"},
@@ -3765,6 +3809,7 @@
 		"description": "Visit to Oktoberfest in Mt. Angel, Oregon",
 		"tags": ["Oregon", "Mt. Angel", "Willamette Valley"],
 		"date": "2018-07-19",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "42575325405", "title": "Denkmal Ertrag"},
 			  { "id": "29609132258", "title": "Denkmal Ertrag"},
@@ -3810,6 +3855,7 @@
 		"description": "Various pictures from my former workplace, Hollywood Video Headquarters in Wilsonville",
 		"tags": ["Oregon"],
 		"date": "2018-07-19",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "28593515317", "title": "Hollywood Entertainment"},
 			  { "id": "42763487554", "title": "My Cubicle"},
@@ -3847,6 +3893,7 @@
 		"description": "Day trip to Seaside and nearby areas along the Oregon Coast",
 		"tags": ["Oregon", "Oregon Coast", "Mt. St. Helens"],
 		"date": "2018-07-19",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "42575566825", "title": "Mt. St. Helens from Coast Ranges"},
 			  { "id": "42575566765", "title": "Seaside Civic and Convention Center from Necanicum River"},
@@ -3890,6 +3937,7 @@
 		"description": "Vacation to Palm Springs, the Coachella Valley and Joshua Tree National Park",
 		"tags": ["California", "Coachella Valley", "Joshua Tree National Park"],
 		"date": "2018-08-28",
+		"type": "Vacation",
 		"pictures": [
 			  { "id": "29085718357", "title": "Snowy Mountains"},
 			  { "id": "29085718637", "title": "The building we stayed at"},
@@ -4025,6 +4073,7 @@
 		"description": "Tulips at the Wooden Shoe Tulip Festival near Woodburn, Oregon",
 		"tags": ["Oregon", "Willamette Valley"],
 		"date": "2018-08-28",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "42415077390", "title": "Mt. Hood Tulips"},
 			  { "id": "42415081040", "title": "Tulips"},
@@ -4075,6 +4124,7 @@
 		"description": "Two trips to Detroit Lake, in the Oregon Cascades",
 		"tags": ["Oregon", "Cascades"],
 		"date": "2018-08-28",
+		"type": "Collection",
 		"pictures": [
 			  { "id": "29307289777", "title": "Breitenbush River"},
 			  { "id": "29307289557", "title": "Detroit Lake w\/ Mount Jefferson"},
@@ -4116,6 +4166,7 @@
 		"description": "Day trip to Warm Springs, Oregon, home of the Indian Reservation",
 		"tags": ["Oregon", "Central Oregon"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "29433859767", "title": "The Museum at Warm Springs"},
 			  { "id": "29433866197", "title": "Petroglyphs"},
@@ -4157,6 +4208,7 @@
 		"description": "Day trip visiting the Lewis River",
 		"tags": ["Washington", "Cascades"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "29808113827", "title": "Lower Lewis River Falls"},
 			  { "id": "44744735761", "title": "Lewis River"},
@@ -4188,6 +4240,7 @@
 		"description": "Visiting two great waterfalls on the McKenzie River",
 		"tags": ["Oregon", "Cascades"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "43836227555", "title": "Sahalie Falls"},
 			  { "id": "44744913361", "title": "McKenzie River"},
@@ -4219,6 +4272,7 @@
 		"description": "Visiting the unique Washington town of Maryhill",
 		"tags": ["Washington", "Columbia River Gorge", "Oregon"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "30436147907", "title": "Sam Hill Stonehenge"},
 			  { "id": "30436147697", "title": "Sam Hill Stonehenge"},
@@ -4252,6 +4306,7 @@
 		"description": "Day trip to Eugene, home of more than the University of Oregon",
 		"tags": ["Oregon", "Eugene"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "45376463801", "title": "Ken Kesey Statue"},
 			  { "id": "45376465461", "title": "Hult Center For Performing Arts"},
@@ -4282,6 +4337,7 @@
 		"description": "Day trip to Mt. St. Helens",
 		"tags": ["Washington", "Mt. St. Helens", "Cascades"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "44652435604", "title": "Mt. St. Helens"},
 			  { "id": "44462212965", "title": "Cascades"},
@@ -4318,6 +4374,7 @@
 		"description": "Day trip to Cannon Bach, home of Haystack Rock and more...",
 		"tags": ["Oregon", "Oregon Coast"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "45376603801", "title": "Haystack Rock"},
 			  { "id": "43559946110", "title": "Haystack Rock"},
@@ -4358,6 +4415,7 @@
 		"description": "Hiking through Oneonta Gorge, within the Columbia Gorge",
 		"tags": ["Oregon", "Columbia River Gorge"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "31501270138", "title": "Horsetail Falls"},
 			  { "id": "31501265408", "title": "Ponytail Falls"},
@@ -4393,6 +4451,7 @@
 		"description": "Day trip to the odd Mima Mounds near Olympia, Washington",
 		"tags": ["Washington", "Olympia"],
 		"date": "2018-10-21",
+		"type": "Day Trip",
 		"pictures": [
 			  { "id": "45376666621", "title": "Mima Mounds"},
 			  { "id": "45376664061", "title": "Mima Mounds"},
@@ -4434,8 +4493,9 @@
 		"startDate": "2010-10-30",
 		"endDate": "2010-11-06",
 		"description": "Seven Day Trip with Jenn to Alabama, Tennesse and Georgia",
-		"tags": ["Alabama", "Tennessee", "Georgia", "Huntsville", "Nashville", "Rock City", "Utah"],
+		"tags": ["Alabama", "Tennessee", "Georgia", "Nashville", "Utah"],
 		"date": "2019-08-31",
+		"type": "Vacation",
 		"pictures": [
 			{"id": "P1000044", "title": "Proper Etiquette for Watching this Show: No Farting"},
 			{"id": "P1000045", "title": "Prologue: Getting to Huntsville from Atlanta"},
@@ -4733,6 +4793,7 @@
 		"description": "A Day Trip to the Coast to see Oregon's Three Capes of Tillamook County: Cape Kiwanda, Cape Lookout and Cape Meares",
 		"tags": ["Oregon", "Oregon Coast"],
 		"date": "2019-09-14",
+		"type": "Day Trip",
 		"pictures": [
 			{"id": "P1030638", "title": "Haystack Rock"},
 			{"id": "P1030644", "title": "Cape Kiwanda"},
@@ -4796,6 +4857,7 @@
 		"description": "A Getaway for the 4th of July Weekend to Central Oregon",
 		"tags": ["Oregon", "Central Oregon", "Bend", "Smith Rock State Park"],
 		"date": "2019-09-14",
+		"type": "Vacation",
 		"pictures": [
 			{"id": "P1040220", "title": "When enjoying nice scenery, remember?"},
 			{"title": "Smith Rock: The \"I'm Having a Wonderful Day\" Edition"},
@@ -4931,6 +4993,7 @@
 		"description": "A Collection of Pictures of Three Trips in the Summer of 2011 to Three Prominent Cascades: Mt. St. Helens, Mt. Hood and Mt. Adams",
 		"tags": ["Oregon", "Washington", "Cascades", "Mt. St. Helens", "Mt. Adams"],
 		"date": "2019-09-14",
+		"type": "Collection",
 		"pictures": [
 			{"id": "P1040049", "title": "Part I: Mt. St. Helens"},
 			{"id": "P1040050", "title": "Mt. St. Helens"},
@@ -5011,6 +5074,7 @@
 		"description": "Trips to Wine Country when I finally decided to try wine for the first time, much to everyone's surprise",
 		"tags": ["Oregon", "Willamette Valley"],
 		"date": "2019-09-14",
+		"type": "Collection",
 		"pictures": [
 			{"id": "P1040948"},
 			{"id": "P1040956", "title": "This is NOT a Joke"},
@@ -5095,6 +5159,7 @@
 		"description": "Day Trip exploring wineries of the Columbia River Gorge surrounding Hood River",
 		"tags": ["Oregon", "Hood River", "Columbia River Gorge"],
 		"date": "2019-09-14",
+		"type": "Day Trip",
 		"pictures": [
 			{"id": "P1050512", "title": "Mt. Hood Winery"},
 			{"id": "P1050484", "title": "They wouldn’t call it Mt. Hood Winery without a view of Mt. Hood."},
@@ -5144,6 +5209,7 @@
 		"description": "Another trip to Hood River, this time in the fall",
 		"tags": ["Oregon", "Hood River", "Columbia River Gorge"],
 		"date": "2019-09-14",
+		"type": "Day Trip",
 		"pictures": [
 			{"id": "P1060063", "title": "Columbia River"},
 			{"id": "P1060077", "title": "Mount Hood"},
@@ -5182,6 +5248,7 @@
 		"description": "Various pictures of my hometown: Portland, Oregon from the latter months of 2011",
 		"tags": ["Oregon", "Portland"],
 		"date": "2019-09-14",
+		"type": "Collection",
 		"pictures": [
 			{"id": "P1060016", "title": "Ira Keller Fountain"},
 			{"id": "P1060011", "title": "Ira Keller Fountain"},
@@ -5227,8 +5294,9 @@
 		"startDate": "2018-03-16",
 		"endDate": "2018-03-17",
 		"description": "A journey to Bellingham, Washington and ensuing drive to the border with Canada",
-		"tags": ["Washington", "Bellingham", "Canada", "Blaine", "Seattle", "Cascades"],
+		"tags": ["Washington", "Bellingham", "Canada", "Seattle", "Cascades"],
 		"date": "2019-09-15",
+		"type": "Road Trip",
 		"pictures": [
 			{ "id": "40977182071", "title": "Seattle from Dr. Jose Rizal Park"},
 			{ "id": "39168658410", "title": "Safeco Field"},
@@ -5493,8 +5561,9 @@
 		"startDate": "2017-08-11",
 		"endDate": "2017-08-13",
 		"description": "A trip to Eastern Oregon and Idaho's most populated area, Boise",
-		"tags": ["Oregon", "Idaho", "Pendleton", "Baker City", "Boise", "Joseph", "Wallowa Mountains"],
+		"tags": ["Oregon", "Idaho", "Eastern Oregon", "Boise", "Wallowa Mountains"],
 		"date": "2019-09-15",
+		"type": "Road Trip",
 		"pictures": [
 			{ "id": "36983960345", "title": "Pendleton Round-Up"},
 			{ "id": "36843645671",  "title": "Buck' Em Cowboy"},
@@ -5808,8 +5877,9 @@
 		"startDate": "2018-04-20",
 		"endDate": "2018-04-22",
 		"description": "Taking the Black Ball to Victoria, British Columbia from Port Angeles, Washington",
-		"tags": ["Washington", "Canada", "Victoria", "Port Angeles", "Bremerton"],
-		"date": "2019-09-15"
+		"tags": ["Washington", "Canada", "Victoria", "Port Angeles"],
+		"date": "2019-09-15",
+		"type": "Vacation"
 	}, {
 		"mainId": "72",
 		"backgroundImage": "reno",
@@ -5821,8 +5891,9 @@
 		"startDate": "2016-07-18",
 		"endDate": "2016-07-21",
 		"description": "A journey to the Biggest Little City in the world, Reno",
-		"tags": ["Nevada", "California", "Oregon", "Reno", "Lake Tahoe", "Cascades"],
-		"date": "2019-09-15"
+		"tags": ["Nevada", "California", "Oregon", "Reno", "Lake Tahoe", "Cascades", "Southen Oregon"],
+		"date": "2019-09-15",
+		"type": "Road Trip"
 	}, {
 		"mainId": "73",
 		"backgroundImage": "spokane",
@@ -5835,7 +5906,8 @@
 		"endDate": "2018-09-03",
 		"description": "A Long Awaited Trip to Spokane",
 		"tags": ["Washington", "Idaho", "Spokane", "Coeur d'Alene"],
-		"date": "2019-09-15"
+		"date": "2019-09-15",
+		"type": "Road Trip"
 	}, {
 		"mainId": "74",
 		"backgroundImage": "best-of-2012",
@@ -5850,6 +5922,7 @@
 		"description": "The Best pictures from the year 2012",
 		"tags": ["Oregon", "Cascades", "Columbia River Gorge", "Silver Falls State Park", "Portland", "Mt. Angel", "Oregon Coast"],
 		"date": "2019-09-16",
+		"type": "Collection",
 		"pictures": [
 			{ "id": "P1070332", "title": "Mt. Hood with dramatic cloud covering over sun"},
 			{ "id": "P1070402", "title": "Multnomah Falls slightly frozen"},
@@ -5925,6 +5998,7 @@
 		"description": "A trip to Washington's small Bavarian themed town in the Cascades, Leavenworth",
 		"tags": ["Washington", "Leavenworth", "Cascades"],
 		"date": "2019-09-15",
+		"type": "Road Trip",
 		"pictures": [
 			{ "id": "42976064761",  "title": "Snoqualmie Falls" },
 			{ "id": "41165940870",  "title": "Snoqualmie River" },
@@ -6114,7 +6188,8 @@
 		"endDate": "2015-05-12",
 		"description": "My 30th Birthday Celebration at the Grand Canyon",
 		"tags": ["Arizona", "Grand Canyon National Park"],
-		"date": "2019-09-16"
+		"date": "2019-09-16",
+		"type": "Vacation"
 	}, {
 		"mainId": "77",
 		"backgroundImage": "walla-walla",
@@ -6126,8 +6201,9 @@
 		"startDate": "2016-03-16",
 		"endDate": "2016-03-17",
 		"description": "My First Vacation as a full time employee in Walla Walla, Washington",
-		"tags": ["Washington", "Walla Walla", "Palouse", "Oregon"],
-		"date": "2019-09-16"
+		"tags": ["Washington", "Walla Walla", "Oregon"],
+		"date": "2019-09-16",
+		"type": "Road Trip"
 	}, {
 		"mainId": "78",
 		"backgroundImage": "yakima",
@@ -6140,8 +6216,9 @@
 		"startDate": "2013-07-06",
 		"endDate": "2013-07-06",
 		"description": "A Day trip to the Yakima Valley enjoying the wineries and scenery",
-		"tags": ["Washington", "Oregon", "Cascades", "Columbia River Gorge", "Yakima"],
+		"tags": ["Washington", "Oregon", "Cascades", "Columbia River Gorge"],
 		"date": "2019-09-17",
+		"type": "Day Trip",
 		"pictures": [
 			{ "id": "P12200", "title": "Within the Trees"},
 			{ "id": "P12202", "title": "Deschutes River Meets the Columbia River"},
@@ -6204,6 +6281,7 @@
 		"description": "A Trip to Seattle with Jenn to see and meet some Peeps",
 		"tags": ["Washington", "Seattle"],
 		"date": "2019-09-17",
+		"type": "Road Trip",
 		"pictures": [
 			{ "id": "P11100", "title": "Seattle"},
 			{ "id": "P11101", "title": "Seattle Great Wheel"},
@@ -6257,8 +6335,9 @@
 		"startDate": "2017-06-17",
 		"endDate": "2017-06-23",
 		"description": "When Jenn and I go back to the East Coast to see our friend Neal, there's Never a Dull Moment.  This time we visit Philly and NYC in the jam packed sequel.",
-		"tags": ["Washington D.C.", "Maryland", "Baltimore", "Philadelphia", "Pennsylvania", "New York", "New York City"],
-		"date": "2019-09-17"
+		"tags": ["Washington D.C.", "Maryland", "Baltimore", "Pennsylvania", "New York"],
+		"date": "2019-09-17",
+		"type": "Vacation"
 	}, {
 	"mainId": "81",
 	"backgroundImage": "seaside-kites",
@@ -6273,6 +6352,7 @@
 	"description": "A family day trip to Seaside, where an unexpected Kite Show awaited us",
 	"tags": ["Oregon", "Oregon Coast"],
 	"date": "2019-09-19",
+	"type": "Day Trip",
 	"pictures": [
 		{ "id": "P123400", "title": "Tillamook Head"},
 		{ "id": "P123401", "title": "Kites in Seaside - Octopi"},
@@ -6316,6 +6396,7 @@
 		"description": "A trip to Astoria to explore the mouth of the Columbia River, on both sides of the river",
 		"tags": ["Oregon", "Oregon Coast", "Washington"],
 		"date": "2019-09-19",
+		"type": "Day Trip",
 		"pictures": [
 			{ "id": "P134500", "title": "Clatskanie River"},
 			{ "id": "P134501", "title": "Clatskanie"},
@@ -6368,8 +6449,9 @@
 			"startDate": "2018-11-07",
 			"endDate": "2018-11-16",
 			"description": "A Once-In-A-Lifetime Trip to the land of my Jewish faith: Israel",
-			"tags": ["Israel", "Jerusalem", "Tel Aviv", "Masada", "New York"],
-			"date": "2019-09-19"
+			"tags": ["Israel", "New York"],
+			"date": "2019-09-19",
+			"type": "Vacation"
 		}, {
 			"mainId": "84",
 			"backgroundImage": "hillsboro",
@@ -6382,8 +6464,9 @@
 			"startDate": "2014-07-12",
 			"endDate": "2014-07-12",
 			"description": "A fun-filled summer night watching the Hillsboro Hops play a friendly game of Basebal",
-			"tags": ["Oregon", "Hillsboro"],
+			"tags": ["Oregon"],
 			"date": "2019-09-20",
+			"type": "Sporting Event",
 			"pictures": [
 				{ "id": "2014071200", "title": "Adam and Jenn"},
 				{ "id": "2014071201", "title": "Adam on the way to baseball"},
@@ -6428,7 +6511,8 @@
 				"endDate": "2013-12-09",
 				"description": "There's Never a Dull Moment when Jenn and I go to the East Coast to visit our friend Neal",
 				"tags": ["Washington D.C.", "Baltimore", "Maryland"],
-				"date": "2019-09-20"
+				"date": "2019-09-20",
+				"type": "Vacation"
 			}, {
 				"mainId": "86",
 				"backgroundImage": "mt-rainier",
@@ -6441,8 +6525,9 @@
 				"startDate": "2014-08-02",
 				"endDate": "2014-08-02",
 				"description": "My first trip to Mt. Rainier National Park",
-				"tags": ["Washington", "Mt. Rainier National Park", "Cascades"],
+				"tags": ["Washington", "Mt. Rainier", "Cascades"],
 				"date": "2019-09-20",
+				"type": "Day Trip",
 				"pictures": [
 					{ "id": "2014080215", "title": "Mt. Rainier from Longmire"},
 					{ "id": "2014080214", "title": "Longmire Administration Center"},
@@ -6508,8 +6593,9 @@
 				"startDate": "2014-09-06",
 				"endDate": "2014-09-07",
 				"description": "A weekend trip to visit Southern Oregon for the first time, along with a return to Crater Lake",
-				"tags": ["Oregon", "Ashland", "California", "Crater Lake National Park", "Cascades"],
+				"tags": ["Oregon", "Southern Oregon", "California", "Crater Lake National Park", "Cascades"],
 				"date": "2019-09-21",
+				"type": "Road Trip",
 				"pictures": [
 					{ "id": "P115000", "title": "The Caveman"},
 					{ "id": "P115001", "title": "The Caveman"},
@@ -6629,8 +6715,9 @@
 				"startDate": "2016-06-17",
 				"endDate": "2016-06-17",
 				"description": "Second Trip to Mt. Rainier, this time with plenty of snow on the ground...in mid-June.",
-				"tags": ["Washington", "Cascades", "Mt. Rainier National Park"],
+				"tags": ["Washington", "Cascades", "Mt. Rainier"],
 				"date": "2019-09-22",
+				"type": "Day Trip",
 				"pictures": [
 					{"id": "2016061700", "title": "Kautz Creek"},
 					{"id": "2016061701", "title": "Kautz Creek"},
@@ -6671,6 +6758,7 @@
 				"description": "A day trip to Cascade Locks",
 				"tags": ["Oregon", "Columbia River Gorge"],
 				"date": "2019-09-22",
+				"type": "Day Trip",
 				"pictures": [
 					{"id": "2016092500", "title": "Columbia River Dry"},
 					{"id": "2016092501", "title": "Columbia River"},
@@ -6700,8 +6788,9 @@
 				"startDate": "2017-01-11",
 				"endDate": "2017-01-17",
 				"description": "This is what happens when Portland gets hit with a blizzard, a Once-In-Every-Ten-Years event these days",
-				"tags": ["Oregon", "Beaverton"],
+				"tags": ["Oregon"],
 				"date": "2019-09-22",
+				"type": "Collection",
 				"pictures": [
 					{"id": "2017011100", "title": "Early morning snow.  No work for me."},
 					{"id": "2017011103", "title": "Feels like Minnesota"},
@@ -6749,6 +6838,7 @@
 				"description": "A Day Trip in Lane County, from the Valley in Eugene to the Coast in Florence",
 				"tags": ["Oregon", "Eugene", "Oregon Coast"],
 				"date": "2019-09-22",
+				"type": "Day Trip",
 				"pictures": [
 					{"id": "2017021100", "title": "Matthew Knight Arena"},
 					{"id": "2017021101", "title": "Matthew Knight Arena"},
@@ -6797,6 +6887,7 @@
 				"description": "Enjoying a hike on my Birthday at Silver Falls State Park",
 				"tags": ["Oregon", "Silver Falls State Park", "Salem"],
 				"date": "2019-09-22",
+				"type": "Day Trip",
 				"pictures": [
 					{"id": "2017051000", "title": "View outside Silve Falls"},
 					{"id": "2017051001", "title": "South Falls"},
@@ -6841,6 +6932,7 @@
 				"description": "A trip to Corvallis to watch the Minnesota Golden Gophers football team play against the Oregon State Beavers",
 				"tags": ["Oregon", "Corvallis", "Minnesota"],
 				"date": "2019-09-22",
+				"type": "Sporting Event",
 				"pictures": [
 					{"id": "2017090900", "title": "Adam Rowed the Boat to Corvallis"},
 					{"id": "2017090905", "title": "Corvallis"},
@@ -6912,6 +7004,7 @@
 				"description": "Enjoying the fall amongst the Washington towns of the Columbia River Gorge",
 				"tags": ["Washington", "Columbia River Gorge"],
 				"date": "2019-09-22",
+				"type": "Day Trip",
 				"pictures": [
 					{"id": "2017102300", "title": "Columbia River from Cape Horn"},
 					{"id": "2017102301", "title": "Columbia Gorge Interpretive Center"},

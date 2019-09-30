@@ -7,7 +7,7 @@ export default class NewCard extends Component {
 		//Two weeks
 		const { date } = this.props;
 		return(
-			moment(date).isBetween((moment.now() - 12096000000), moment.now()) && (
+			moment(date).isBetween((moment.now() - 1209600000), moment.now()) && (
 				<React.Fragment>
 					<span></span>
 					<h6>New</h6>

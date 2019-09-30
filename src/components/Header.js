@@ -11,7 +11,10 @@ const Header = () => (
 			<Link to='/pages'>
 				<FontAwesome className='icon' name='home'/>
 			</Link>
-			<Link to='/tags'>
+			<Link to='/tags/location'>
+				<FontAwesome className='icon' name='globe'/>
+			</Link>
+			<Link to='/tags/type'>
 				<FontAwesome className='icon' name='tags'/>
 			</Link>
 		</div>
