@@ -16,24 +16,27 @@ export default class AllPages extends Component {
 		return (
 			<Layout>
 				<div className='container'>
-					<h1>Projects</h1>
+					<h1>All Projects</h1>
 					<div className='row'>
-						{posts.map((x, index) => (
+						{posts.map((x, index) => {
+							const { mainId, backgroundImage, backgroundColor, color, description, tags, date, startDate, endDate, isExternal } = x.node;
+							return(
 							<div className='col-lg-4' key={index} >
 								<Card
-									mainId={x.node.mainId}
-									backgroundImage={x.node.backgroundImage}
-									backgroundColor={x.node.backgroundColor}
-									color={x.node.color}
-									description={x.node.description}
-									tags={x.node.tags}
-									date={x.node.date}
-									startDate={x.node.startDate}
-									endDate={x.node.endDate}
-									isExternal={x.node.isExternal}
+									mainId={mainId}
+									backgroundImage={backgroundImage}
+									backgroundColor={backgroundColor}
+									color={color}
+									description={description}
+									tags={tags}
+									date={date}
+									startDate={startDate}
+									endDate={endDate}
+									isExternal={isExternal}
 								/>
 							</div>
-						))}
+						)}
+					)}
 					</div>
 					<Pagination 
 						prevPage={prevPage} 
@@ -49,7 +52,7 @@ export default class AllPages extends Component {
 export const listQuery = graphql`
   	query projectListQuery($skip: Int!, $limit: Int!)  {
 		allItemJson( 
-			sort: {fields: [startDate, mainId], order: [DESC, DESC]}
+			sort: {fields: [date, mainId], order: [DESC, DESC]}
 			limit: $limit 
 			skip: $skip
 			) {

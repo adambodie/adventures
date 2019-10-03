@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 import '../styles/home.scss'
 import NewCard from './NewCard'
 import CardDescription from './CardDescription'
+import ExternalLink from './ExternalLink'
+import InternalLink from './InternalLink'
 
 export default class Card extends Component {
 	render() {
@@ -12,35 +13,33 @@ export default class Card extends Component {
 			backgroundSize: 'cover', 
 			backgroundPosition: 'top'
 		};
-		const card = <div className='flip-card'>
-		<div className='flip-card-inner'>
-			<div className='flip-card-front' style={frontStyle}>
-				<NewCard date={date} />
+		const card = (
+			<div className='flip-card'>
+				<div className='flip-card-inner'>
+					<div className='flip-card-front' style={frontStyle}>
+						<NewCard date={date} />
+					</div>
+					<div className='flip-card-back' style={{backgroundColor: backgroundColor}}>
+						<CardDescription 
+							description={description} 
+							color={color} 
+							startDate={startDate} 
+							endDate={endDate} 
+							date={date} 
+						/>
+					</div>
+				</div>
 			</div>
-			<div className='flip-card-back' style={{backgroundColor: backgroundColor}}>
-				<CardDescription 
-						description={description} 
-						color={color} 
-						startDate={startDate} 
-						endDate={endDate} 
-						date={date} 
-					/>
-			</div>
-		</div>
-	</div>
+		)
 		return(
 			<React.Fragment>
-			{!isExternal ? (
-				<Link to={`/${backgroundImage}`}>
-					{card}
-				</Link>
-				) : (
-				<a href={`http://${backgroundImage}.bodiewebdesign.com`}>
-					{card}	
-				</a>
-				)
-			}
-		</React.Fragment>
+				{!isExternal ? (
+					<InternalLink backgroundImage={backgroundImage} card={card} />
+					) : (
+					<ExternalLink backgroundImage={backgroundImage} card={card} />
+					)
+				}
+			</React.Fragment>
 		);
 		
 	}

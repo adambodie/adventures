@@ -30,6 +30,9 @@ header {
 	text-shadow: 4px 4px 4px $darkblue;
 	position: static;
 	margin: 20px;
+	&:hover {
+		color: darken(#B4BAC6, 20);
+	}
 }
 
 @media (min-width: 550px) {

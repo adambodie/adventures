@@ -2,13 +2,24 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import './_imports.scss';
 
-.carousel {
-	font: 1em/1.5 'Roboto', sans-serif;
-	margin-top: -30px;
+
+.icon-arrow {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	z-index: 10000;
+	top: 50%;
+	font-size: 2em!important;
 }
 
+.prev {
+	left: -50px;
+}
+.next {
+	right: -50px;
+}
 .carousel-background {
-	min-height: 600px;
+	min-height: 550px;
 }
 
 .slick-slider {
@@ -36,9 +47,6 @@ a {
 	}
 }
 
-
-
-
 ul,li {
 	margin: 0;
 	padding: 0;
@@ -55,9 +63,6 @@ ul,li {
 	line-height: 1.2;
 }
 
-.slick-arrow {
-	z-index: 1000;
-}
 
 .slick-slide img {
 	margin: 0px auto;
@@ -93,17 +98,20 @@ ul,li {
 }
 
 .content-tags {
-	margin-top: 120px;
 	padding: 10px;
 	background: $red;
 }
-
 
 /* =================================
   Media Queries
 ==================================== */
 
 @media (min-width: 550px) {
+	.icon-arrow {
+		width: 40px;
+		height: 40px;
+		font-size: 3em!important;
+	}
 	h6 {
 		max-width: 400px;
 	}	
@@ -117,13 +125,12 @@ ul,li {
 	.slick-list {
 		padding: 10px;
 	}
-	.slick-prev:before, .slick-next:before {
-		font-size: 40px!important;
-		opacity: 1!important;
-	}
 }
 
-@media (min-width: 769px) {	
+@media (min-width: 769px) {
+	.carousel-background {
+		min-height: 1000px;
+	}	
 	.image-caption {
 		h3 {
 			font-size: 2em;
@@ -148,6 +155,6 @@ ul,li {
 	}
 
 	.slick-slide img {
-		height: 400px;
+		height: 500px;
 	}
 }

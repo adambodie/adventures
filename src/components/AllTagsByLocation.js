@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Link, graphql } from 'gatsby'
-import kebabCase from 'lodash/kebabCase'
+import { graphql } from 'gatsby'
 import '../styles/tags.scss'
 import Layout from './Layout'
+import Tags from './Tags'
 
 export default class AllTags extends Component {
 	render() {
@@ -13,11 +13,7 @@ export default class AllTags extends Component {
 				<div className='container'>
 					<h1>Tags by Location</h1>
 						<ul className='tags row'>
-						{tags.map((x, index) => (
-							<li className='col-md-4' key={index}>
-								<Link to={`/tags/location/${kebabCase(x.fieldValue)}`}>{x.fieldValue} ({x.totalCount})</Link>
-							</li>
-						))}
+							<Tags tags={tags} link={'location'} />
 						</ul>
 				</div>
 			</Layout>
