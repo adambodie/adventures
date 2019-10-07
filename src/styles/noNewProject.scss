@@ -1,0 +1,21 @@
+@import './_imports.scss';
+
+.gif {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	flex-wrap: wrap;
+    flex-direction: column;
+    h3 {
+        @include font-style($red, $lightblue);
+        display: flex;
+        justify-content: center;
+    }
+    
+	img {
+		width: 512px; 
+		height: 386px;
+		display: block;
+		margin: 0 auto;
+	}
+}

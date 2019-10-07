@@ -9,7 +9,11 @@
 	position: absolute;
 	z-index: 10000;
 	top: 50%;
+	opacity: 0.8;
 	font-size: 2em!important;
+	&:hover {
+		opacity: 1
+	}
 }
 
 .prev {

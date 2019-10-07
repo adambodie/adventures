@@ -50,6 +50,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 		component: path.resolve(`./src/components/Home.js`),
 	});
 
+	//Home page
+	createPage({
+		path: `/newest/`,
+		component: path.resolve(`./src/components/NewestPages.js`),
+	});
 
 	const Page = result.data.allItemJson.edges;
 	const Tags = result.data.allItemJson.locationGroup;

@@ -7,13 +7,16 @@ export default class CardDescription extends Component {
 		//Two weeks
 		const { description, color, startDate, endDate, date } = this.props;
 		const formatDate = (date) => moment(date).format('MMMM DD, YYYY');
+		const style = {
+			color: color
+		}
 		return(
 		<React.Fragment>
-		<p style={{color: color, fontWeight: 'bold'}}>{description}</p>
+		<p style={style}><strong>{description}</strong></p>
 			{moment(date).isValid() && (
 				<React.Fragment>
-					<p style={{color: color}}>Visit: {formatDate(startDate)} {!moment(startDate).isSame(endDate) && (` to ${formatDate(endDate)}`)}</p>
-					<p style={{color: color}}>Added: {formatDate(date)}</p>
+					<p style={style}>Visit: {formatDate(startDate)} {!moment(startDate).isSame(endDate) && (` to ${formatDate(endDate)}`)}</p>
+					<p style={style}>Added: {formatDate(date)}</p>
 				</React.Fragment>
 			)}
 		</React.Fragment>

@@ -17,19 +17,20 @@ export default class Tags extends Component {
 					<h4 className='tagResults'>Results: {totalCount} Project{totalCount === 1 ? '' : 's'}</h4>
 					<div className='row'>
 						{edges.map((x, index) => {
+							const { mainId, backgroundImage, backgroundColor, color, description, tags, date, startDate, endDate, isExternal } = x.node;
 								return (
 								<div className='col-md-4 link' key={index} >
 									<Card
-										mainId={x.node.mainId}
-										backgroundImage={x.node.backgroundImage}
-										backgroundColor={x.node.backgroundColor}
-										color={x.node.color}
-										description={x.node.description}
-										tags={x.node.tags}
-										isExternal={x.node.isExternal}
-										date={x.node.date}
-										startDate={x.node.startDate}
-										endDate={x.node.endDate}
+										mainId={mainId}
+										backgroundImage={backgroundImage}
+										backgroundColor={backgroundColor}
+										color={color}
+										description={description}
+										tags={tags}
+										isExternal={isExternal}
+										date={date}
+										startDate={startDate}
+										endDate={endDate}
 									/>
 								</div>)
 							})
@@ -44,7 +45,7 @@ export default class Tags extends Component {
 export const listQuery = graphql`
   	query projectTagQuery($tag: String)  {
 		allItemJson(
-			sort: {fields: [startDate, mainId], order: [DESC, DESC]}
+			sort: {fields: [date, mainId], order: [DESC, DESC]}
 			filter: { tags: { in: [$tag] }  }
 		) {
 		totalCount
