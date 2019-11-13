@@ -11,7 +11,10 @@ export default class Photo extends Component {
 		}
 		return (
 			<div className='image-caption'>
-				<img src={`https://adventures.bodiewebdesign.com/_photos/images/${category}/${id}_o.jpg`} alt={title}/>
+				{id !== null ? (
+					<img src={`https://adventures.bodiewebdesign.com/_photos/images/${category}/${id}_o.jpg`} alt={title}/> 
+				) : (<div style={{width: '600px', height: '300px'}}></div>)
+				}
 				<h3 style={colorStyle}>{title}</h3>
 				<h6 style={colorStyle}>{index} of {length}</h6>
 			</div>
