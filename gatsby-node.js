@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	Page.forEach(post => {
 		if (!post.node.isExternal) {
 			createPage({
-				path: `${post.node.backgroundImage}`,
+				path: `/pages/${post.node.backgroundImage}`,
 				component: PageTemplate,
 				context: {
 					mainId: post.node.mainId,

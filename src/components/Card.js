@@ -9,7 +9,7 @@ export default class Card extends Component {
 	render() {
 		const { backgroundImage, color, backgroundColor, description, mainId, date, startDate, endDate, isExternal } = this.props;
 		const frontStyle = {
-			backgroundImage: `url('https://adventures.bodiewebdesign.com/_photos/links/adventure${mainId}.jpg')`, 
+			backgroundImage: `url('/assets/links/adventure${mainId}.jpg')`, 
 			backgroundSize: 'cover', 
 			backgroundPosition: 'top'
 		};

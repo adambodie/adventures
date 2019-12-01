@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import '../styles/home.scss'
 
 const InternalLink = ({backgroundImage, card}) => (
-    <Link to={`/${backgroundImage}`}>
+    <Link to={`/pages/${backgroundImage}`}>
         {card}
     </Link>
 )

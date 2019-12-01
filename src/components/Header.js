@@ -14,7 +14,7 @@ const links = [
 const Header = () => (
 	<header>
 		<div className='header-logo'>
-			<img src={'https://adventures.bodiewebdesign.com/_photos/logo.jpg'} alt='Logo' className='img-fluid' />
+			<img src={'/assets/logo.jpg'} alt='Logo' className='img-fluid' />
 			<h1 data-testid='header-title'>Adam&apos;s Adventures</h1>
 			{links.map((x, index) => {
 				return(

@@ -10,7 +10,7 @@ export default class Page extends Component {
 		const item = data.itemJson;
 		const { backgroundColor, backgroundImage, color, title, pictures, category, page, date, tags } = item;
 		const backgroundStyle = {
-			backgroundImage: `url('https://adventures.bodiewebdesign.com/_photos/backgrounds/${backgroundImage}.jpg')`,
+			backgroundImage: `url('/assets/backgrounds/${backgroundImage}.jpg')`,
 			backgroundSize: 'cover'
 		}
 		const titleStyle = { 

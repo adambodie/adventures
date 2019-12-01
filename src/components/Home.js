@@ -8,7 +8,7 @@ export default class Home extends Component {
 		return(
 			<Layout>
 			<div className='landing'>
-				<div className='container' style={{backgroundImage: 'url(https://adventures.bodiewebdesign.com/_photos/background.jpg)'}}>
+				<div className='container' style={{backgroundImage: 'url(assets/background.jpg)'}}>
 				<h1>Welcome to Adam&apos;s Adventures!</h1>
 				<div>
 				<p>Over the years, I've made numerous trips throughout the U.S. and a few in Europe. Travelling and photography are two things I've excelled at over the years. It's a true passion I've always held. As such, I enjoyed showing off my photos to whoever I could show them to. I typically made slideshows of my photos with Microsoft Powerpoint, including facts and other tidbits to make it more than just a picture gallery.</p>
