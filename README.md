@@ -1,5 +1,11 @@
 # Adam's Adventures
 
+* React
+* GatsbyJs
+* GraphQL
+* Jest
+* Sass
+
 ### Version 1.0
 My initial goal for this project was to build a website containing links to all of my slideshows I had previously made with Microsoft Powerpoint of my various trips between 2003 and 2011.   My first version of the project was built in React, containing a scrollable slider with links to all of my projects underneath the header, with a body containing basic information on the project.  I based my color scheme of the project from a photograph I took whose colors I found to be particularly fascinating.
 
