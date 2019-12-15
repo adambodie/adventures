@@ -1,7 +1,7 @@
 Adam's Adventures
 =======================
 
-# Technologies Used
+## Technologies Used
 
 * React
 * GatsbyJs
